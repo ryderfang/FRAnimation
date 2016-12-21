@@ -14,6 +14,7 @@
 		71630EE41DF56586002F4D0A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71630EE21DF56586002F4D0A /* LaunchScreen.storyboard */; };
 		71630EEF1DF56586002F4D0A /* AnimationDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 71630EEE1DF56586002F4D0A /* AnimationDemoTests.m */; };
 		71630EFA1DF56586002F4D0A /* AnimationDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 71630EF91DF56586002F4D0A /* AnimationDemoUITests.m */; };
+		7174C86D1E0A7A86008D5887 /* icon_balloon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7174C86C1E0A7A86008D5887 /* icon_balloon.png */; };
 		EB64437D1E41CA276DB65907 /* libPods-AnimationDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AF1A1B18B3AE4EDE740BF642 /* libPods-AnimationDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +52,7 @@
 		71630EF51DF56586002F4D0A /* AnimationDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnimationDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		71630EF91DF56586002F4D0A /* AnimationDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimationDemoUITests.m; sourceTree = "<group>"; };
 		71630EFB1DF56586002F4D0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7174C86C1E0A7A86008D5887 /* icon_balloon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_balloon.png; sourceTree = "<group>"; };
 		AF1A1B18B3AE4EDE740BF642 /* libPods-AnimationDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AnimationDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D37E81D0AC2EEBBA0D042A87 /* Pods-AnimationDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimationDemo.release.xcconfig"; path = "../Pods/Target Support Files/Pods-AnimationDemo/Pods-AnimationDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -115,6 +117,7 @@
 		71630ED31DF56585002F4D0A /* AnimationDemo */ = {
 			isa = PBXGroup;
 			children = (
+				7174C86B1E0A795E008D5887 /* Resources */,
 				71630ED71DF56585002F4D0A /* AppDelegate.h */,
 				71630ED81DF56585002F4D0A /* AppDelegate.m */,
 				71630EDA1DF56585002F4D0A /* ViewController.h */,
@@ -151,6 +154,14 @@
 				71630EFB1DF56586002F4D0A /* Info.plist */,
 			);
 			path = AnimationDemoUITests;
+			sourceTree = "<group>";
+		};
+		7174C86B1E0A795E008D5887 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7174C86C1E0A7A86008D5887 /* icon_balloon.png */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		7B52045144EBAA536D642D59 /* Frameworks */ = {
@@ -275,6 +286,7 @@
 			files = (
 				71630EE41DF56586002F4D0A /* LaunchScreen.storyboard in Resources */,
 				71630EE11DF56586002F4D0A /* Assets.xcassets in Resources */,
+				7174C86D1E0A7A86008D5887 /* icon_balloon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
