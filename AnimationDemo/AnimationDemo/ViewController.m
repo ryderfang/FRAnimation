@@ -18,6 +18,7 @@
 @implementation ViewController
 
 - (void)viewDidLoad {
+    self.view.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:self.bgView];
     
     [self.bgView mas_makeConstraints:^(MASConstraintMaker *make) {
