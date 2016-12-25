@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  ClockViewController.h
 //  AnimationDemo
 //
 //  Created by Ray Fong on 16/12/5.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ClockViewController : UIViewController
 
 
 @end

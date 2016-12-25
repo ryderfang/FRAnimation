@@ -6,10 +6,10 @@
 //  Copyright © 2016年 Ray Fong. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "ClockViewController.h"
 #import "Masonry.h"
 
-@interface ViewController () <CALayerDelegate>
+@interface ClockViewController () <CALayerDelegate>
 
 @property (nonatomic, strong) UIView *bgView;
 @property (nonatomic, strong) UIImageView *hourImage;
@@ -19,7 +19,7 @@
 
 @end
 
-@implementation ViewController
+@implementation ClockViewController
 
 - (void)viewDidLoad {
     self.view.backgroundColor = [UIColor whiteColor];
