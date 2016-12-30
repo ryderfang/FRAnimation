@@ -8,9 +8,28 @@
 
 #import "MainViewController.h"
 #import "ClockViewController.h"
+#import "LoginViewController.h"
 #import "Masonry.h"
 
 #define FRTableCellIdentifier @"FRTableCellIdentifier"
+
+@interface MyListItem : NSObject
+
+@property (nonatomic, strong) NSString *name;
+@property (nonatomic, strong) id object;
+
+@end
+
+@implementation MyListItem
+
++ (instancetype)initWithName:(NSString *)name withClass:(Class)type {
+    MyListItem *item = [[MyListItem alloc] init];
+    item.name = name;
+    item.object = type;
+    return item;
+}
+
+@end
 
 @interface MyTableViewCell : UITableViewCell
 
@@ -49,7 +68,7 @@
 @interface MainViewController () <UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) UITableView *mainTable;
-@property (nonatomic, strong) NSArray *titleArray;
+@property (nonatomic, strong) NSArray *itemList;
 
 @end
 
@@ -60,13 +79,19 @@
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor clearColor];
     [self.view addSubview:self.mainTable];
+    
     UIBarButtonItem *backItem = [[UIBarButtonItem alloc] init];
     backItem.title = @"返回";
     self.navigationItem.backBarButtonItem = backItem;
-    
-    self.titleArray = @[@"时针", @"这是一个标题", @"这是一个标题", @"这是一个标题", @"这是一个标题"];
-    [self.mainTable registerClass:[MyTableViewCell class] forCellReuseIdentifier:FRTableCellIdentifier];
     self.navigationItem.title = @"动画学习";
+    
+    [self initDataSource];
+}
+
+- (void)initDataSource {
+    self.itemList = @[[MyListItem initWithName:@"一个时针" withClass:[ClockViewController class]],
+                      [MyListItem initWithName:@"一个登录界面" withClass:[LoginViewController class]]
+                     ];
 }
 
 - (UITableView *)mainTable {
@@ -75,13 +100,14 @@
         _mainTable.backgroundColor = [UIColor whiteColor];
         _mainTable.delegate = self;
         _mainTable.dataSource = self;
+        [_mainTable registerClass:[MyTableViewCell class] forCellReuseIdentifier:FRTableCellIdentifier];
     }
     return _mainTable;
 }
 
 #pragma mark - UITableViewDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.titleArray.count;
+    return self.itemList.count;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -90,17 +116,14 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     MyTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:FRTableCellIdentifier];
-    [cell.title setText:self.titleArray[indexPath.row]];
+    [cell.title setText:((MyListItem *)self.itemList[indexPath.row]).name];
     return cell;
 }
 
 #pragma mark - UITableViewDelegate
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (indexPath.row == 0) {
-        ClockViewController *clockVC = [[ClockViewController alloc] init];
-        self.navigationController.navigationBar.hidden = NO;
-        [self.navigationController pushViewController:clockVC animated:YES];
-    }
+    UIViewController *viewController = [[((MyListItem *)self.itemList[indexPath.row]).object alloc] init];
+    [self.navigationController pushViewController:viewController animated:YES];
 }
 
 @end

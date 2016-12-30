@@ -33,7 +33,7 @@
     blueLayer.contentsScale = image.scale;
     blueLayer.cornerRadius = 150;
     blueLayer.masksToBounds = YES;
-
+    
     [self.view addSubview:self.hourImage];
     [self.view addSubview:self.minutesImage];
     [self.view addSubview:self.secondsImage];

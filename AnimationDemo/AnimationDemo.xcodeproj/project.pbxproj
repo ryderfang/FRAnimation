@@ -9,13 +9,18 @@
 /* Begin PBXBuildFile section */
 		71630ED61DF56585002F4D0A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 71630ED51DF56585002F4D0A /* main.m */; };
 		71630ED91DF56585002F4D0A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 71630ED81DF56585002F4D0A /* AppDelegate.m */; };
-		71630EDC1DF56585002F4D0A /* ClockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71630EDB1DF56585002F4D0A /* ClockViewController.m */; };
 		71630EE11DF56586002F4D0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71630EE01DF56586002F4D0A /* Assets.xcassets */; };
-		71630EE41DF56586002F4D0A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71630EE21DF56586002F4D0A /* LaunchScreen.storyboard */; };
 		71630EEF1DF56586002F4D0A /* AnimationDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 71630EEE1DF56586002F4D0A /* AnimationDemoTests.m */; };
 		71630EFA1DF56586002F4D0A /* AnimationDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 71630EF91DF56586002F4D0A /* AnimationDemoUITests.m */; };
 		71DFB8AB1E0D2DDB00DFAE63 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71DFB8AA1E0D2DDB00DFAE63 /* MainViewController.m */; };
 		71DFB8AE1E0FB46700DFAE63 /* icon_balloon.png in Resources */ = {isa = PBXBuildFile; fileRef = 71DFB8AC1E0FB46700DFAE63 /* icon_balloon.png */; };
+		71DFB8CF1E10C92200DFAE63 /* ClockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71DFB8CC1E10C92200DFAE63 /* ClockViewController.m */; };
+		71DFB8D01E10C92200DFAE63 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71DFB8CE1E10C92200DFAE63 /* LoginViewController.m */; };
+		71DFB8D51E10F42400DFAE63 /* FRTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 71DFB8D41E10F42400DFAE63 /* FRTextField.m */; };
+		71DFB8E21E112B3500DFAE63 /* FRLoginButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 71DFB8E11E112B3500DFAE63 /* FRLoginButton.m */; };
+		71DFB8E71E14B20200DFAE63 /* LoggedInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71DFB8E61E14B20200DFAE63 /* LoggedInViewController.m */; };
+		71DFB8E91E14B9E800DFAE63 /* next_bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 71DFB8E81E14B9E700DFAE63 /* next_bg.jpg */; };
+		71DFB8ED1E14C0C900DFAE63 /* LoginCustomTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 71DFB8EC1E14C0C900DFAE63 /* LoginCustomTransition.m */; };
 		EB64437D1E41CA276DB65907 /* libPods-AnimationDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AF1A1B18B3AE4EDE740BF642 /* libPods-AnimationDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -42,10 +47,7 @@
 		71630ED51DF56585002F4D0A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		71630ED71DF56585002F4D0A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		71630ED81DF56585002F4D0A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		71630EDA1DF56585002F4D0A /* ClockViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClockViewController.h; sourceTree = "<group>"; };
-		71630EDB1DF56585002F4D0A /* ClockViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClockViewController.m; sourceTree = "<group>"; };
 		71630EE01DF56586002F4D0A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		71630EE31DF56586002F4D0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		71630EE51DF56586002F4D0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		71630EEA1DF56586002F4D0A /* AnimationDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnimationDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		71630EEE1DF56586002F4D0A /* AnimationDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimationDemoTests.m; sourceTree = "<group>"; };
@@ -56,6 +58,19 @@
 		71DFB8A91E0D2DDB00DFAE63 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		71DFB8AA1E0D2DDB00DFAE63 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		71DFB8AC1E0FB46700DFAE63 /* icon_balloon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_balloon.png; path = Resources/icon_balloon.png; sourceTree = "<group>"; };
+		71DFB8CB1E10C92200DFAE63 /* ClockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ClockViewController.h; path = Controllers/ClockViewController.h; sourceTree = "<group>"; };
+		71DFB8CC1E10C92200DFAE63 /* ClockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ClockViewController.m; path = Controllers/ClockViewController.m; sourceTree = "<group>"; };
+		71DFB8CD1E10C92200DFAE63 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginViewController.h; path = Controllers/LoginViewController.h; sourceTree = "<group>"; };
+		71DFB8CE1E10C92200DFAE63 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginViewController.m; path = Controllers/LoginViewController.m; sourceTree = "<group>"; };
+		71DFB8D31E10F42400DFAE63 /* FRTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FRTextField.h; path = UIComponents/FRTextField.h; sourceTree = "<group>"; };
+		71DFB8D41E10F42400DFAE63 /* FRTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FRTextField.m; path = UIComponents/FRTextField.m; sourceTree = "<group>"; };
+		71DFB8E01E112B3500DFAE63 /* FRLoginButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FRLoginButton.h; path = UIComponents/FRLoginButton.h; sourceTree = "<group>"; };
+		71DFB8E11E112B3500DFAE63 /* FRLoginButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FRLoginButton.m; path = UIComponents/FRLoginButton.m; sourceTree = "<group>"; };
+		71DFB8E51E14B20200DFAE63 /* LoggedInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoggedInViewController.h; path = Controllers/LoggedInViewController.h; sourceTree = "<group>"; };
+		71DFB8E61E14B20200DFAE63 /* LoggedInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoggedInViewController.m; path = Controllers/LoggedInViewController.m; sourceTree = "<group>"; };
+		71DFB8E81E14B9E700DFAE63 /* next_bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = next_bg.jpg; path = Resources/next_bg.jpg; sourceTree = "<group>"; };
+		71DFB8EB1E14C0C900DFAE63 /* LoginCustomTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginCustomTransition.h; path = Delegates/LoginCustomTransition.h; sourceTree = "<group>"; };
+		71DFB8EC1E14C0C900DFAE63 /* LoginCustomTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginCustomTransition.m; path = Delegates/LoginCustomTransition.m; sourceTree = "<group>"; };
 		AF1A1B18B3AE4EDE740BF642 /* libPods-AnimationDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AnimationDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D37E81D0AC2EEBBA0D042A87 /* Pods-AnimationDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimationDemo.release.xcconfig"; path = "../Pods/Target Support Files/Pods-AnimationDemo/Pods-AnimationDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -120,17 +135,16 @@
 		71630ED31DF56585002F4D0A /* AnimationDemo */ = {
 			isa = PBXGroup;
 			children = (
-				7174C86B1E0A795E008D5887 /* Resources */,
 				71630ED71DF56585002F4D0A /* AppDelegate.h */,
 				71630ED81DF56585002F4D0A /* AppDelegate.m */,
+				71DFB8CA1E10C8E800DFAE63 /* Controllers */,
+				71DFB8EA1E14BC8E00DFAE63 /* Delegates */,
+				71630EE51DF56586002F4D0A /* Info.plist */,
 				71DFB8A91E0D2DDB00DFAE63 /* MainViewController.h */,
 				71DFB8AA1E0D2DDB00DFAE63 /* MainViewController.m */,
-				71630EDA1DF56585002F4D0A /* ClockViewController.h */,
-				71630EDB1DF56585002F4D0A /* ClockViewController.m */,
-				71630EE01DF56586002F4D0A /* Assets.xcassets */,
-				71630EE21DF56586002F4D0A /* LaunchScreen.storyboard */,
-				71630EE51DF56586002F4D0A /* Info.plist */,
+				7174C86B1E0A795E008D5887 /* Resources */,
 				71630ED41DF56585002F4D0A /* Supporting Files */,
+				71DFB8D21E10F33500DFAE63 /* UIComponents */,
 			);
 			path = AnimationDemo;
 			sourceTree = "<group>";
@@ -164,9 +178,44 @@
 		7174C86B1E0A795E008D5887 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				71DFB8E81E14B9E700DFAE63 /* next_bg.jpg */,
+				71630EE01DF56586002F4D0A /* Assets.xcassets */,
 				71DFB8AC1E0FB46700DFAE63 /* icon_balloon.png */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		71DFB8CA1E10C8E800DFAE63 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				71DFB8CB1E10C92200DFAE63 /* ClockViewController.h */,
+				71DFB8CC1E10C92200DFAE63 /* ClockViewController.m */,
+				71DFB8CD1E10C92200DFAE63 /* LoginViewController.h */,
+				71DFB8CE1E10C92200DFAE63 /* LoginViewController.m */,
+				71DFB8E51E14B20200DFAE63 /* LoggedInViewController.h */,
+				71DFB8E61E14B20200DFAE63 /* LoggedInViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		71DFB8D21E10F33500DFAE63 /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				71DFB8D31E10F42400DFAE63 /* FRTextField.h */,
+				71DFB8D41E10F42400DFAE63 /* FRTextField.m */,
+				71DFB8E01E112B3500DFAE63 /* FRLoginButton.h */,
+				71DFB8E11E112B3500DFAE63 /* FRLoginButton.m */,
+			);
+			name = UIComponents;
+			sourceTree = "<group>";
+		};
+		71DFB8EA1E14BC8E00DFAE63 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				71DFB8EB1E14C0C900DFAE63 /* LoginCustomTransition.h */,
+				71DFB8EC1E14C0C900DFAE63 /* LoginCustomTransition.m */,
+			);
+			name = Delegates;
 			sourceTree = "<group>";
 		};
 		7B52045144EBAA536D642D59 /* Frameworks */ = {
@@ -289,8 +338,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				71630EE41DF56586002F4D0A /* LaunchScreen.storyboard in Resources */,
 				71630EE11DF56586002F4D0A /* Assets.xcassets in Resources */,
+				71DFB8E91E14B9E800DFAE63 /* next_bg.jpg in Resources */,
 				71DFB8AE1E0FB46700DFAE63 /* icon_balloon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -364,10 +413,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				71630EDC1DF56585002F4D0A /* ClockViewController.m in Sources */,
 				71630ED91DF56585002F4D0A /* AppDelegate.m in Sources */,
 				71630ED61DF56585002F4D0A /* main.m in Sources */,
 				71DFB8AB1E0D2DDB00DFAE63 /* MainViewController.m in Sources */,
+				71DFB8E71E14B20200DFAE63 /* LoggedInViewController.m in Sources */,
+				71DFB8D51E10F42400DFAE63 /* FRTextField.m in Sources */,
+				71DFB8ED1E14C0C900DFAE63 /* LoginCustomTransition.m in Sources */,
+				71DFB8E21E112B3500DFAE63 /* FRLoginButton.m in Sources */,
+				71DFB8CF1E10C92200DFAE63 /* ClockViewController.m in Sources */,
+				71DFB8D01E10C92200DFAE63 /* LoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,17 +455,6 @@
 			targetProxy = 71630EF61DF56586002F4D0A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		71630EE21DF56586002F4D0A /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				71630EE31DF56586002F4D0A /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		71630EFC1DF56586002F4D0A /* Debug */ = {
