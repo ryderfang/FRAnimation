@@ -191,9 +191,9 @@
 		7174C86B1E0A795E008D5887 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				71DFB8E81E14B9E700DFAE63 /* next_bg.jpg */,
 				71630EE01DF56586002F4D0A /* Assets.xcassets */,
 				71DFB8AC1E0FB46700DFAE63 /* icon_balloon.png */,
+				71DFB8E81E14B9E700DFAE63 /* next_bg.jpg */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -568,11 +568,13 @@
 			baseConfigurationReference = 234B705C465687C689077428 /* Pods-AnimationDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = PLNQ96T9E6;
 				INFOPLIST_FILE = AnimationDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bilibili.AnimationDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -581,11 +583,13 @@
 			baseConfigurationReference = D37E81D0AC2EEBBA0D042A87 /* Pods-AnimationDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = PLNQ96T9E6;
 				INFOPLIST_FILE = AnimationDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bilibili.AnimationDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
