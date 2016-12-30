@@ -11,7 +11,8 @@
 
 @interface ClockViewController () <CALayerDelegate>
 
-@property (nonatomic, strong) UIView *bgView;
+@property (nonatomic, strong) UIImageView *bgView;
+@property (nonatomic, strong) UIView *shadowView;
 @property (nonatomic, strong) UIImageView *hourImage;
 @property (nonatomic, strong) UIImageView *minutesImage;
 @property (nonatomic, strong) UIImageView *secondsImage;
@@ -23,16 +24,15 @@
 
 - (void)viewDidLoad {
     self.view.backgroundColor = [UIColor whiteColor];
-    [self.view addSubview:self.bgView];
     
-    CALayer *blueLayer = self.bgView.layer;
-    blueLayer.backgroundColor = [UIColor blueColor].CGColor;
-    UIImage *image = [UIImage imageNamed:@"icon_balloon"];
-    blueLayer.contents = (__bridge id)image.CGImage;
-    blueLayer.contentsGravity = kCAGravityResizeAspect;
-    blueLayer.contentsScale = image.scale;
-    blueLayer.cornerRadius = 150;
-    blueLayer.masksToBounds = YES;
+    self.shadowView = [[UIView alloc] init];
+    // shadow
+    self.shadowView.layer.shadowColor = [UIColor blueColor].CGColor;
+    self.shadowView.layer.shadowOpacity = 0.4;
+    self.shadowView.layer.shadowOffset = CGSizeMake(3, 3);
+    self.shadowView.layer.shadowRadius = 3;
+    [self.shadowView addSubview:self.bgView];
+    [self.view addSubview:self.shadowView];
     
     [self.view addSubview:self.hourImage];
     [self.view addSubview:self.minutesImage];
@@ -41,6 +41,10 @@
     [self.bgView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.center.equalTo(self.view);
         make.width.and.height.equalTo(@300);
+    }];
+    
+    [self.shadowView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(self.bgView);
     }];
     
     [self.hourImage mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -78,10 +82,13 @@
     self.secondsImage.transform = CGAffineTransformMakeRotation(secAngle);
 }
 
-- (UIView *)bgView {
+- (UIImageView *)bgView {
     if (!_bgView) {
-        _bgView = [[UIView alloc] init];
-        _bgView.backgroundColor = [UIColor yellowColor];
+        _bgView = [[UIImageView alloc] init];
+        [_bgView setImage:[UIImage imageNamed:@"icon_balloon"]];
+        _bgView.layer.cornerRadius = 150;
+        // 这个会导致阴影也被干掉，所以必须在外面套一层view添加阴影
+        _bgView.layer.masksToBounds = YES;
     }
     return _bgView;
 }
