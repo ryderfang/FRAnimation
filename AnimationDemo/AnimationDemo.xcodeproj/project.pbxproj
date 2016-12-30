@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		71516C971E1630F5003DC670 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 71516C961E1630F5003DC670 /* UIColor+Hex.m */; };
 		71630ED61DF56585002F4D0A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 71630ED51DF56585002F4D0A /* main.m */; };
 		71630ED91DF56585002F4D0A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 71630ED81DF56585002F4D0A /* AppDelegate.m */; };
 		71630EE11DF56586002F4D0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71630EE01DF56586002F4D0A /* Assets.xcassets */; };
@@ -43,6 +44,8 @@
 
 /* Begin PBXFileReference section */
 		234B705C465687C689077428 /* Pods-AnimationDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimationDemo.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-AnimationDemo/Pods-AnimationDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		71516C951E1630F5003DC670 /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+Hex.h"; path = "Catagories/UIColor+Hex.h"; sourceTree = "<group>"; };
+		71516C961E1630F5003DC670 /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+Hex.m"; path = "Catagories/UIColor+Hex.m"; sourceTree = "<group>"; };
 		71630ED11DF56585002F4D0A /* AnimationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71630ED51DF56585002F4D0A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		71630ED71DF56585002F4D0A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -110,6 +113,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		71516C941E1630A2003DC670 /* Catagories */ = {
+			isa = PBXGroup;
+			children = (
+				71516C951E1630F5003DC670 /* UIColor+Hex.h */,
+				71516C961E1630F5003DC670 /* UIColor+Hex.m */,
+			);
+			name = Catagories;
+			sourceTree = "<group>";
+		};
 		71630EC81DF56585002F4D0A = {
 			isa = PBXGroup;
 			children = (
@@ -137,6 +149,7 @@
 			children = (
 				71630ED71DF56585002F4D0A /* AppDelegate.h */,
 				71630ED81DF56585002F4D0A /* AppDelegate.m */,
+				71516C941E1630A2003DC670 /* Catagories */,
 				71DFB8CA1E10C8E800DFAE63 /* Controllers */,
 				71DFB8EA1E14BC8E00DFAE63 /* Delegates */,
 				71630EE51DF56586002F4D0A /* Info.plist */,
@@ -418,6 +431,7 @@
 				71DFB8AB1E0D2DDB00DFAE63 /* MainViewController.m in Sources */,
 				71DFB8E71E14B20200DFAE63 /* LoggedInViewController.m in Sources */,
 				71DFB8D51E10F42400DFAE63 /* FRTextField.m in Sources */,
+				71516C971E1630F5003DC670 /* UIColor+Hex.m in Sources */,
 				71DFB8ED1E14C0C900DFAE63 /* LoginCustomTransition.m in Sources */,
 				71DFB8E21E112B3500DFAE63 /* FRLoginButton.m in Sources */,
 				71DFB8CF1E10C92200DFAE63 /* ClockViewController.m in Sources */,

@@ -10,6 +10,7 @@
 #import "LoggedInViewController.h"
 #import "FRTextField.h"
 #import "FRLoginButton.h"
+#import "UIColor+Hex.h"
 
 @interface LoginViewController ()
 
@@ -73,9 +74,9 @@
 - (CAGradientLayer *)backgroundLayer {
     CAGradientLayer *layer = [CAGradientLayer layer];
     layer.frame = self.view.bounds;
-    layer.colors = @[(__bridge id)[UIColor redColor].CGColor,
-                     (__bridge id)[UIColor greenColor].CGColor,
-                     (__bridge id)[UIColor blueColor].CGColor];
+    layer.colors = @[(__bridge id)[UIColor colorWithHex:0x87bef1].CGColor,
+                     (__bridge id)[UIColor colorWithHex:0xe9dcb7].CGColor,
+                     (__bridge id)[UIColor colorWithHex:0xeaa1c8].CGColor];
     layer.startPoint = CGPointMake(0.5, 0);
     layer.endPoint = CGPointMake(0.5, 1);
     layer.locations = @[@0.25, @0.75];

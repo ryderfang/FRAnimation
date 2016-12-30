@@ -109,8 +109,8 @@
     if (!_button) {
         _button = [UIButton buttonWithType:UIButtonTypeCustom];
         [_button setTitle:@"SIGN IN" forState:UIControlStateNormal];
+        [_button.titleLabel setFont:[UIFont boldSystemFontOfSize:13]];
         [_button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        [_button.titleLabel setFont:[UIFont systemFontOfSize:13]];
         [_button addTarget:self action:@selector(buttonClicked:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _button;
