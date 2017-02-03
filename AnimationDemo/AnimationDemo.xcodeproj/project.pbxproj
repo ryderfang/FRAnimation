@@ -309,7 +309,7 @@
 				TargetAttributes = {
 					71630ED01DF56585002F4D0A = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = PLNQ96T9E6;
+						DevelopmentTeam = AV8J5QKX6U;
 						ProvisioningStyle = Automatic;
 					};
 					71630EE91DF56586002F4D0A = {
@@ -569,10 +569,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				DEVELOPMENT_TEAM = PLNQ96T9E6;
+				DEVELOPMENT_TEAM = AV8J5QKX6U;
 				INFOPLIST_FILE = AnimationDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.bilibili.AnimationDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = tk.fangr.myanimation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -584,10 +584,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				DEVELOPMENT_TEAM = PLNQ96T9E6;
+				DEVELOPMENT_TEAM = AV8J5QKX6U;
 				INFOPLIST_FILE = AnimationDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.bilibili.AnimationDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = tk.fangr.myanimation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
