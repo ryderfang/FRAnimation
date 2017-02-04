@@ -13,6 +13,7 @@
 		71630EE11DF56586002F4D0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71630EE01DF56586002F4D0A /* Assets.xcassets */; };
 		71630EEF1DF56586002F4D0A /* AnimationDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 71630EEE1DF56586002F4D0A /* AnimationDemoTests.m */; };
 		71630EFA1DF56586002F4D0A /* AnimationDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 71630EF91DF56586002F4D0A /* AnimationDemoUITests.m */; };
+		71973B6A1E458FD400C9D07A /* EmitterSnowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71973B691E458FD400C9D07A /* EmitterSnowController.swift */; };
 		71DFB8AB1E0D2DDB00DFAE63 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71DFB8AA1E0D2DDB00DFAE63 /* MainViewController.m */; };
 		71DFB8AE1E0FB46700DFAE63 /* icon_balloon.png in Resources */ = {isa = PBXBuildFile; fileRef = 71DFB8AC1E0FB46700DFAE63 /* icon_balloon.png */; };
 		71DFB8CF1E10C92200DFAE63 /* ClockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71DFB8CC1E10C92200DFAE63 /* ClockViewController.m */; };
@@ -58,6 +59,8 @@
 		71630EF51DF56586002F4D0A /* AnimationDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnimationDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		71630EF91DF56586002F4D0A /* AnimationDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimationDemoUITests.m; sourceTree = "<group>"; };
 		71630EFB1DF56586002F4D0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71973B681E458FD400C9D07A /* AnimationDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AnimationDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		71973B691E458FD400C9D07A /* EmitterSnowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmitterSnowController.swift; sourceTree = "<group>"; };
 		71DFB8A91E0D2DDB00DFAE63 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		71DFB8AA1E0D2DDB00DFAE63 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		71DFB8AC1E0FB46700DFAE63 /* icon_balloon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_balloon.png; path = Resources/icon_balloon.png; sourceTree = "<group>"; };
@@ -165,6 +168,7 @@
 		71630ED41DF56585002F4D0A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				71973B681E458FD400C9D07A /* AnimationDemo-Bridging-Header.h */,
 				71630ED51DF56585002F4D0A /* main.m */,
 			);
 			name = "Supporting Files";
@@ -207,6 +211,7 @@
 				71DFB8CE1E10C92200DFAE63 /* LoginViewController.m */,
 				71DFB8E51E14B20200DFAE63 /* LoggedInViewController.h */,
 				71DFB8E61E14B20200DFAE63 /* LoggedInViewController.m */,
+				71973B691E458FD400C9D07A /* EmitterSnowController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -310,6 +315,7 @@
 					71630ED01DF56585002F4D0A = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = AV8J5QKX6U;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					71630EE91DF56586002F4D0A = {
@@ -436,6 +442,7 @@
 				71DFB8E21E112B3500DFAE63 /* FRLoginButton.m in Sources */,
 				71DFB8CF1E10C92200DFAE63 /* ClockViewController.m in Sources */,
 				71DFB8D01E10C92200DFAE63 /* LoginViewController.m in Sources */,
+				71973B6A1E458FD400C9D07A /* EmitterSnowController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -569,11 +576,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = AV8J5QKX6U;
 				INFOPLIST_FILE = AnimationDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tk.fangr.myanimation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AnimationDemo/AnimationDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -584,11 +595,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = AV8J5QKX6U;
 				INFOPLIST_FILE = AnimationDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tk.fangr.myanimation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AnimationDemo/AnimationDemo-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -596,6 +610,7 @@
 		71630F021DF56586002F4D0A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = PLNQ96T9E6;
 				INFOPLIST_FILE = AnimationDemoTests/Info.plist;
@@ -609,6 +624,7 @@
 		71630F031DF56586002F4D0A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = PLNQ96T9E6;
 				INFOPLIST_FILE = AnimationDemoTests/Info.plist;
@@ -622,6 +638,7 @@
 		71630F051DF56586002F4D0A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = PLNQ96T9E6;
 				INFOPLIST_FILE = AnimationDemoUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -634,6 +651,7 @@
 		71630F061DF56586002F4D0A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = PLNQ96T9E6;
 				INFOPLIST_FILE = AnimationDemoUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

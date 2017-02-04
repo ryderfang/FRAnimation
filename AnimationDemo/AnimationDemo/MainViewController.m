@@ -7,6 +7,7 @@
 //
 
 #import "MainViewController.h"
+#import "AnimationDemo-Swift.h"
 #import "ClockViewController.h"
 #import "LoginViewController.h"
 #import "Masonry.h"
@@ -90,7 +91,8 @@
 
 - (void)initDataSource {
     self.itemList = @[[MyListItem initWithName:@"一个时针" withClass:[ClockViewController class]],
-                      [MyListItem initWithName:@"一个登录界面" withClass:[LoginViewController class]]
+                      [MyListItem initWithName:@"一个登录界面" withClass:[LoginViewController class]],
+                      [MyListItem initWithName:@"雪花粒子动画" withClass:[EmitterSnowController class]]
                      ];
 }
 
