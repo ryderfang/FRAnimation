@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "UIDefs.h"
 #import "MainViewController.h"
 
 @interface AppDelegate ()
@@ -22,6 +23,10 @@
     MainViewController *root = [[MainViewController alloc] init];
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:root];
     self.window.rootViewController = navigationController;
+    [[UINavigationBar appearance] setBarTintColor:FR_BLUE_COLOR];
+    [[UINavigationBar appearance]
+     setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]}];
+    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
     [self.window addSubview:root.view];
     [self.window makeKeyAndVisible];
     return YES;

@@ -52,7 +52,7 @@
     
     FRTextField *userName = [[FRTextField alloc] initWithFrame:CGRectMake(0, 0, 270, 30)];
     userName.center = CGPointMake(self.view.center.x, 350);
-    userName.placeholderLabel.text = @"Username";
+    userName.placeholderLabel.text = @"UserName";
     [self.view addSubview:userName];
     
     FRTextField *passWord = [[FRTextField alloc] initWithFrame:CGRectMake(0, 0, 270, 30)];

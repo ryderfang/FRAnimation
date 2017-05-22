@@ -11,6 +11,8 @@
 #import "ClockViewController.h"
 #import "LoginViewController.h"
 #import "Masonry.h"
+#import "UIDefs.h"
+#import <StoreKit/StoreKit.h>
 
 #define FRTableCellIdentifier @"FRTableCellIdentifier"
 
@@ -35,6 +37,7 @@
 @interface MyTableViewCell : UITableViewCell
 
 @property (nonatomic, strong) UILabel *title;
+@property (nonatomic, strong) UIView *shadowView;
 
 @end
 
@@ -51,6 +54,10 @@
             make.left.equalTo(self.contentView).offset(12);
             make.centerY.equalTo(self.contentView);
         }];
+        [self.contentView addSubview:self.shadowView];
+        [self.shadowView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.edges.equalTo(self.contentView);
+        }];
     }
     return self;
 }
@@ -64,9 +71,23 @@
     return _title;
 }
 
+- (UIView *)shadowView {
+    if (!_shadowView) {
+        _shadowView = [[UIView alloc] init];
+        _shadowView.backgroundColor = [UIColor blackColor];
+        _shadowView.alpha = 0.04;
+        _shadowView.hidden = YES;
+    }
+    return _shadowView;
+}
+
 @end
 
-@interface MainViewController () <UITableViewDelegate, UITableViewDataSource>
+@interface MainViewController () <
+    UITableViewDelegate,
+    UITableViewDataSource,
+    SKStoreProductViewControllerDelegate
+>
 
 @property (nonatomic, strong) UITableView *mainTable;
 @property (nonatomic, strong) NSArray *itemList;
@@ -85,14 +106,15 @@
     backItem.title = @"返回";
     self.navigationItem.backBarButtonItem = backItem;
     self.navigationItem.title = @"动画学习";
-    
+
     [self initDataSource];
 }
 
 - (void)initDataSource {
     self.itemList = @[[MyListItem initWithName:@"一个时针" withClass:[ClockViewController class]],
                       [MyListItem initWithName:@"一个登录界面" withClass:[LoginViewController class]],
-                      [MyListItem initWithName:@"雪花粒子动画" withClass:[EmitterSnowController class]]
+                      [MyListItem initWithName:@"雪花粒子动画" withClass:[EmitterSnowController class]],
+                      [MyListItem initWithName:@"测试界面" withClass:[UIViewController class]]
                      ];
 }
 
@@ -123,9 +145,45 @@
 }
 
 #pragma mark - UITableViewDelegate
+- (void)tableView:(UITableView *)tableView didHighlightRowAtIndexPath:(NSIndexPath *)indexPath {
+    MyTableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+    cell.shadowView.alpha = 0;
+    cell.shadowView.hidden = NO;
+    [UIView animateWithDuration:0.2 animations:^{
+        cell.shadowView.alpha = 0.04;
+    }];
+}
+
+- (void)tableView:(UITableView *)tableView didUnhighlightRowAtIndexPath:(NSIndexPath *)indexPath {
+    MyTableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+    cell.shadowView.alpha = 0.04;
+    [UIView animateWithDuration:0.2 animations:^{
+        cell.shadowView.alpha = 0;
+    } completion:^(BOOL finished) {
+        cell.shadowView.hidden = YES;
+    }];
+}
+
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    UIViewController *viewController = [[((MyListItem *)self.itemList[indexPath.row]).object alloc] init];
-    [self.navigationController pushViewController:viewController animated:YES];
+    if (indexPath.row == self.itemList.count - 1) {
+        SKStoreProductViewController *storeVC = [[SKStoreProductViewController alloc] init];
+        storeVC.delegate = self;
+        [storeVC loadProductWithParameters:@{SKStoreProductParameterITunesItemIdentifier: @"1108397779"}
+                           completionBlock:^(BOOL result, NSError * _Nullable error) {
+                               if (result && !error) {
+                                   // nothing
+                               }
+        }];
+        [self.navigationController presentViewController:storeVC animated:YES completion:nil];
+    } else {
+        UIViewController *viewController = [[((MyListItem *)self.itemList[indexPath.row]).object alloc] init];
+        [self.navigationController pushViewController:viewController animated:YES];
+    }
+}
+
+#pragma mark - SKStoreProductViewControllerDelegate
+- (void)productViewControllerDidFinish:(SKStoreProductViewController *)viewController {
+    [viewController dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end
