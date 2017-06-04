@@ -41,9 +41,9 @@ class EmitterSnowController : UIViewController {
         // 粒子y方向的加速度分量
         snowflake.yAcceleration = 2
         // 周围发射角度
-        snowflake.emissionRange = (CGFloat)(0.5 * M_PI)
+        snowflake.emissionRange = (CGFloat)(0.5 * Double.pi)
         // 子旋转角度范围
-        snowflake.spinRange = CGFloat.init(0.25 * M_PI)
+        snowflake.spinRange = CGFloat.init(0.25 * Double.pi)
         snowflake.contents = UIImage.init(named: "snow")?.cgImage
         // 雪花形状的粒子颜色
         snowflake.color = UIColor.white.cgColor
