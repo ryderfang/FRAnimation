@@ -1,0 +1,22 @@
+//
+//  Demo-Prefix.pch
+//  AnimationDemo
+//
+//  Created by Ray Fong on 2017/6/15.
+//  Copyright © 2017年 Ray Fong. All rights reserved.
+//
+
+#ifndef Demo_Prefix_pch
+#define Demo_Prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#ifdef __OBJC__
+    #import <Masonry/Masonry.h>
+    #import <AFNetworking/AFNetworking.h>
+    #import "UIDefs.h"
+    #import "BiliIconFont.h"
+    #import "BiliIconConfig.h"
+#endif
+
+#endif /* Demo_Prefix_pch */

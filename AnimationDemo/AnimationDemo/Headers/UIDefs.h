@@ -20,4 +20,7 @@
 #define FR_PINK_COLOR [UIColor colorWithRed:251./255 green:114./255 blue:153./255 alpha:1]
 #define FR_BLUE_COLOR [UIColor colorWithRed:20./255 green:155./255 blue:213./255 alpha:1]
 
+#define FR_GRAY_COLOR_53 [UIColor colorWithWhite:53./255 alpha:1]
+#define FR_GRAY_COLOR_153 [UIColor colorWithWhite:153./255 alpha:1]
+
 #endif /* UIDefs_h */

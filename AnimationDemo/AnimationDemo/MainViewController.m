@@ -10,9 +10,11 @@
 #import "AnimationDemo-Swift.h"
 #import "ClockViewController.h"
 #import "LoginViewController.h"
+#import "IconFontViewController.h"
 #import "Masonry.h"
 #import "UIDefs.h"
 #import <StoreKit/StoreKit.h>
+#import "objc/runtime.h"
 
 #define FRTableCellIdentifier @"FRTableCellIdentifier"
 
@@ -30,6 +32,10 @@
     item.name = name;
     item.object = type;
     return item;
+}
+
++ (void)fuckClass {
+    NSLog(@"shit");
 }
 
 @end
@@ -96,8 +102,10 @@
 
 @implementation MainViewController
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor clearColor];
     [self.view addSubview:self.mainTable];
@@ -107,6 +115,14 @@
     self.navigationItem.backBarButtonItem = backItem;
     self.navigationItem.title = @"动画学习";
 
+    // Check Fonts
+    for (NSString* family in [UIFont familyNames]) {
+        NSLog(@"%@", family);
+        for (NSString* name in [UIFont fontNamesForFamilyName: family]) {
+            NSLog(@"  %@", name);
+        }
+    }
+
     [self initDataSource];
 }
 
@@ -114,6 +130,7 @@
     self.itemList = @[[MyListItem initWithName:@"一个时针" withClass:[ClockViewController class]],
                       [MyListItem initWithName:@"一个登录界面" withClass:[LoginViewController class]],
                       [MyListItem initWithName:@"雪花粒子动画" withClass:[EmitterSnowController class]],
+                      [MyListItem initWithName:@"IconFont测试" withClass:[IconFontViewController class]],
                       [MyListItem initWithName:@"测试界面" withClass:[UIViewController class]]
                      ];
 }

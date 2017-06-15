@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7138754C1EF2673D0093BE11 /* fontello.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7138754B1EF2673D0093BE11 /* fontello.ttf */; };
+		713875511EF2758F0093BE11 /* BiliIconFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 713875501EF2758F0093BE11 /* BiliIconFont.m */; };
+		713875551EF27F110093BE11 /* UILabel+BiliIconFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 713875541EF27F110093BE11 /* UILabel+BiliIconFont.m */; };
+		713875581EF281710093BE11 /* UIImage+BiliIconFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 713875571EF281710093BE11 /* UIImage+BiliIconFont.m */; };
+		7138755B1EF28B990093BE11 /* iconfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7138755A1EF28B880093BE11 /* iconfont.ttf */; };
+		7138755E1EF29B470093BE11 /* UIImageView+BiliIconFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 7138755D1EF29B470093BE11 /* UIImageView+BiliIconFont.m */; };
+		713875611EF29B650093BE11 /* UIButton+BiliIconFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 713875601EF29B650093BE11 /* UIButton+BiliIconFont.m */; };
 		71516C971E1630F5003DC670 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 71516C961E1630F5003DC670 /* UIColor+Hex.m */; };
 		71630ED61DF56585002F4D0A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 71630ED51DF56585002F4D0A /* main.m */; };
 		71630ED91DF56585002F4D0A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 71630ED81DF56585002F4D0A /* AppDelegate.m */; };
@@ -14,6 +21,7 @@
 		71630EEF1DF56586002F4D0A /* AnimationDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 71630EEE1DF56586002F4D0A /* AnimationDemoTests.m */; };
 		71630EFA1DF56586002F4D0A /* AnimationDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 71630EF91DF56586002F4D0A /* AnimationDemoUITests.m */; };
 		71973B6A1E458FD400C9D07A /* EmitterSnowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71973B691E458FD400C9D07A /* EmitterSnowController.swift */; };
+		71D1D1651EF25E4000BF6CB1 /* IconFontViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71D1D1641EF25E4000BF6CB1 /* IconFontViewController.m */; };
 		71DFB8AB1E0D2DDB00DFAE63 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71DFB8AA1E0D2DDB00DFAE63 /* MainViewController.m */; };
 		71DFB8AE1E0FB46700DFAE63 /* icon_balloon.png in Resources */ = {isa = PBXBuildFile; fileRef = 71DFB8AC1E0FB46700DFAE63 /* icon_balloon.png */; };
 		71DFB8CF1E10C92200DFAE63 /* ClockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71DFB8CC1E10C92200DFAE63 /* ClockViewController.m */; };
@@ -45,6 +53,20 @@
 
 /* Begin PBXFileReference section */
 		234B705C465687C689077428 /* Pods-AnimationDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimationDemo.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-AnimationDemo/Pods-AnimationDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		713875491EF2601E0093BE11 /* Demo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Demo-Prefix.pch"; sourceTree = "<group>"; };
+		7138754B1EF2673D0093BE11 /* fontello.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = fontello.ttf; path = Resources/fontello.ttf; sourceTree = "<group>"; };
+		7138754F1EF2758F0093BE11 /* BiliIconFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BiliIconFont.h; path = IconFont/BiliIconFont.h; sourceTree = "<group>"; };
+		713875501EF2758F0093BE11 /* BiliIconFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BiliIconFont.m; path = IconFont/BiliIconFont.m; sourceTree = "<group>"; };
+		713875531EF27F110093BE11 /* UILabel+BiliIconFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UILabel+BiliIconFont.h"; path = "IconFont/UILabel+BiliIconFont.h"; sourceTree = "<group>"; };
+		713875541EF27F110093BE11 /* UILabel+BiliIconFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UILabel+BiliIconFont.m"; path = "IconFont/UILabel+BiliIconFont.m"; sourceTree = "<group>"; };
+		713875561EF281710093BE11 /* UIImage+BiliIconFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+BiliIconFont.h"; path = "IconFont/UIImage+BiliIconFont.h"; sourceTree = "<group>"; };
+		713875571EF281710093BE11 /* UIImage+BiliIconFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+BiliIconFont.m"; path = "IconFont/UIImage+BiliIconFont.m"; sourceTree = "<group>"; };
+		713875591EF2849F0093BE11 /* BiliIconConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BiliIconConfig.h; path = IconFont/BiliIconConfig.h; sourceTree = "<group>"; };
+		7138755A1EF28B880093BE11 /* iconfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = iconfont.ttf; path = Resources/iconfont.ttf; sourceTree = "<group>"; };
+		7138755C1EF29B470093BE11 /* UIImageView+BiliIconFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImageView+BiliIconFont.h"; path = "IconFont/UIImageView+BiliIconFont.h"; sourceTree = "<group>"; };
+		7138755D1EF29B470093BE11 /* UIImageView+BiliIconFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+BiliIconFont.m"; path = "IconFont/UIImageView+BiliIconFont.m"; sourceTree = "<group>"; };
+		7138755F1EF29B650093BE11 /* UIButton+BiliIconFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIButton+BiliIconFont.h"; path = "IconFont/UIButton+BiliIconFont.h"; sourceTree = "<group>"; };
+		713875601EF29B650093BE11 /* UIButton+BiliIconFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIButton+BiliIconFont.m"; path = "IconFont/UIButton+BiliIconFont.m"; sourceTree = "<group>"; };
 		713BAF581ED2E665008789C7 /* UIDefs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = UIDefs.h; path = Headers/UIDefs.h; sourceTree = "<group>"; };
 		71516C951E1630F5003DC670 /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+Hex.h"; path = "Catagories/UIColor+Hex.h"; sourceTree = "<group>"; };
 		71516C961E1630F5003DC670 /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+Hex.m"; path = "Catagories/UIColor+Hex.m"; sourceTree = "<group>"; };
@@ -62,6 +84,8 @@
 		71630EFB1DF56586002F4D0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		71973B681E458FD400C9D07A /* AnimationDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AnimationDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 		71973B691E458FD400C9D07A /* EmitterSnowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmitterSnowController.swift; sourceTree = "<group>"; };
+		71D1D1631EF25E4000BF6CB1 /* IconFontViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IconFontViewController.h; path = Controllers/IconFontViewController.h; sourceTree = "<group>"; };
+		71D1D1641EF25E4000BF6CB1 /* IconFontViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IconFontViewController.m; path = Controllers/IconFontViewController.m; sourceTree = "<group>"; };
 		71DFB8A91E0D2DDB00DFAE63 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		71DFB8AA1E0D2DDB00DFAE63 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		71DFB8AC1E0FB46700DFAE63 /* icon_balloon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_balloon.png; path = Resources/icon_balloon.png; sourceTree = "<group>"; };
@@ -117,6 +141,24 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		7138754E1EF275310093BE11 /* IconFont */ = {
+			isa = PBXGroup;
+			children = (
+				713875591EF2849F0093BE11 /* BiliIconConfig.h */,
+				7138754F1EF2758F0093BE11 /* BiliIconFont.h */,
+				713875501EF2758F0093BE11 /* BiliIconFont.m */,
+				7138755F1EF29B650093BE11 /* UIButton+BiliIconFont.h */,
+				713875601EF29B650093BE11 /* UIButton+BiliIconFont.m */,
+				713875561EF281710093BE11 /* UIImage+BiliIconFont.h */,
+				713875571EF281710093BE11 /* UIImage+BiliIconFont.m */,
+				7138755C1EF29B470093BE11 /* UIImageView+BiliIconFont.h */,
+				7138755D1EF29B470093BE11 /* UIImageView+BiliIconFont.m */,
+				713875531EF27F110093BE11 /* UILabel+BiliIconFont.h */,
+				713875541EF27F110093BE11 /* UILabel+BiliIconFont.m */,
+			);
+			name = IconFont;
+			sourceTree = "<group>";
+		};
 		713BAF551ED2E5D3008789C7 /* Headers */ = {
 			isa = PBXGroup;
 			children = (
@@ -165,7 +207,9 @@
 				71DFB8CA1E10C8E800DFAE63 /* Controllers */,
 				71DFB8EA1E14BC8E00DFAE63 /* Delegates */,
 				713BAF551ED2E5D3008789C7 /* Headers */,
+				7138754E1EF275310093BE11 /* IconFont */,
 				71630EE51DF56586002F4D0A /* Info.plist */,
+				713875491EF2601E0093BE11 /* Demo-Prefix.pch */,
 				71DFB8A91E0D2DDB00DFAE63 /* MainViewController.h */,
 				71DFB8AA1E0D2DDB00DFAE63 /* MainViewController.m */,
 				7174C86B1E0A795E008D5887 /* Resources */,
@@ -205,6 +249,8 @@
 		7174C86B1E0A795E008D5887 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				7138755A1EF28B880093BE11 /* iconfont.ttf */,
+				7138754B1EF2673D0093BE11 /* fontello.ttf */,
 				71630EE01DF56586002F4D0A /* Assets.xcassets */,
 				71DFB8AC1E0FB46700DFAE63 /* icon_balloon.png */,
 				71DFB8E81E14B9E700DFAE63 /* next_bg.jpg */,
@@ -222,6 +268,8 @@
 				71DFB8E51E14B20200DFAE63 /* LoggedInViewController.h */,
 				71DFB8E61E14B20200DFAE63 /* LoggedInViewController.m */,
 				71973B691E458FD400C9D07A /* EmitterSnowController.swift */,
+				71D1D1631EF25E4000BF6CB1 /* IconFontViewController.h */,
+				71D1D1641EF25E4000BF6CB1 /* IconFontViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -367,9 +415,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7138755B1EF28B990093BE11 /* iconfont.ttf in Resources */,
 				71630EE11DF56586002F4D0A /* Assets.xcassets in Resources */,
 				71DFB8E91E14B9E800DFAE63 /* next_bg.jpg in Resources */,
 				71DFB8AE1E0FB46700DFAE63 /* icon_balloon.png in Resources */,
+				7138754C1EF2673D0093BE11 /* fontello.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,14 +492,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				713875581EF281710093BE11 /* UIImage+BiliIconFont.m in Sources */,
+				713875511EF2758F0093BE11 /* BiliIconFont.m in Sources */,
 				71630ED91DF56585002F4D0A /* AppDelegate.m in Sources */,
+				713875611EF29B650093BE11 /* UIButton+BiliIconFont.m in Sources */,
 				71630ED61DF56585002F4D0A /* main.m in Sources */,
 				71DFB8AB1E0D2DDB00DFAE63 /* MainViewController.m in Sources */,
 				71DFB8E71E14B20200DFAE63 /* LoggedInViewController.m in Sources */,
 				71DFB8D51E10F42400DFAE63 /* FRTextField.m in Sources */,
 				71516C971E1630F5003DC670 /* UIColor+Hex.m in Sources */,
+				71D1D1651EF25E4000BF6CB1 /* IconFontViewController.m in Sources */,
 				71DFB8ED1E14C0C900DFAE63 /* LoginCustomTransition.m in Sources */,
 				71DFB8E21E112B3500DFAE63 /* FRLoginButton.m in Sources */,
+				713875551EF27F110093BE11 /* UILabel+BiliIconFont.m in Sources */,
+				7138755E1EF29B470093BE11 /* UIImageView+BiliIconFont.m in Sources */,
 				71DFB8CF1E10C92200DFAE63 /* ClockViewController.m in Sources */,
 				71DFB8D01E10C92200DFAE63 /* LoginViewController.m in Sources */,
 				71973B6A1E458FD400C9D07A /* EmitterSnowController.swift in Sources */,
@@ -589,6 +645,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = AV8J5QKX6U;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/AnimationDemo/Demo-Prefix.pch";
 				INFOPLIST_FILE = AnimationDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -609,6 +666,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = AV8J5QKX6U;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/AnimationDemo/Demo-Prefix.pch";
 				INFOPLIST_FILE = AnimationDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
