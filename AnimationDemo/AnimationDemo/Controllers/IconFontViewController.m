@@ -75,15 +75,19 @@
 
 - (void)buttonClicked:(UIButton *)btn {
     if (btn == self.iconButtonUp) {
-        CGRect frame = self.iconImageView.frame;
+//        CGRect frame = self.iconImageView.frame;
+        CGRect frame = self.iconLabel.frame;
         frame.size.width += 2;
         frame.size.height += 2;
-        self.iconImageView.frame = frame;
+//        self.iconImageView.frame = frame;
+        self.iconLabel.frame = frame;
     } else if (btn == self.iconButtonDown) {
-        CGRect frame = self.iconImageView.frame;
+//        CGRect frame = self.iconImageView.frame;
+        CGRect frame = self.iconLabel.frame;
         frame.size.width -= 2;
         frame.size.height -= 2;
-        self.iconImageView.frame = frame;
+//        self.iconImageView.frame = frame;
+        self.iconLabel.frame = frame;
     }
 }
 

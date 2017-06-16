@@ -182,9 +182,9 @@
 				71630ED31DF56585002F4D0A /* AnimationDemo */,
 				71630EED1DF56586002F4D0A /* AnimationDemoTests */,
 				71630EF81DF56586002F4D0A /* AnimationDemoUITests */,
-				71630ED21DF56585002F4D0A /* Products */,
-				2516032FBC4F492D5252FD16 /* Pods */,
 				7B52045144EBAA536D642D59 /* Frameworks */,
+				2516032FBC4F492D5252FD16 /* Pods */,
+				71630ED21DF56585002F4D0A /* Products */,
 			);
 			sourceTree = "<group>";
 		};

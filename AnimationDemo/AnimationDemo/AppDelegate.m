@@ -7,8 +7,8 @@
 //
 
 #import "AppDelegate.h"
-#import "UIDefs.h"
 #import "MainViewController.h"
+#import <DCIntrospect/DCIntrospect.h>
 
 @interface AppDelegate ()
 
@@ -30,6 +30,10 @@
     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
     [self.window addSubview:root.view];
     [self.window makeKeyAndVisible];
+
+#if TARGET_IPHONE_SIMULATOR
+    [[DCIntrospect sharedIntrospector] start];
+#endif
     return YES;
 }
 

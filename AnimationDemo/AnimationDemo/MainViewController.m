@@ -131,7 +131,7 @@
                       [MyListItem initWithName:@"一个登录界面" withClass:[LoginViewController class]],
                       [MyListItem initWithName:@"雪花粒子动画" withClass:[EmitterSnowController class]],
                       [MyListItem initWithName:@"IconFont测试" withClass:[IconFontViewController class]],
-                      [MyListItem initWithName:@"测试界面" withClass:[UIViewController class]]
+                      [MyListItem initWithName:@"App内打开AppStore" withClass:[UIViewController class]]
                      ];
 }
 
