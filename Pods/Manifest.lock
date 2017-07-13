@@ -16,17 +16,22 @@ PODS:
     - AFNetworking/NSURLSession
   - DCIntrospect (0.0.2)
   - Masonry (1.0.2)
+  - SensorsAnalyticsSDK (1.7.4):
+    - SensorsAnalyticsSDK/core (= 1.7.4)
+  - SensorsAnalyticsSDK/core (1.7.4)
 
 DEPENDENCIES:
   - AFNetworking
   - DCIntrospect
   - Masonry
+  - SensorsAnalyticsSDK
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   DCIntrospect: 5ead4806e10323dcb959f39f0003577b187bb015
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+  SensorsAnalyticsSDK: 9769cc390b009c463f47d294f49888165b4de824
 
-PODFILE CHECKSUM: 19a1ffe006ab749232e299fdf10dfef2e97bbba9
+PODFILE CHECKSUM: 8eaa68c7029991c3255d4198b350f72e9736d5e1
 
 COCOAPODS: 1.2.1

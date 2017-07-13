@@ -4,5 +4,6 @@ target 'AnimationDemo' do
 	pod 'Masonry'
     pod 'AFNetworking'
     pod 'DCIntrospect'
+    pod 'SensorsAnalyticsSDK'
 	project './AnimationDemo/AnimationDemo.xcodeproj'
 end

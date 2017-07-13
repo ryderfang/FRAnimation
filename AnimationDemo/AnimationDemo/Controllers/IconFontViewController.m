@@ -12,6 +12,8 @@
 #import "UIImageView+BiliIconFont.h"
 #import "UIButton+BiliIconFont.h"
 
+//#define _LABEL
+
 @interface IconFontViewController ()
 
 @property (nonatomic, strong) UILabel *emojiLabel;
@@ -42,12 +44,12 @@
     [self.iconLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.emojiLabel.mas_bottom).offset(10);
         make.centerX.equalTo(self.view);
-        make.width.and.height.equalTo(@20);
+//        make.width.and.height.equalTo(@20);
     }];
 
     [self.view addSubview:self.iconWithTextLabel];
     [self.iconWithTextLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.iconLabel.mas_bottom).offset(10);
+        make.top.equalTo(self.view).offset(280);
         make.centerX.equalTo(self.view);
         make.height.equalTo(@20);
     }];
@@ -75,19 +77,31 @@
 
 - (void)buttonClicked:(UIButton *)btn {
     if (btn == self.iconButtonUp) {
-//        CGRect frame = self.iconImageView.frame;
+#ifdef _LABEL
+        CGRect frame = self.iconImageView.frame;
+#else
         CGRect frame = self.iconLabel.frame;
+#endif
         frame.size.width += 2;
         frame.size.height += 2;
-//        self.iconImageView.frame = frame;
+#ifdef _LABEL
+        self.iconImageView.frame = frame;
+#else
         self.iconLabel.frame = frame;
+#endif
     } else if (btn == self.iconButtonDown) {
-//        CGRect frame = self.iconImageView.frame;
+#ifdef _LABEL
+        CGRect frame = self.iconImageView.frame;
+#else
         CGRect frame = self.iconLabel.frame;
+#endif
         frame.size.width -= 2;
         frame.size.height -= 2;
-//        self.iconImageView.frame = frame;
+#ifdef _LABEL
+        self.iconImageView.frame = frame;
+#else
         self.iconLabel.frame = frame;
+#endif
     }
 }
 
