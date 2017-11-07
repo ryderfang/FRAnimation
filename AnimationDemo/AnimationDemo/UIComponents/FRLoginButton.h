@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-typedef void(^completeBlock)();
+typedef void(^completeBlock)(void);
 
 @interface FRLoginButton : UIView
 

@@ -11,6 +11,7 @@
 #import "ClockViewController.h"
 #import "LoginViewController.h"
 #import "IconFontViewController.h"
+#import "LottieViewController.h"
 #import "Masonry.h"
 #import "UIDefs.h"
 #import <StoreKit/StoreKit.h>
@@ -131,6 +132,10 @@
                       [MyListItem initWithName:@"一个登录界面" withClass:[LoginViewController class]],
                       [MyListItem initWithName:@"雪花粒子动画" withClass:[EmitterSnowController class]],
                       [MyListItem initWithName:@"IconFont测试" withClass:[IconFontViewController class]],
+                      [MyListItem initWithName:@"Lottie动画测试" withClass:[LottieViewController class]],
+                      
+                      
+                      // Last one is reserved.
                       [MyListItem initWithName:@"App内打开AppStore" withClass:[UIViewController class]]
                      ];
 }
@@ -157,6 +162,9 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     MyTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:FRTableCellIdentifier];
+    if (indexPath.row & 1) {
+        cell.backgroundColor = [UIColor colorWithRed:78./255 green:78./255 blue:78./255 alpha:0.4];
+    }
     [cell.title setText:((MyListItem *)self.itemList[indexPath.row]).name];
     return cell;
 }

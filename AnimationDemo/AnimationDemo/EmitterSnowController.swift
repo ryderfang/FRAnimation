@@ -84,7 +84,7 @@ class EmitterSnowController : UIViewController {
         dragView.addGestureRecognizer(recognizer)
     }
     
-    func handlePan(sender: UIPanGestureRecognizer) {
+    @objc func handlePan(sender: UIPanGestureRecognizer) {
         let translation: CGPoint = sender.translation(in: self.view)
         sender.view?.center = CGPoint.init(x: (sender.view?.center.x)! + translation.x,
                                            y: (sender.view?.center.y)! + translation.y)
