@@ -15,23 +15,21 @@ PODS:
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
   - DCIntrospect (0.0.2)
+  - lottie-ios (2.1.4)
   - Masonry (1.0.2)
-  - SensorsAnalyticsSDK (1.7.4):
-    - SensorsAnalyticsSDK/core (= 1.7.4)
-  - SensorsAnalyticsSDK/core (1.7.4)
 
 DEPENDENCIES:
   - AFNetworking
   - DCIntrospect
+  - lottie-ios
   - Masonry
-  - SensorsAnalyticsSDK
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   DCIntrospect: 5ead4806e10323dcb959f39f0003577b187bb015
+  lottie-ios: 94fa2d82547ce3adf1e61157653ba99999fd279f
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
-  SensorsAnalyticsSDK: 9769cc390b009c463f47d294f49888165b4de824
 
-PODFILE CHECKSUM: 8eaa68c7029991c3255d4198b350f72e9736d5e1
+PODFILE CHECKSUM: 6ae0c791e49918d09ca0f2dc50a39065ed8c81fc
 
-COCOAPODS: 1.2.1
+COCOAPODS: 1.3.1

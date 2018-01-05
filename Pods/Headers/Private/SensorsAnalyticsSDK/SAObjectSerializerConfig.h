@@ -1,1 +1,0 @@
-../../../SensorsAnalyticsSDK/SensorsAnalyticsSDK/SensorsAnalyticsSDK/SAObjectSerializerConfig.h

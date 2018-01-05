@@ -7,12 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2337DA5F1FB1D381008D480F /* Lottie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2337DA5E1FB1D381008D480F /* Lottie.framework */; };
-		2337DA601FB1D381008D480F /* Lottie.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2337DA5E1FB1D381008D480F /* Lottie.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2337DA641FB1D419008D480F /* LottieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2337DA631FB1D419008D480F /* LottieViewController.m */; };
 		2337DA651FB1D5BE008D480F /* gears.json in Resources */ = {isa = PBXBuildFile; fileRef = 2337DA5C1FB1CBF1008D480F /* gears.json */; };
 		2337DA681FB1D847008D480F /* bell.json in Resources */ = {isa = PBXBuildFile; fileRef = 2337DA661FB1D690008D480F /* bell.json */; };
 		2337DA691FB1D847008D480F /* birth.json in Resources */ = {isa = PBXBuildFile; fileRef = 2337DA671FB1D6A3008D480F /* birth.json */; };
+		2337DA6B1FB1E781008D480F /* bell2.json in Resources */ = {isa = PBXBuildFile; fileRef = 2337DA6A1FB1E780008D480F /* bell2.json */; };
 		7138754C1EF2673D0093BE11 /* fontello.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7138754B1EF2673D0093BE11 /* fontello.ttf */; };
 		713875511EF2758F0093BE11 /* BiliIconFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 713875501EF2758F0093BE11 /* BiliIconFont.m */; };
 		713875551EF27F110093BE11 /* UILabel+BiliIconFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 713875541EF27F110093BE11 /* UILabel+BiliIconFont.m */; };
@@ -64,7 +63,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				2337DA601FB1D381008D480F /* Lottie.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -73,11 +71,11 @@
 
 /* Begin PBXFileReference section */
 		2337DA5C1FB1CBF1008D480F /* gears.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = gears.json; path = Resources/gears.json; sourceTree = "<group>"; };
-		2337DA5E1FB1D381008D480F /* Lottie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Lottie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2337DA621FB1D419008D480F /* LottieViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LottieViewController.h; path = Controllers/LottieViewController.h; sourceTree = "<group>"; };
 		2337DA631FB1D419008D480F /* LottieViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = LottieViewController.m; path = Controllers/LottieViewController.m; sourceTree = "<group>"; };
 		2337DA661FB1D690008D480F /* bell.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = bell.json; path = Resources/bell.json; sourceTree = "<group>"; };
 		2337DA671FB1D6A3008D480F /* birth.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = birth.json; path = Resources/birth.json; sourceTree = "<group>"; };
+		2337DA6A1FB1E780008D480F /* bell2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = bell2.json; path = Resources/bell2.json; sourceTree = "<group>"; };
 		234B705C465687C689077428 /* Pods-AnimationDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimationDemo.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-AnimationDemo/Pods-AnimationDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		713875491EF2601E0093BE11 /* Demo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Demo-Prefix.pch"; sourceTree = "<group>"; };
 		7138754B1EF2673D0093BE11 /* fontello.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = fontello.ttf; path = Resources/fontello.ttf; sourceTree = "<group>"; };
@@ -138,7 +136,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB64437D1E41CA276DB65907 /* libPods-AnimationDemo.a in Frameworks */,
-				2337DA5F1FB1D381008D480F /* Lottie.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,7 +203,6 @@
 		71630EC81DF56585002F4D0A = {
 			isa = PBXGroup;
 			children = (
-				2337DA5E1FB1D381008D480F /* Lottie.framework */,
 				71630ED31DF56585002F4D0A /* AnimationDemo */,
 				71630EED1DF56586002F4D0A /* AnimationDemoTests */,
 				71630EF81DF56586002F4D0A /* AnimationDemoUITests */,
@@ -277,6 +273,7 @@
 		7174C86B1E0A795E008D5887 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				2337DA6A1FB1E780008D480F /* bell2.json */,
 				2337DA661FB1D690008D480F /* bell.json */,
 				2337DA5C1FB1CBF1008D480F /* gears.json */,
 				2337DA671FB1D6A3008D480F /* birth.json */,
@@ -453,6 +450,7 @@
 				2337DA651FB1D5BE008D480F /* gears.json in Resources */,
 				7138755B1EF28B990093BE11 /* iconfont.ttf in Resources */,
 				71630EE11DF56586002F4D0A /* Assets.xcassets in Resources */,
+				2337DA6B1FB1E781008D480F /* bell2.json in Resources */,
 				71DFB8E91E14B9E800DFAE63 /* next_bg.jpg in Resources */,
 				71DFB8AE1E0FB46700DFAE63 /* icon_balloon.png in Resources */,
 				7138754C1EF2673D0093BE11 /* fontello.ttf in Resources */,
@@ -497,13 +495,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AnimationDemo-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E92B206364FA92FF0B4117D8 /* [CP] Embed Pods Frameworks */ = {
