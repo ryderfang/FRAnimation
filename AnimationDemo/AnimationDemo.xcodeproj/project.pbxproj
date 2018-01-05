@@ -12,6 +12,12 @@
 		2337DA681FB1D847008D480F /* bell.json in Resources */ = {isa = PBXBuildFile; fileRef = 2337DA661FB1D690008D480F /* bell.json */; };
 		2337DA691FB1D847008D480F /* birth.json in Resources */ = {isa = PBXBuildFile; fileRef = 2337DA671FB1D6A3008D480F /* birth.json */; };
 		2337DA6B1FB1E781008D480F /* bell2.json in Resources */ = {isa = PBXBuildFile; fileRef = 2337DA6A1FB1E780008D480F /* bell2.json */; };
+		234C77AF1FFF779200E585AF /* DCFrameView.m in Sources */ = {isa = PBXBuildFile; fileRef = 234C77A21FFF779100E585AF /* DCFrameView.m */; };
+		234C77B01FFF779200E585AF /* DCStatusBarOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 234C77A31FFF779100E585AF /* DCStatusBarOverlay.m */; };
+		234C77B11FFF779200E585AF /* DCCrossHairView.m in Sources */ = {isa = PBXBuildFile; fileRef = 234C77A41FFF779100E585AF /* DCCrossHairView.m */; };
+		234C77B21FFF779200E585AF /* DCIntrospect.m in Sources */ = {isa = PBXBuildFile; fileRef = 234C77A61FFF779100E585AF /* DCIntrospect.m */; };
+		234C77B31FFF779200E585AF /* DCTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 234C77AA1FFF779200E585AF /* DCTextView.m */; };
+		234C77B41FFF779200E585AF /* UIView+DCAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 234C77AC1FFF779200E585AF /* UIView+DCAdditions.m */; };
 		7138754C1EF2673D0093BE11 /* fontello.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7138754B1EF2673D0093BE11 /* fontello.ttf */; };
 		713875511EF2758F0093BE11 /* BiliIconFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 713875501EF2758F0093BE11 /* BiliIconFont.m */; };
 		713875551EF27F110093BE11 /* UILabel+BiliIconFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 713875541EF27F110093BE11 /* UILabel+BiliIconFont.m */; };
@@ -77,6 +83,19 @@
 		2337DA671FB1D6A3008D480F /* birth.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = birth.json; path = Resources/birth.json; sourceTree = "<group>"; };
 		2337DA6A1FB1E780008D480F /* bell2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = bell2.json; path = Resources/bell2.json; sourceTree = "<group>"; };
 		234B705C465687C689077428 /* Pods-AnimationDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimationDemo.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-AnimationDemo/Pods-AnimationDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		234C77A21FFF779100E585AF /* DCFrameView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCFrameView.m; sourceTree = "<group>"; };
+		234C77A31FFF779100E585AF /* DCStatusBarOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCStatusBarOverlay.m; sourceTree = "<group>"; };
+		234C77A41FFF779100E585AF /* DCCrossHairView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCCrossHairView.m; sourceTree = "<group>"; };
+		234C77A51FFF779100E585AF /* DCFrameView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCFrameView.h; sourceTree = "<group>"; };
+		234C77A61FFF779100E585AF /* DCIntrospect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCIntrospect.m; sourceTree = "<group>"; };
+		234C77A71FFF779200E585AF /* DCIntrospectSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCIntrospectSettings.h; sourceTree = "<group>"; };
+		234C77A81FFF779200E585AF /* UIView+DCAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+DCAdditions.h"; sourceTree = "<group>"; };
+		234C77A91FFF779200E585AF /* DCTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCTextView.h; sourceTree = "<group>"; };
+		234C77AA1FFF779200E585AF /* DCTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCTextView.m; sourceTree = "<group>"; };
+		234C77AB1FFF779200E585AF /* DCIntrospect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCIntrospect.h; sourceTree = "<group>"; };
+		234C77AC1FFF779200E585AF /* UIView+DCAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+DCAdditions.m"; sourceTree = "<group>"; };
+		234C77AD1FFF779200E585AF /* DCStatusBarOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCStatusBarOverlay.h; sourceTree = "<group>"; };
+		234C77AE1FFF779200E585AF /* DCCrossHairView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCCrossHairView.h; sourceTree = "<group>"; };
 		713875491EF2601E0093BE11 /* Demo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Demo-Prefix.pch"; sourceTree = "<group>"; };
 		7138754B1EF2673D0093BE11 /* fontello.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = fontello.ttf; path = Resources/fontello.ttf; sourceTree = "<group>"; };
 		7138754F1EF2758F0093BE11 /* BiliIconFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BiliIconFont.h; path = IconFont/BiliIconFont.h; sourceTree = "<group>"; };
@@ -156,6 +175,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		234C779B1FFF745500E585AF /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				234C77A11FFF774C00E585AF /* DCIntrospect */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		234C77A11FFF774C00E585AF /* DCIntrospect */ = {
+			isa = PBXGroup;
+			children = (
+				234C77AE1FFF779200E585AF /* DCCrossHairView.h */,
+				234C77A41FFF779100E585AF /* DCCrossHairView.m */,
+				234C77A51FFF779100E585AF /* DCFrameView.h */,
+				234C77A21FFF779100E585AF /* DCFrameView.m */,
+				234C77AB1FFF779200E585AF /* DCIntrospect.h */,
+				234C77A61FFF779100E585AF /* DCIntrospect.m */,
+				234C77A71FFF779200E585AF /* DCIntrospectSettings.h */,
+				234C77AD1FFF779200E585AF /* DCStatusBarOverlay.h */,
+				234C77A31FFF779100E585AF /* DCStatusBarOverlay.m */,
+				234C77A91FFF779200E585AF /* DCTextView.h */,
+				234C77AA1FFF779200E585AF /* DCTextView.m */,
+				234C77A81FFF779200E585AF /* UIView+DCAdditions.h */,
+				234C77AC1FFF779200E585AF /* UIView+DCAdditions.m */,
+			);
+			path = DCIntrospect;
+			sourceTree = "<group>";
+		};
 		2516032FBC4F492D5252FD16 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -233,12 +280,10 @@
 				713BAF551ED2E5D3008789C7 /* Headers */,
 				7138754E1EF275310093BE11 /* IconFont */,
 				71630EE51DF56586002F4D0A /* Info.plist */,
-				713875491EF2601E0093BE11 /* Demo-Prefix.pch */,
-				71DFB8A91E0D2DDB00DFAE63 /* MainViewController.h */,
-				71DFB8AA1E0D2DDB00DFAE63 /* MainViewController.m */,
 				7174C86B1E0A795E008D5887 /* Resources */,
 				71630ED41DF56585002F4D0A /* Supporting Files */,
 				71DFB8D21E10F33500DFAE63 /* UIComponents */,
+				234C779B1FFF745500E585AF /* Vendor */,
 			);
 			path = AnimationDemo;
 			sourceTree = "<group>";
@@ -246,6 +291,7 @@
 		71630ED41DF56585002F4D0A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				713875491EF2601E0093BE11 /* Demo-Prefix.pch */,
 				71973B681E458FD400C9D07A /* AnimationDemo-Bridging-Header.h */,
 				71630ED51DF56585002F4D0A /* main.m */,
 			);
@@ -289,6 +335,8 @@
 		71DFB8CA1E10C8E800DFAE63 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				71DFB8A91E0D2DDB00DFAE63 /* MainViewController.h */,
+				71DFB8AA1E0D2DDB00DFAE63 /* MainViewController.m */,
 				71DFB8CB1E10C92200DFAE63 /* ClockViewController.h */,
 				71DFB8CC1E10C92200DFAE63 /* ClockViewController.m */,
 				71DFB8CD1E10C92200DFAE63 /* LoginViewController.h */,
@@ -529,6 +577,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				234C77B31FFF779200E585AF /* DCTextView.m in Sources */,
+				234C77B41FFF779200E585AF /* UIView+DCAdditions.m in Sources */,
 				713875581EF281710093BE11 /* UIImage+BiliIconFont.m in Sources */,
 				713875511EF2758F0093BE11 /* BiliIconFont.m in Sources */,
 				71630ED91DF56585002F4D0A /* AppDelegate.m in Sources */,
@@ -538,11 +588,15 @@
 				71DFB8E71E14B20200DFAE63 /* LoggedInViewController.m in Sources */,
 				71DFB8D51E10F42400DFAE63 /* FRTextField.m in Sources */,
 				71516C971E1630F5003DC670 /* UIColor+Hex.m in Sources */,
+				234C77B01FFF779200E585AF /* DCStatusBarOverlay.m in Sources */,
 				71D1D1651EF25E4000BF6CB1 /* IconFontViewController.m in Sources */,
 				71DFB8ED1E14C0C900DFAE63 /* LoginCustomTransition.m in Sources */,
 				2337DA641FB1D419008D480F /* LottieViewController.m in Sources */,
 				71DFB8E21E112B3500DFAE63 /* FRLoginButton.m in Sources */,
+				234C77B11FFF779200E585AF /* DCCrossHairView.m in Sources */,
 				713875551EF27F110093BE11 /* UILabel+BiliIconFont.m in Sources */,
+				234C77AF1FFF779200E585AF /* DCFrameView.m in Sources */,
+				234C77B21FFF779200E585AF /* DCIntrospect.m in Sources */,
 				7138755E1EF29B470093BE11 /* UIImageView+BiliIconFont.m in Sources */,
 				71DFB8CF1E10C92200DFAE63 /* ClockViewController.m in Sources */,
 				71DFB8D01E10C92200DFAE63 /* LoginViewController.m in Sources */,

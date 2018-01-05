@@ -8,8 +8,7 @@
 
 #import "AppDelegate.h"
 #import "MainViewController.h"
-#import <DCIntrospect/DCIntrospect.h>
-#import "SensorsAnalyticsSDK.h"
+#import "DCIntrospect.h"
 
 @interface AppDelegate ()
 
@@ -35,28 +34,7 @@
 #if TARGET_IPHONE_SIMULATOR
     [[DCIntrospect sharedIntrospector] start];
 #endif
-
-    // 数据接收的 URL
-#define SA_SERVER_URL @"YOUR_SERVER_URL"
-    // 配置分发的 URL
-#define SA_CONFIGURE_URL @"YOUR_CONFIGURE_URL"
-    // Debug 模式选项
-    //   SensorsAnalyticsDebugOff - 关闭 Debug 模式
-    //   SensorsAnalyticsDebugOnly - 打开 Debug 模式，校验数据，但不进行数据导入
-    //   SensorsAnalyticsDebugAndTrack - 打开 Debug 模式，校验数据，并将数据导入到 Sensors Analytics 中
-    // 注意！请不要在正式发布的 App 中使用 Debug 模式！
-#define SA_DEBUG_MODE SensorsAnalyticsDebugOnly
-
-    // 初始化 SDK
-    [SensorsAnalyticsSDK sharedInstanceWithServerURL:SA_SERVER_URL
-                                     andConfigureURL:SA_CONFIGURE_URL
-                                        andDebugMode:SA_DEBUG_MODE];
-
-    [[SensorsAnalyticsSDK sharedInstance] enableAutoTrack:SensorsAnalyticsEventTypeAppStart |
-     SensorsAnalyticsEventTypeAppEnd |
-     SensorsAnalyticsEventTypeAppViewScreen |
-     SensorsAnalyticsEventTypeAppClick];
-
+    
     return YES;
 }
 
