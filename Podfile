@@ -1,8 +1,8 @@
-workspace 'ios-demo'
+workspace 'FRAnimation'
 platform :ios, '8.0'
-target 'AnimationDemo' do
+target 'FRAnimation' do
 	pod 'Masonry'
     pod 'AFNetworking'
     pod 'lottie-ios'
-    project './AnimationDemo/AnimationDemo.xcodeproj'
+    project './FRAnimation/FRAnimation.xcodeproj'
 end
