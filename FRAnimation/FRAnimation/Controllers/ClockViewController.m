@@ -7,6 +7,7 @@
 //
 
 #import "ClockViewController.h"
+#import "UIColor+Hex.h"
 
 @interface ClockViewController () <CALayerDelegate>
 
@@ -24,12 +25,49 @@
 @implementation ClockViewController
 
 - (void)viewDidLoad {
-    self.view.backgroundColor = [UIColor whiteColor];
-
+//    self.view.backgroundColor = [UIColor whiteColor];
+    
+    //// ----
+//    NSMutableString *shit = [[NSMutableString alloc] initWithString:@"shit"];
+//    NSDictionary *t = @{@"1": @(1), @"2": shit};
+//    free((__bridge void *)(shit));
+//    NSMutableDictionary *s = [[NSMutableDictionary alloc] init];
+//    [s addEntriesFromDictionary:t];
+    
+    NSLog(@"串行 start ::: %@", [NSThread currentThread]);
+    dispatch_queue_t queue = dispatch_queue_create("FloatQueue", DISPATCH_QUEUE_CONCURRENT);
+    dispatch_sync(queue, ^{
+        for (int i = 0; i < 3; i++) {
+            NSLog(@"串行 index %d ::: %@", i, [NSThread currentThread]);
+        }
+    });
+    dispatch_sync(queue, ^{
+        for (int i = 10; i < 13; i++) {
+            NSLog(@"串行 index %d ::: %@", i, [NSThread currentThread]);
+        }
+    });
+    NSLog(@"串行 end ::: %@", [NSThread currentThread]);
+    
+    
+    ////
+    
     [self.shadowView addSubview:self.bgView];
     [self.view addSubview:self.shadowView];
     [self.view.layer addSublayer:self.circleLayer];
     [self performSelector:@selector(startAnimation) withObject:self afterDelay:0.5];
+    
+    //// <!---  镂空图层
+    UIBezierPath *path = [UIBezierPath bezierPathWithArcCenter:CGPointMake(self.view.center.x, self.view.center.y) radius:30 startAngle:-M_PI / 2  endAngle:M_PI * 3 / 2 clockwise:YES];
+    CAShapeLayer *shapeLayer = [CAShapeLayer layer];
+    shapeLayer.fillColor = [UIColor blackColor].CGColor;
+    shapeLayer.opacity = 0.4;
+    [self.bgView.layer addSublayer:shapeLayer];
+    
+    UIBezierPath *circlePath = [UIBezierPath bezierPathWithCGPath:self.circleLayer.path];
+    [circlePath appendPath:path];
+    shapeLayer.path = circlePath.CGPath;
+    shapeLayer.fillRule = kCAFillRuleEvenOdd;
+    ////// ---- !>
     
     [self.view addSubview:self.hourImage];
     [self.view addSubview:self.minutesImage];

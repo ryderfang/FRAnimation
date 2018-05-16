@@ -23,4 +23,10 @@
 #define FR_GRAY_COLOR_53 [UIColor colorWithWhite:53./255 alpha:1]
 #define FR_GRAY_COLOR_153 [UIColor colorWithWhite:153./255 alpha:1]
 
+#define FR_SCREEN_WIDTH MIN([UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height)
+#define FR_SCREEN_HEIGHT MAX([UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height)
+
+// 被坑了一把，记得后面的括号！！不然在表达式中就坑了！(a - b + c) != (a - (b + c))
+#define FR_NavStatusHeight  (self.navigationController.navigationBar.frame.size.height+[[UIApplication sharedApplication] statusBarFrame].size.height)
+
 #endif /* UIDefs_h */

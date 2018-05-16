@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		232D8BDF20AC135500516A4D /* ScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 232D8BDE20AC135500516A4D /* ScrollViewController.m */; };
 		2337DA641FB1D419008D480F /* LottieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2337DA631FB1D419008D480F /* LottieViewController.m */; };
 		2337DA651FB1D5BE008D480F /* gears.json in Resources */ = {isa = PBXBuildFile; fileRef = 2337DA5C1FB1CBF1008D480F /* gears.json */; };
 		2337DA681FB1D847008D480F /* bell.json in Resources */ = {isa = PBXBuildFile; fileRef = 2337DA661FB1D690008D480F /* bell.json */; };
@@ -19,6 +20,8 @@
 		234C77B31FFF779200E585AF /* DCTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 234C77AA1FFF779200E585AF /* DCTextView.m */; };
 		234C77B41FFF779200E585AF /* UIView+DCAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 234C77AC1FFF779200E585AF /* UIView+DCAdditions.m */; };
 		234C77B71FFF783300E585AF /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 234C77B51FFF783300E585AF /* NSString+Extension.m */; };
+		236496C620AC298C00502F74 /* AMOrderContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 236496C520AC298C00502F74 /* AMOrderContainerView.m */; };
+		236496C920AC29A400502F74 /* AMOrderItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 236496C820AC29A400502F74 /* AMOrderItemView.m */; };
 		7138754C1EF2673D0093BE11 /* fontello.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7138754B1EF2673D0093BE11 /* fontello.ttf */; };
 		713875511EF2758F0093BE11 /* BiliIconFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 713875501EF2758F0093BE11 /* BiliIconFont.m */; };
 		713875551EF27F110093BE11 /* UILabel+BiliIconFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 713875541EF27F110093BE11 /* UILabel+BiliIconFont.m */; };
@@ -78,6 +81,8 @@
 
 /* Begin PBXFileReference section */
 		1C88B88261FDCAA920D39E62 /* Pods-FRAnimation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FRAnimation.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-FRAnimation/Pods-FRAnimation.debug.xcconfig"; sourceTree = "<group>"; };
+		232D8BDD20AC135500516A4D /* ScrollViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ScrollViewController.h; path = Controllers/ScrollViewController.h; sourceTree = "<group>"; };
+		232D8BDE20AC135500516A4D /* ScrollViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ScrollViewController.m; path = Controllers/ScrollViewController.m; sourceTree = "<group>"; };
 		2337DA5C1FB1CBF1008D480F /* gears.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = gears.json; path = Resources/gears.json; sourceTree = "<group>"; };
 		2337DA621FB1D419008D480F /* LottieViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LottieViewController.h; path = Controllers/LottieViewController.h; sourceTree = "<group>"; };
 		2337DA631FB1D419008D480F /* LottieViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = LottieViewController.m; path = Controllers/LottieViewController.m; sourceTree = "<group>"; };
@@ -100,6 +105,10 @@
 		234C77AE1FFF779200E585AF /* DCCrossHairView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCCrossHairView.h; sourceTree = "<group>"; };
 		234C77B51FFF783300E585AF /* NSString+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extension.m"; sourceTree = "<group>"; };
 		234C77B61FFF783300E585AF /* NSString+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extension.h"; sourceTree = "<group>"; };
+		236496C420AC298C00502F74 /* AMOrderContainerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMOrderContainerView.h; sourceTree = "<group>"; };
+		236496C520AC298C00502F74 /* AMOrderContainerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMOrderContainerView.m; sourceTree = "<group>"; };
+		236496C720AC29A400502F74 /* AMOrderItemView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMOrderItemView.h; sourceTree = "<group>"; };
+		236496C820AC29A400502F74 /* AMOrderItemView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMOrderItemView.m; sourceTree = "<group>"; };
 		713875491EF2601E0093BE11 /* Demo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Demo-Prefix.pch"; sourceTree = "<group>"; };
 		7138754B1EF2673D0093BE11 /* fontello.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = fontello.ttf; path = Resources/fontello.ttf; sourceTree = "<group>"; };
 		7138754F1EF2758F0093BE11 /* BiliIconFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BiliIconFont.h; path = IconFont/BiliIconFont.h; sourceTree = "<group>"; };
@@ -208,6 +217,17 @@
 			path = DCIntrospect;
 			sourceTree = "<group>";
 		};
+		236496C320AC28BC00502F74 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				236496C420AC298C00502F74 /* AMOrderContainerView.h */,
+				236496C520AC298C00502F74 /* AMOrderContainerView.m */,
+				236496C720AC29A400502F74 /* AMOrderItemView.h */,
+				236496C820AC29A400502F74 /* AMOrderItemView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		2516032FBC4F492D5252FD16 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -285,6 +305,7 @@
 				71630ED81DF56585002F4D0A /* AppDelegate.m */,
 				71516C941E1630A2003DC670 /* Catagories */,
 				71DFB8CA1E10C8E800DFAE63 /* Controllers */,
+				236496C320AC28BC00502F74 /* Views */,
 				71DFB8EA1E14BC8E00DFAE63 /* Delegates */,
 				713BAF551ED2E5D3008789C7 /* Headers */,
 				7138754E1EF275310093BE11 /* IconFont */,
@@ -357,6 +378,8 @@
 				71D1D1641EF25E4000BF6CB1 /* IconFontViewController.m */,
 				2337DA621FB1D419008D480F /* LottieViewController.h */,
 				2337DA631FB1D419008D480F /* LottieViewController.m */,
+				232D8BDD20AC135500516A4D /* ScrollViewController.h */,
+				232D8BDE20AC135500516A4D /* ScrollViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -586,7 +609,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				236496C920AC29A400502F74 /* AMOrderItemView.m in Sources */,
 				234C77B31FFF779200E585AF /* DCTextView.m in Sources */,
+				232D8BDF20AC135500516A4D /* ScrollViewController.m in Sources */,
 				234C77B41FFF779200E585AF /* UIView+DCAdditions.m in Sources */,
 				713875581EF281710093BE11 /* UIImage+BiliIconFont.m in Sources */,
 				713875511EF2758F0093BE11 /* BiliIconFont.m in Sources */,
@@ -598,6 +623,7 @@
 				71DFB8D51E10F42400DFAE63 /* FRTextField.m in Sources */,
 				234C77B71FFF783300E585AF /* NSString+Extension.m in Sources */,
 				71516C971E1630F5003DC670 /* UIColor+Hex.m in Sources */,
+				236496C620AC298C00502F74 /* AMOrderContainerView.m in Sources */,
 				234C77B01FFF779200E585AF /* DCStatusBarOverlay.m in Sources */,
 				71D1D1651EF25E4000BF6CB1 /* IconFontViewController.m in Sources */,
 				71DFB8ED1E14C0C900DFAE63 /* LoginCustomTransition.m in Sources */,
