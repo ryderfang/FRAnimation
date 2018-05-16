@@ -7,7 +7,7 @@
 //
 
 #import "LottieViewController.h"
-#import <Lottie/Lottie.h>
+//#import <Lottie/Lottie.h>
 
 @interface LottieViewController () {
     CGFloat _yOffset;
@@ -30,14 +30,14 @@
 }
 
 - (void)addAnimationView:(NSString *)jsonName {
-    LOTAnimationView *animation = [LOTAnimationView animationNamed:jsonName];
-    animation.loopAnimation = YES;
-    animation.frame = CGRectMake(animation.frame.origin.x, _yOffset, CGRectGetWidth(animation.frame), CGRectGetHeight(animation.frame));
-    [self.view addSubview:animation];
-    [animation playWithCompletion:^(BOOL animationFinished) {
-        // Do Something
-    }];
-    _yOffset += CGRectGetHeight(animation.frame) + 20;
+//    LOTAnimationView *animation = [LOTAnimationView animationNamed:jsonName];
+//    animation.loopAnimation = YES;
+//    animation.frame = CGRectMake(animation.frame.origin.x, _yOffset, CGRectGetWidth(animation.frame), CGRectGetHeight(animation.frame));
+//    [self.view addSubview:animation];
+//    [animation playWithCompletion:^(BOOL animationFinished) {
+//        // Do Something
+//    }];
+//    _yOffset += CGRectGetHeight(animation.frame) + 20;
 }
 
 - (void)didReceiveMemoryWarning {

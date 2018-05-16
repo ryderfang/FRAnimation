@@ -21,30 +21,33 @@ const CGFloat kTop = 24.f;
 
 @property (nonatomic, strong) UIScrollView *container;
 @property (nonatomic, assign) CGFloat cardWidth;
-@property (nonatomic, assign) NSUInteger count;
+@property (nonatomic, assign) NSInteger numberOfPages;
+@property (nonatomic, assign) NSInteger currentPage;
+@property (nonatomic, assign) CGFloat pageSize;
 
 @end
 
 @implementation AMOrderContainerView
 
-- (instancetype)initWithFrame:(CGRect)frame ItemCount:(NSUInteger)count {
+- (instancetype)initWithFrame:(CGRect)frame ItemCount:(NSInteger)count {
     if (self = [super initWithFrame:frame]) {
         self.cardWidth = CGRectGetWidth(self.bounds) - 2 * kMargin  - kOffset;
-        self.count = count;
+        self.numberOfPages = count;
+        self.currentPage = 0;
+        self.pageSize = self.cardWidth + kMargin;
         [self addSubview:self.container];
-        [self addGestureRecognizer:self.container.panGestureRecognizer];
         self.container.delegate = self;
         for (int i = 0; i < count; i++) {
             [self.container addSubview:[self generateView:i]];
         }
-        self.container.contentSize = CGSizeMake((self.cardWidth + kMargin) * count + kMargin, 0);
+        self.container.contentSize = CGSizeMake(self.numberOfPages * self.pageSize + kMargin, 0);
     }
     return self;
 }
 
-- (AMOrderItemView *)generateView:(NSUInteger)index {
+- (AMOrderItemView *)generateView:(NSInteger)index {
     CGFloat h = CGRectGetHeight(self.bounds) -  2 * kTop;
-    CGFloat x = kMargin + (self.cardWidth + kMargin) * index;
+    CGFloat x = kMargin + self.pageSize * index;
     CGFloat y = kTop;
     AMOrderItemView *v = [[AMOrderItemView alloc] initWithFrame:CGRectMake(x, y, self.cardWidth, h) Index:index];
     return v;
@@ -53,21 +56,14 @@ const CGFloat kTop = 24.f;
 
 - (UIScrollView *)container {
     if (!_container) {
-        CGRect newFrame = self.bounds;
-        newFrame.size.width = self.cardWidth + kMargin;
-        _container = [[UIScrollView alloc] initWithFrame:newFrame];
-//        if (@available(iOS 11.0, *)) {
-//            _container.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
-//        } else {
-//            // Fallback on earlier versions
-//        }
+        _container = [[UIScrollView alloc] initWithFrame:self.bounds];
         self.backgroundColor = [UIColor clearColor];
         _container.layer.borderColor = [UIColor yellowColor].CGColor;
         _container.layer.cornerRadius = 10.f;
         _container.layer.masksToBounds = YES;
         _container.layer.borderWidth = 5.0f;
-//        _container.pagingEnabled = YES;
-        _container.clipsToBounds = NO;
+        _container.showsVerticalScrollIndicator = NO;
+        //_container.bounces = NO;
     }
     return _container;
 }
@@ -75,37 +71,48 @@ const CGFloat kTop = 24.f;
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
     CGFloat offset = scrollView.contentOffset.x;
     NSLog(@"scrollViewDidScroll:: %f", offset);
-//    NSUInteger index = floorf((offset + self.cardWidth / 2 - kMargin) / self.cardWidth);
-//    [scrollView setContentOffset:CGPointMake(kMargin + (self.cardWidth + kMargin) * index, 0)];
+    CGFloat moveX = offset - [self pageOffset];
+    if (fabs(moveX) >= self.pageSize) {
+
+    }
+}
+
+- (CGFloat)pageOffset {
+    if (self.currentPage < self.numberOfPages - 1) {
+        return self.pageSize * self.currentPage;
+    } else {
+        return self.pageSize * self.currentPage - kOffset;
+    }
+}
+
+- (CGFloat)targetOffsetForMoveX:(CGFloat)moveX velocity:(CGFloat)velocity {
+    BOOL complete = (fabs(moveX) >= self.cardWidth * 0.5) ||
+                     (fabs(velocity) > 0 && fabs(moveX) >= self.cardWidth * 0.1);
+    BOOL isMoveRight = moveX > 0;
+    if (complete) {
+        if (isMoveRight) {
+            self.currentPage = MIN(self.currentPage + 1, self.numberOfPages - 1);
+        } else {
+            self.currentPage = MAX(0, self.currentPage - 1);
+        }
+    } else {
+        // cancel
+    }
+    return [self pageOffset];
 }
 
 - (void)scrollViewWillEndDragging:(UIScrollView *)scrollView withVelocity:(CGPoint)velocity targetContentOffset:(inout CGPoint *)targetContentOffset {
-    NSLog(@"scrollViewWillEndDragging: start:: %f", targetContentOffset->x);
-    CGFloat offset = (self.cardWidth + kMargin) * (self.count - 1);
-    NSLog(@"scrollViewWillEndDragging: shit:: %f", offset);
-    if (fabs(targetContentOffset->x - offset) < FLT_EPSILON) {
-        targetContentOffset->x = scrollView.contentSize.width - CGRectGetWidth(self.bounds);
+    CGFloat moveX = scrollView.contentOffset.x - self.pageOffset;
+    NSLog(@"scrollViewWillEndDragging: moveX:: %f", moveX);
+    CGFloat targetX = [self targetOffsetForMoveX:moveX velocity:velocity.x];
+    if (targetX == self.pageOffset) {
+        // cancel
+        targetContentOffset->x = scrollView.contentOffset.x;
+        [scrollView setContentOffset:CGPointMake(targetX, targetContentOffset->y) animated:YES];
     } else {
-        
+        targetContentOffset->x = targetX;
     }
     NSLog(@"scrollViewWillEndDragging: end:: %f", targetContentOffset->x);
-}
-
-- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
-    CGFloat offset = scrollView.contentOffset.x;
-    NSLog(@"scrollViewDidEndDecelerating:: %f", offset);
-    NSUInteger index = floor(offset / (self.cardWidth + kMargin));
-    NSLog(@"scrollViewDidEndDecelerating:: index:: %lu", (unsigned long)index);
-    // 倒数第二页
-    if (index >= self.count - 2) {
-//        CGRect newFrame = self.bounds;
-//        newFrame.size.width = self.cardWidth + kMargin - kOffset;
-//        scrollView.frame = newFrame;
-    } else {
-//        CGRect newFrame = self.bounds;
-//        newFrame.size.width = self.cardWidth + kMargin;
-//        scrollView.frame = newFrame;
-    }
 }
 
 @end

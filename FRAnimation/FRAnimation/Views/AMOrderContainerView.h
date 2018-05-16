@@ -10,6 +10,6 @@
 
 @interface AMOrderContainerView : UIView
 
-- (instancetype)initWithFrame:(CGRect)frame ItemCount:(NSUInteger)count;
+- (instancetype)initWithFrame:(CGRect)frame ItemCount:(NSInteger)count;
 
 @end

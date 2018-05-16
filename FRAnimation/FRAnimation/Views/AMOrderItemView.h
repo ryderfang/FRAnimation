@@ -10,6 +10,6 @@
 
 @interface AMOrderItemView : UIView
 
-- (instancetype)initWithFrame:(CGRect)frame Index:(NSUInteger)index;
+- (instancetype)initWithFrame:(CGRect)frame Index:(NSInteger)index;
 
 @end
