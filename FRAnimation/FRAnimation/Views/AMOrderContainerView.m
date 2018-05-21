@@ -64,6 +64,7 @@ const CGFloat kTop = 24.f;
         _container.layer.borderWidth = 5.0f;
         _container.showsVerticalScrollIndicator = NO;
         //_container.bounces = NO;
+//        _container.clipsToBounds = NO;
     }
     return _container;
 }
