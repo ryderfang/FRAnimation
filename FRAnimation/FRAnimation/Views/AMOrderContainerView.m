@@ -41,8 +41,14 @@ const CGFloat kTop = 24.f;
             [self.container addSubview:[self generateView:i]];
         }
         self.container.contentSize = CGSizeMake(self.numberOfPages * self.pageSize + kMargin, 0);
+        
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(notificationGot:) name:kGlobalNotification object:nil];
     }
     return self;
+}
+
+- (void)notificationGot:(NSNotification *)notification {
+    NSLog(@"$YM$ %@ Get Notification.", NSStringFromClass(self.class));
 }
 
 - (AMOrderItemView *)generateView:(NSInteger)index {

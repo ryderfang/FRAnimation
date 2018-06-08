@@ -29,4 +29,7 @@
 // 被坑了一把，记得后面的括号！！不然在表达式中就坑了！(a - b + c) != (a - (b + c))
 #define FR_NavStatusHeight  (self.navigationController.navigationBar.frame.size.height+[[UIApplication sharedApplication] statusBarFrame].size.height)
 
+
+#define kGlobalNotification @"kGlobalNotification"
+
 #endif /* UIDefs_h */
