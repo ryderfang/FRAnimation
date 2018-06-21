@@ -25,8 +25,8 @@
 @implementation ClockViewController
 
 - (void)viewDidLoad {
-//    self.view.backgroundColor = [UIColor whiteColor];
-    
+    self.view.backgroundColor = [UIColor blackColor];
+
     //// ----
 //    NSMutableString *shit = [[NSMutableString alloc] initWithString:@"shit"];
 //    NSDictionary *t = @{@"1": @(1), @"2": shit};
@@ -34,23 +34,24 @@
 //    NSMutableDictionary *s = [[NSMutableDictionary alloc] init];
 //    [s addEntriesFromDictionary:t];
     
-    NSLog(@"串行 start ::: %@", [NSThread currentThread]);
-    dispatch_queue_t queue = dispatch_queue_create("FloatQueue", DISPATCH_QUEUE_CONCURRENT);
-    dispatch_sync(queue, ^{
-        for (int i = 0; i < 3; i++) {
-            NSLog(@"串行 index %d ::: %@", i, [NSThread currentThread]);
-        }
-    });
-    dispatch_sync(queue, ^{
-        for (int i = 10; i < 13; i++) {
-            NSLog(@"串行 index %d ::: %@", i, [NSThread currentThread]);
-        }
-    });
-    NSLog(@"串行 end ::: %@", [NSThread currentThread]);
+//    NSLog(@"串行 start ::: %@", [NSThread currentThread]);
+//    dispatch_queue_t queue = dispatch_queue_create("FloatQueue", DISPATCH_QUEUE_CONCURRENT);
+//    dispatch_sync(queue, ^{
+//        for (int i = 0; i < 3; i++) {
+//            NSLog(@"串行 index %d ::: %@", i, [NSThread currentThread]);
+//        }
+//    });
+//    dispatch_sync(queue, ^{
+//        for (int i = 10; i < 13; i++) {
+//            NSLog(@"串行 index %d ::: %@", i, [NSThread currentThread]);
+//        }
+//    });
+//    NSLog(@"串行 end ::: %@", [NSThread currentThread]);
     
     
     ////
     
+    NSLog(@"shit 1 %lf", [[NSDate date] timeIntervalSince1970]);
     [self.shadowView addSubview:self.bgView];
     [self.view addSubview:self.shadowView];
     [self.view.layer addSublayer:self.circleLayer];
@@ -106,7 +107,7 @@
     CABasicAnimation *basicAnimation = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
     basicAnimation.fromValue = @(0);
     basicAnimation.toValue = [NSNumber numberWithFloat:hourAngle];
-    basicAnimation.duration = 0.5;
+    basicAnimation.duration = 0.1;
     basicAnimation.removedOnCompletion = NO;
     basicAnimation.fillMode = kCAFillModeForwards;
     [self.hourImage.layer addAnimation:basicAnimation forKey:nil];
@@ -149,6 +150,7 @@
     [self.circleLayer addAnimation:basicAnimation forKey:nil];
 }
 
+#pragma mark - CALayerDelegate
 - (void)drawLayer:(CALayer *)layer inContext:(CGContextRef)ctx {
     CGContextSetLineWidth(ctx, 3.f);
     CGContextSetStrokeColorWithColor(ctx, [UIColor redColor].CGColor);
@@ -168,6 +170,7 @@
     self.secondsImage.transform = CGAffineTransformMakeRotation(secAngle);
 }
 
+#pragma mark - Lazyload
 - (NSTimer *)timer {
     if (!_timer) {
         self.timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(tick) userInfo:nil repeats:YES];

@@ -42,7 +42,7 @@ const CGFloat kTop = 24.f;
         }
         self.container.contentSize = CGSizeMake(self.numberOfPages * self.pageSize + kMargin, 0);
         
-        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(notificationGot:) name:kGlobalNotification object:nil];
+//        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(notificationGot:) name:kGlobalNotification object:nil];
     }
     return self;
 }

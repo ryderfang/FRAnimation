@@ -128,13 +128,13 @@
     [self initDataSource];
     
     
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        NSIndexPath *indexPath = [NSIndexPath indexPathForRow:5 inSection:0];
-        [self.mainTable selectRowAtIndexPath:indexPath animated:YES scrollPosition:UITableViewScrollPositionBottom];
-        if ([self.mainTable.delegate respondsToSelector:@selector(tableView:didSelectRowAtIndexPath:)]) {
-            [self.mainTable.delegate tableView:self.mainTable didSelectRowAtIndexPath:indexPath];
-        }
-    });
+//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//        NSIndexPath *indexPath = [NSIndexPath indexPathForRow:5 inSection:0];
+//        [self.mainTable selectRowAtIndexPath:indexPath animated:YES scrollPosition:UITableViewScrollPositionBottom];
+//        if ([self.mainTable.delegate respondsToSelector:@selector(tableView:didSelectRowAtIndexPath:)]) {
+//            [self.mainTable.delegate tableView:self.mainTable didSelectRowAtIndexPath:indexPath];
+//        }
+//    });
 }
 
 - (void)initDataSource {
@@ -214,6 +214,7 @@
         }];
         [self.navigationController presentViewController:storeVC animated:YES completion:nil];
     } else {
+        NSLog(@"shit 0 %lf", [[NSDate date] timeIntervalSince1970]);
         UIViewController *viewController = [[((MyListItem *)self.itemList[indexPath.row]).object alloc] init];
         [self.navigationController pushViewController:viewController animated:YES];
     }

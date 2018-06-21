@@ -30,7 +30,7 @@
         lbl.textColor = [UIColor redColor];
         [self addSubview:lbl];
         
-        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(notificationGot:) name:kGlobalNotification object:nil];
+//        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(notificationGot:) name:kGlobalNotification object:nil];
     }
     return self;
 }

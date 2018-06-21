@@ -14,16 +14,19 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
+  - lottie-ios (2.1.5)
   - Masonry (1.0.2)
 
 DEPENDENCIES:
   - AFNetworking
+  - lottie-ios
   - Masonry
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  lottie-ios: 836cdbba92f62f3c6a00e37a4ce485321fe317cf
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
 
-PODFILE CHECKSUM: b19bfbcc4330d62f874d797eeaf042b1ec41653e
+PODFILE CHECKSUM: 6dce33118bb79c34a80b840bbaae39d07c3403f0
 
-COCOAPODS: 1.2.1
+COCOAPODS: 1.3.1
