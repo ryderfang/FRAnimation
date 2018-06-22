@@ -20,6 +20,8 @@
 @property (nonatomic, strong) UIImageView *secondsImage;
 @property (nonatomic, strong) NSTimer *timer;
 
+@property (atomic, strong) NSArray *tempArr;
+
 @end
 
 @implementation ClockViewController
@@ -48,10 +50,38 @@
 //    });
 //    NSLog(@"串行 end ::: %@", [NSThread currentThread]);
     
+    self.tempArr = [NSArray array];
+    dispatch_queue_t queue = dispatch_queue_create("temp", DISPATCH_QUEUE_CONCURRENT);
+    dispatch_async(queue, ^{
+        NSLog(@"Thread A: %@", [NSThread currentThread]);
+        for (int i = 0; i < 100000; i++) {
+            @synchronized(self) {    // 下面这种就会 crash
+//            @synchronized(_tempArr) {
+                if (i % 2 == 0) {
+                    self.tempArr = @[@"1", @"2", @"3"];
+                } else {
+                    self.tempArr = @[@"1"];
+                }
+            }
+            //NSLog(@"Thread A: %@", self.tempArr);
+        }
+    });
+    dispatch_async(queue, ^{
+        NSLog(@"Thread B: %@", [NSThread currentThread]);
+        for (int i = 0; i < 100000; i++) {
+            @synchronized(self) {
+//            @synchronized(_tempArr) {
+                if (self.tempArr.count >= 2) {
+                    NSString *str = [self.tempArr objectAtIndex:1];
+                }
+            }
+            //NSLog(@"Thread B: %@", self.tempArr);
+        }
+    });
+    
     
     ////
     
-    NSLog(@"shit 1 %lf", [[NSDate date] timeIntervalSince1970]);
     [self.shadowView addSubview:self.bgView];
     [self.view addSubview:self.shadowView];
     [self.view.layer addSublayer:self.circleLayer];

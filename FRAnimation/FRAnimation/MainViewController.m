@@ -214,7 +214,6 @@
         }];
         [self.navigationController presentViewController:storeVC animated:YES completion:nil];
     } else {
-        NSLog(@"shit 0 %lf", [[NSDate date] timeIntervalSince1970]);
         UIViewController *viewController = [[((MyListItem *)self.itemList[indexPath.row]).object alloc] init];
         [self.navigationController pushViewController:viewController animated:YES];
     }
