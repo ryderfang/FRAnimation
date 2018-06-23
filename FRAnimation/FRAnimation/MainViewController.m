@@ -13,6 +13,7 @@
 #import "IconFontViewController.h"
 #import "LottieViewController.h"
 #import "ScrollViewController.h"
+#import "SpeechViewController.h"
 #import "Masonry.h"
 #import "UIDefs.h"
 #import <StoreKit/StoreKit.h>
@@ -144,6 +145,7 @@
                       [MyListItem initWithName:@"IconFont测试" withClass:[IconFontViewController class]],
                       [MyListItem initWithName:@"Lottie动画测试" withClass:[LottieViewController class]],
                       [MyListItem initWithName:@"水平滚动账单" withClass:[ScrollViewController class]],
+                      [MyListItem initWithName:@"语音识别" withClass:[SpeechViewController class]],
                       
                       // Last one is reserved.
                       [MyListItem initWithName:@"App内打开AppStore" withClass:[UIViewController class]]
