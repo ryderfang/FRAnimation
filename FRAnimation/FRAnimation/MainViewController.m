@@ -119,12 +119,12 @@
     self.navigationItem.title = @"动画学习";
 
     // Check Fonts
-    for (NSString* family in [UIFont familyNames]) {
-        NSLog(@"%@", family);
-        for (NSString* name in [UIFont fontNamesForFamilyName: family]) {
-            NSLog(@"  %@", name);
-        }
-    }
+//    for (NSString* family in [UIFont familyNames]) {
+//        NSLog(@"%@", family);
+//        for (NSString* name in [UIFont fontNamesForFamilyName: family]) {
+//            NSLog(@"  %@", name);
+//        }
+//    }
 
     [self initDataSource];
     
