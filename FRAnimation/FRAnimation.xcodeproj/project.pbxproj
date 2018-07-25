@@ -19,7 +19,6 @@
 		234C77B21FFF779200E585AF /* DCIntrospect.m in Sources */ = {isa = PBXBuildFile; fileRef = 234C77A61FFF779100E585AF /* DCIntrospect.m */; };
 		234C77B31FFF779200E585AF /* DCTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 234C77AA1FFF779200E585AF /* DCTextView.m */; };
 		234C77B41FFF779200E585AF /* UIView+DCAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 234C77AC1FFF779200E585AF /* UIView+DCAdditions.m */; };
-		234C77B71FFF783300E585AF /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 234C77B51FFF783300E585AF /* NSString+Extension.m */; };
 		236496C620AC298C00502F74 /* AMOrderContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 236496C520AC298C00502F74 /* AMOrderContainerView.m */; };
 		236496C920AC29A400502F74 /* AMOrderItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 236496C820AC29A400502F74 /* AMOrderItemView.m */; };
 		2371A44E20E08E4900624979 /* microphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 2371A44D20E08E4900624979 /* microphone.png */; };
@@ -28,6 +27,8 @@
 		2371A45620E0D6A000624979 /* voice.json in Resources */ = {isa = PBXBuildFile; fileRef = 2371A45320E0D6A000624979 /* voice.json */; };
 		237552E420DDFB430032607E /* SpeechViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 237552E320DDFB430032607E /* SpeechViewController.m */; };
 		237552E620DDFBF10032607E /* Speech.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 237552E520DDFBF10032607E /* Speech.framework */; };
+		23DDDE032108581F00CA9B92 /* UIImage+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = 23DDDE022108581F00CA9B92 /* UIImage+Color.m */; };
+		23DDDE062108584700CA9B92 /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 23DDDE052108584700CA9B92 /* NSString+Extension.m */; };
 		7138754C1EF2673D0093BE11 /* fontello.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7138754B1EF2673D0093BE11 /* fontello.ttf */; };
 		713875511EF2758F0093BE11 /* BiliIconFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 713875501EF2758F0093BE11 /* BiliIconFont.m */; };
 		713875551EF27F110093BE11 /* UILabel+BiliIconFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 713875541EF27F110093BE11 /* UILabel+BiliIconFont.m */; };
@@ -109,8 +110,6 @@
 		234C77AC1FFF779200E585AF /* UIView+DCAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+DCAdditions.m"; sourceTree = "<group>"; };
 		234C77AD1FFF779200E585AF /* DCStatusBarOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCStatusBarOverlay.h; sourceTree = "<group>"; };
 		234C77AE1FFF779200E585AF /* DCCrossHairView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCCrossHairView.h; sourceTree = "<group>"; };
-		234C77B51FFF783300E585AF /* NSString+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extension.m"; sourceTree = "<group>"; };
-		234C77B61FFF783300E585AF /* NSString+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extension.h"; sourceTree = "<group>"; };
 		236496C420AC298C00502F74 /* AMOrderContainerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMOrderContainerView.h; sourceTree = "<group>"; };
 		236496C520AC298C00502F74 /* AMOrderContainerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMOrderContainerView.m; sourceTree = "<group>"; };
 		236496C720AC29A400502F74 /* AMOrderItemView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMOrderItemView.h; sourceTree = "<group>"; };
@@ -122,6 +121,10 @@
 		237552E220DDFB430032607E /* SpeechViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SpeechViewController.h; path = Controllers/SpeechViewController.h; sourceTree = "<group>"; };
 		237552E320DDFB430032607E /* SpeechViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SpeechViewController.m; path = Controllers/SpeechViewController.m; sourceTree = "<group>"; };
 		237552E520DDFBF10032607E /* Speech.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Speech.framework; path = System/Library/Frameworks/Speech.framework; sourceTree = SDKROOT; };
+		23DDDE012108581F00CA9B92 /* UIImage+Color.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "UIImage+Color.h"; path = "Catagories/UIImage+Color.h"; sourceTree = "<group>"; };
+		23DDDE022108581F00CA9B92 /* UIImage+Color.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Color.m"; path = "Catagories/UIImage+Color.m"; sourceTree = "<group>"; };
+		23DDDE042108584700CA9B92 /* NSString+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+Extension.h"; path = "Catagories/NSString+Extension.h"; sourceTree = "<group>"; };
+		23DDDE052108584700CA9B92 /* NSString+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+Extension.m"; path = "Catagories/NSString+Extension.m"; sourceTree = "<group>"; };
 		713875491EF2601E0093BE11 /* Demo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Demo-Prefix.pch"; sourceTree = "<group>"; };
 		7138754B1EF2673D0093BE11 /* fontello.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = fontello.ttf; sourceTree = "<group>"; };
 		7138754F1EF2758F0093BE11 /* BiliIconFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BiliIconFont.h; path = IconFont/BiliIconFont.h; sourceTree = "<group>"; };
@@ -282,10 +285,12 @@
 		71516C941E1630A2003DC670 /* Catagories */ = {
 			isa = PBXGroup;
 			children = (
-				234C77B61FFF783300E585AF /* NSString+Extension.h */,
-				234C77B51FFF783300E585AF /* NSString+Extension.m */,
+				23DDDE042108584700CA9B92 /* NSString+Extension.h */,
+				23DDDE052108584700CA9B92 /* NSString+Extension.m */,
 				71516C951E1630F5003DC670 /* UIColor+Hex.h */,
 				71516C961E1630F5003DC670 /* UIColor+Hex.m */,
+				23DDDE012108581F00CA9B92 /* UIImage+Color.h */,
+				23DDDE022108581F00CA9B92 /* UIImage+Color.m */,
 			);
 			name = Catagories;
 			sourceTree = "<group>";
@@ -647,7 +652,6 @@
 				71DFB8AB1E0D2DDB00DFAE63 /* MainViewController.m in Sources */,
 				71DFB8E71E14B20200DFAE63 /* LoggedInViewController.m in Sources */,
 				71DFB8D51E10F42400DFAE63 /* FRTextField.m in Sources */,
-				234C77B71FFF783300E585AF /* NSString+Extension.m in Sources */,
 				71516C971E1630F5003DC670 /* UIColor+Hex.m in Sources */,
 				236496C620AC298C00502F74 /* AMOrderContainerView.m in Sources */,
 				234C77B01FFF779200E585AF /* DCStatusBarOverlay.m in Sources */,
@@ -661,7 +665,9 @@
 				234C77B21FFF779200E585AF /* DCIntrospect.m in Sources */,
 				7138755E1EF29B470093BE11 /* UIImageView+BiliIconFont.m in Sources */,
 				71DFB8CF1E10C92200DFAE63 /* ClockViewController.m in Sources */,
+				23DDDE062108584700CA9B92 /* NSString+Extension.m in Sources */,
 				71DFB8D01E10C92200DFAE63 /* LoginViewController.m in Sources */,
+				23DDDE032108581F00CA9B92 /* UIImage+Color.m in Sources */,
 				71973B6A1E458FD400C9D07A /* EmitterSnowController.swift in Sources */,
 				237552E420DDFB430032607E /* SpeechViewController.m in Sources */,
 			);
