@@ -7,13 +7,8 @@
 //
 
 #import "MainViewController.h"
+#import "ViewControllers.h"
 #import "FRAnimation-Swift.h"
-#import "ClockViewController.h"
-#import "LoginViewController.h"
-#import "IconFontViewController.h"
-#import "LottieViewController.h"
-#import "ScrollViewController.h"
-#import "SpeechViewController.h"
 #import "Masonry.h"
 #import "UIDefs.h"
 #import <StoreKit/StoreKit.h>
@@ -129,33 +124,36 @@
     [self initDataSource];
     
     
-//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-//        NSIndexPath *indexPath = [NSIndexPath indexPathForRow:5 inSection:0];
-//        [self.mainTable selectRowAtIndexPath:indexPath animated:YES scrollPosition:UITableViewScrollPositionBottom];
-//        if ([self.mainTable.delegate respondsToSelector:@selector(tableView:didSelectRowAtIndexPath:)]) {
-//            [self.mainTable.delegate tableView:self.mainTable didSelectRowAtIndexPath:indexPath];
-//        }
-//    });
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        NSIndexPath *indexPath = [NSIndexPath indexPathForRow:7 inSection:0];
+        [self.mainTable selectRowAtIndexPath:indexPath animated:YES scrollPosition:UITableViewScrollPositionBottom];
+        if ([self.mainTable.delegate respondsToSelector:@selector(tableView:didSelectRowAtIndexPath:)]) {
+            [self.mainTable.delegate tableView:self.mainTable didSelectRowAtIndexPath:indexPath];
+        }
+    });
 }
 
 - (void)initDataSource {
-    self.itemList = @[[MyListItem initWithName:@"一个时针" withClass:[ClockViewController class]],
-                      [MyListItem initWithName:@"一个登录界面" withClass:[LoginViewController class]],
-                      [MyListItem initWithName:@"雪花粒子动画" withClass:[EmitterSnowController class]],
-                      [MyListItem initWithName:@"IconFont测试" withClass:[IconFontViewController class]],
-                      [MyListItem initWithName:@"Lottie动画测试" withClass:[LottieViewController class]],
-                      [MyListItem initWithName:@"水平滚动账单" withClass:[ScrollViewController class]],
-                      [MyListItem initWithName:@"语音识别" withClass:[SpeechViewController class]],
+    self.itemList = @[[MyListItem initWithName:@"🕘一个时针" withClass:[ClockViewController class]],
+                      [MyListItem initWithName:@"➡️一个登录界面" withClass:[LoginViewController class]],
+                      [MyListItem initWithName:@"❄️雪花粒子动画" withClass:[EmitterSnowController class]],
+                      [MyListItem initWithName:@"🌀IconFont测试" withClass:[IconFontViewController class]],
+                      [MyListItem initWithName:@"〽️Lottie动画测试" withClass:[LottieViewController class]],
+                      [MyListItem initWithName:@"🖖水平滚动账单" withClass:[ScrollViewController class]],
+                      [MyListItem initWithName:@"🗣语音识别" withClass:[SpeechViewController class]],
+                      [MyListItem initWithName:@"🦅Weex & Vue.js" withClass:[MyWeexViewController class]],
                       
                       // Last one is reserved.
-                      [MyListItem initWithName:@"App内打开AppStore" withClass:[UIViewController class]]
+                      [MyListItem initWithName:@"🤔 App内打开AppStore" withClass:[UIViewController class]]
                      ];
 }
 
 - (UITableView *)mainTable {
     if (!_mainTable) {
         _mainTable = [[UITableView alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-        _mainTable.backgroundColor = HEXCOLOR(0xFFFBE6);
+//        _mainTable.backgroundColor = HEXCOLOR(0xFFFBE6);
+        UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"table_bg.png"]];
+        _mainTable.backgroundView = imageView;
         _mainTable.delegate = self;
         _mainTable.dataSource = self;
         [_mainTable registerClass:[MyTableViewCell class] forCellReuseIdentifier:FRTableCellIdentifier];
@@ -176,9 +174,9 @@
     MyTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:FRTableCellIdentifier];
 
     if (indexPath.row & 1) {
-        cell.backgroundColor = HEXCOLOR(0xFFF4D2);
+        cell.backgroundColor = HEXCOLORA(0xFFF4D2, 0.8);
     } else {
-        cell.backgroundColor = HEXCOLOR(0xD9E5A3);
+        cell.backgroundColor = HEXCOLORA(0xD9E5A3, 0.8);
     }
     [cell.title setText:((MyListItem *)self.itemList[indexPath.row]).name];
     return cell;

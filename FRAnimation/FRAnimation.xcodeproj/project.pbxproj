@@ -27,6 +27,8 @@
 		2371A45620E0D6A000624979 /* voice.json in Resources */ = {isa = PBXBuildFile; fileRef = 2371A45320E0D6A000624979 /* voice.json */; };
 		237552E420DDFB430032607E /* SpeechViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 237552E320DDFB430032607E /* SpeechViewController.m */; };
 		237552E620DDFBF10032607E /* Speech.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 237552E520DDFBF10032607E /* Speech.framework */; };
+		237D0FD7211C1F8E006911BA /* MyWeexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 237D0FD6211C1F8E006911BA /* MyWeexViewController.m */; };
+		237D0FD9211C20AC006911BA /* fuck_weex.js in Resources */ = {isa = PBXBuildFile; fileRef = 237D0FD8211C20AC006911BA /* fuck_weex.js */; };
 		23DDDE032108581F00CA9B92 /* UIImage+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = 23DDDE022108581F00CA9B92 /* UIImage+Color.m */; };
 		23DDDE062108584700CA9B92 /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 23DDDE052108584700CA9B92 /* NSString+Extension.m */; };
 		7138754C1EF2673D0093BE11 /* fontello.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7138754B1EF2673D0093BE11 /* fontello.ttf */; };
@@ -121,6 +123,10 @@
 		237552E220DDFB430032607E /* SpeechViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SpeechViewController.h; path = Controllers/SpeechViewController.h; sourceTree = "<group>"; };
 		237552E320DDFB430032607E /* SpeechViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SpeechViewController.m; path = Controllers/SpeechViewController.m; sourceTree = "<group>"; };
 		237552E520DDFBF10032607E /* Speech.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Speech.framework; path = System/Library/Frameworks/Speech.framework; sourceTree = SDKROOT; };
+		237D0FD5211C1F8E006911BA /* MyWeexViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MyWeexViewController.h; path = Controllers/MyWeexViewController.h; sourceTree = "<group>"; };
+		237D0FD6211C1F8E006911BA /* MyWeexViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MyWeexViewController.m; path = Controllers/MyWeexViewController.m; sourceTree = "<group>"; };
+		237D0FD8211C20AC006911BA /* fuck_weex.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = fuck_weex.js; sourceTree = "<group>"; };
+		23D38D06211C254B0032CA98 /* ViewControllers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewControllers.h; path = Headers/ViewControllers.h; sourceTree = "<group>"; };
 		23DDDE012108581F00CA9B92 /* UIImage+Color.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "UIImage+Color.h"; path = "Catagories/UIImage+Color.h"; sourceTree = "<group>"; };
 		23DDDE022108581F00CA9B92 /* UIImage+Color.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Color.m"; path = "Catagories/UIImage+Color.m"; sourceTree = "<group>"; };
 		23DDDE042108584700CA9B92 /* NSString+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+Extension.h"; path = "Catagories/NSString+Extension.h"; sourceTree = "<group>"; };
@@ -278,6 +284,7 @@
 			isa = PBXGroup;
 			children = (
 				713BAF581ED2E665008789C7 /* UIDefs.h */,
+				23D38D06211C254B0032CA98 /* ViewControllers.h */,
 			);
 			name = Headers;
 			sourceTree = "<group>";
@@ -322,6 +329,8 @@
 			children = (
 				71630ED71DF56585002F4D0A /* AppDelegate.h */,
 				71630ED81DF56585002F4D0A /* AppDelegate.m */,
+				71DFB8A91E0D2DDB00DFAE63 /* MainViewController.h */,
+				71DFB8AA1E0D2DDB00DFAE63 /* MainViewController.m */,
 				71516C941E1630A2003DC670 /* Catagories */,
 				71DFB8CA1E10C8E800DFAE63 /* Controllers */,
 				236496C320AC28BC00502F74 /* Views */,
@@ -368,6 +377,7 @@
 		7174C86B1E0A795E008D5887 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				237D0FD8211C20AC006911BA /* fuck_weex.js */,
 				2371A45220E0D6A000624979 /* table_bg.png */,
 				2371A45120E0D6A000624979 /* voice_indicator.json */,
 				2371A45320E0D6A000624979 /* voice.json */,
@@ -388,8 +398,6 @@
 		71DFB8CA1E10C8E800DFAE63 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				71DFB8A91E0D2DDB00DFAE63 /* MainViewController.h */,
-				71DFB8AA1E0D2DDB00DFAE63 /* MainViewController.m */,
 				71DFB8CB1E10C92200DFAE63 /* ClockViewController.h */,
 				71DFB8CC1E10C92200DFAE63 /* ClockViewController.m */,
 				71DFB8CD1E10C92200DFAE63 /* LoginViewController.h */,
@@ -405,6 +413,8 @@
 				232D8BDE20AC135500516A4D /* ScrollViewController.m */,
 				237552E220DDFB430032607E /* SpeechViewController.h */,
 				237552E320DDFB430032607E /* SpeechViewController.m */,
+				237D0FD5211C1F8E006911BA /* MyWeexViewController.h */,
+				237D0FD6211C1F8E006911BA /* MyWeexViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -449,7 +459,6 @@
 				71630ECD1DF56585002F4D0A /* Sources */,
 				71630ECE1DF56585002F4D0A /* Frameworks */,
 				71630ECF1DF56585002F4D0A /* Resources */,
-				E92B206364FA92FF0B4117D8 /* [CP] Embed Pods Frameworks */,
 				714C34CCAA07BAC15F982EB5 /* [CP] Copy Pods Resources */,
 				2337DA611FB1D381008D480F /* Embed Frameworks */,
 			);
@@ -555,6 +564,7 @@
 				2337DA681FB1D847008D480F /* bell.json in Resources */,
 				2337DA691FB1D847008D480F /* birth.json in Resources */,
 				2371A45620E0D6A000624979 /* voice.json in Resources */,
+				237D0FD9211C20AC006911BA /* fuck_weex.js in Resources */,
 				2371A44E20E08E4900624979 /* microphone.png in Resources */,
 				2371A45520E0D6A000624979 /* table_bg.png in Resources */,
 				2337DA651FB1D5BE008D480F /* gears.json in Resources */,
@@ -591,9 +601,14 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/../Pods/Target Support Files/Pods-FRAnimation/Pods-FRAnimation-resources.sh",
+				"${PODS_ROOT}/WeexSDK/pre-build/native-bundle-main.js",
+				"${PODS_ROOT}/WeexSDK/ios/sdk/WeexSDK/Resources/wx_load_error@3x.png",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/native-bundle-main.js",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/wx_load_error@3x.png",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -616,21 +631,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E92B206364FA92FF0B4117D8 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-FRAnimation/Pods-FRAnimation-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -662,6 +662,7 @@
 				234C77B11FFF779200E585AF /* DCCrossHairView.m in Sources */,
 				713875551EF27F110093BE11 /* UILabel+BiliIconFont.m in Sources */,
 				234C77AF1FFF779200E585AF /* DCFrameView.m in Sources */,
+				237D0FD7211C1F8E006911BA /* MyWeexViewController.m in Sources */,
 				234C77B21FFF779200E585AF /* DCIntrospect.m in Sources */,
 				7138755E1EF29B470093BE11 /* UIImageView+BiliIconFont.m in Sources */,
 				71DFB8CF1E10C92200DFAE63 /* ClockViewController.m in Sources */,
