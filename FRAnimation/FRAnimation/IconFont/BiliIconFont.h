@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "BiliIconConfig.h"
 
 @interface BiliIconFont : NSObject
 

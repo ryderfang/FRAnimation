@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BiliIconFont.h"
 
 @interface UIButton (BiliIconFont)
 

@@ -10,6 +10,7 @@
 #import "MainViewController.h"
 #import "DCIntrospect.h"
 #import "NSString+Extension.h"
+#import "UIImage+BiliIconFont.h"
 #import <WeexSDK/WeexSDK.h>
 
 @interface AppDelegate ()
@@ -21,16 +22,36 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [BiliIconFont initWithName:@"iconfont"];
-    // Override point for customization after application launch.
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    MainViewController *root = [[MainViewController alloc] init];
-    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:root];
-    self.window.rootViewController = navigationController;
+    
     [[UINavigationBar appearance] setBarTintColor:FR_BLUE_COLOR];
     [[UINavigationBar appearance]
      setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]}];
     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
-    [self.window addSubview:root.view];
+    
+    // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.backgroundColor = [UIColor whiteColor];
+    
+    UITabBarController *tabBar = [[UITabBarController alloc] init];
+    MainViewController *mainVC = [[MainViewController alloc] init];
+    UINavigationController *tab1 = [[UINavigationController alloc] initWithRootViewController:mainVC];
+    tab1.tabBarItem.image = [UIImage imageWithIconInfo:Bili_Icon_Male];
+    tab1.tabBarItem.imageInsets = UIEdgeInsetsMake(6, 0, -6, 0);
+    
+    UIViewController *otherVC = [[UIViewController alloc] init];
+    otherVC.view.backgroundColor = [UIColor orangeColor];
+    UINavigationController *tab2 = [[UINavigationController alloc] initWithRootViewController:otherVC];
+    tab2.tabBarItem.image = [UIImage imageWithIconInfo:Bili_Icon_Female];;
+    tab2.tabBarItem.imageInsets = UIEdgeInsetsMake(6, 0, -6, 0);
+    
+    UIViewController *anotherVC = [[UIViewController alloc] init];
+    anotherVC.view.backgroundColor = [UIColor purpleColor];
+    UINavigationController *tab3 = [[UINavigationController alloc] initWithRootViewController:anotherVC];
+    tab3.tabBarItem.image = [UIImage imageWithIconInfo:Bili_Icon_Unknown_Gender];;
+    tab3.tabBarItem.imageInsets = UIEdgeInsetsMake(6, 0, -6, 0);
+    
+    tabBar.viewControllers = @[tab1, tab2, tab3];
+    self.window.rootViewController = tabBar;
     [self.window makeKeyAndVisible];
 
 #if TARGET_IPHONE_SIMULATOR
