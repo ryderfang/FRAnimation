@@ -12,6 +12,7 @@
 #import "NSString+Extension.h"
 #import "UIImage+BiliIconFont.h"
 #import <WeexSDK/WeexSDK.h>
+#import "WXDevTool.h"
 
 @interface AppDelegate ()
 
@@ -65,6 +66,11 @@
     [WXAppConfiguration setAppName:@"FRAnimation"];
     [WXAppConfiguration setAppVersion:@"1.0.0"];
     
+    // debug
+    [WXDevTool setDebug:YES];
+    // !!! 下面这个地址藏在 weex debug 的 二维码里，每次都不一样
+    [WXDevTool launchDevToolDebugWithUrl:@"ws://30.17.104.85:8088/debugProxy/native/b4c3a8ae-c2e4-42ef-a25a-95581fe7db34"];
+    
     // init sdk environment
     [WXSDKEngine initSDKEnvironment];
     
@@ -75,7 +81,7 @@
     // set the log level
     [WXLog setLogLevel:WXLogLevelAll];
     
-    
+
 //    NSArray<NSString *> *texts = [@"这是 Pin 里面使用的文本分词功能的代码，哦对了，完全是本地的，准确率有限" segment:PINSegmentationOptionsNone];
 //    [texts enumerateObjectsUsingBlock:^(NSString * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
 //        NSLog(@"%@", obj);

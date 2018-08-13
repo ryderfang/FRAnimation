@@ -5,6 +5,7 @@ target 'FRAnimation' do
     pod 'AFNetworking'
     pod 'lottie-ios'
     pod 'WeexSDK', '~> 0.17.0'
+    pod 'SocketRocket'
     project './FRAnimation/FRAnimation.xcodeproj'
 end
 

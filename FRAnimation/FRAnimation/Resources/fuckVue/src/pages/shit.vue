@@ -1,6 +1,6 @@
-<template>
+<template
   <div style='justify-content:center'>
-    <text class='freestyle'>Fuck Weex</text>
+    <text class='freestyle'>Fuck We!!!!??</text>
   </div>
 </template>
 

@@ -16,12 +16,14 @@ PODS:
     - AFNetworking/NSURLSession
   - lottie-ios (2.1.5)
   - Masonry (1.0.2)
+  - SocketRocket (0.5.1)
   - WeexSDK (0.17.0)
 
 DEPENDENCIES:
   - AFNetworking
   - lottie-ios
   - Masonry
+  - SocketRocket
   - WeexSDK (~> 0.17.0)
 
 SPEC REPOS:
@@ -29,14 +31,16 @@ SPEC REPOS:
     - AFNetworking
     - lottie-ios
     - Masonry
+    - SocketRocket
     - WeexSDK
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   lottie-ios: 836cdbba92f62f3c6a00e37a4ce485321fe317cf
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+  SocketRocket: d57c7159b83c3c6655745cd15302aa24b6bae531
   WeexSDK: ad8443f4290ef7cb241bbd4c03b02d9dfc9fdca2
 
-PODFILE CHECKSUM: ae85d1f8bd4e95d476950e7fc3351c2e9716f991
+PODFILE CHECKSUM: 95c7f0046f5ec4b10d51d707d6ce39ddfc2d7df9
 
 COCOAPODS: 1.5.3

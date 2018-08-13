@@ -76,8 +76,11 @@ var __vue_styles__ = []
 __vue_styles__.push(__webpack_require__(1)
 )
 
+/* script */
+__vue_exports__ = __webpack_require__(2)
+
 /* template */
-var __vue_template__ = __webpack_require__(2)
+var __vue_template__ = __webpack_require__(3)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -89,18 +92,20 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/Users/yimu/Coding/FRAnimation/FRAnimation/FRAnimation/Resources/fuck_weex.vue"
+__vue_options__.__file = "/Users/yimu/Coding/FRAnimation/FRAnimation/FRAnimation/Resources/fuckVue/src/index.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-__vue_options__._scopeId = "data-v-29c7bbb8"
+__vue_options__._scopeId = "data-v-c816c47c"
 __vue_options__.style = __vue_options__.style || {}
 __vue_styles__.forEach(function (module) {
   for (var name in module) {
     __vue_options__.style[name] = module[name]
   }
 })
-if (typeof __register_static_styles__ === "function") {
-  __register_static_styles__(__vue_options__._scopeId, __vue_styles__)
+if (typeof weex === "object" && weex && weex.document) {
+  try {
+    weex.document.registerStyleSheets(__vue_options__._scopeId, __vue_styles__)
+  } catch (e) {}
 }
 
 module.exports = __vue_exports__
@@ -113,28 +118,74 @@ new Vue(module.exports)
 /***/ (function(module, exports) {
 
 module.exports = {
-  "freestyle": {
-    "color": "#41b883",
-    "fontSize": "48",
-    "textAlign": "center"
+  "wrapper": {
+    "justifyContent": "center",
+    "alignItems": "center"
+  },
+  "logo": {
+    "width": "424",
+    "height": "200"
+  },
+  "greeting": {
+    "marginTop": "70",
+    "fontSize": "50",
+    "color": "#41B883"
+  },
+  "message": {
+    "marginTop": "30",
+    "marginRight": "30",
+    "marginBottom": "30",
+    "marginLeft": "30",
+    "fontSize": "32",
+    "color": "#727272"
   }
 }
 
 /***/ }),
 /* 2 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+//
+//
+//
+//
+//
+//
+//
+//
+
+exports.default = {
+  data: function data() {
+    return {
+      logo: 'https://gw.alicdn.com/tfs/TB1yopEdgoQMeJjy1XaXXcSsFXa-640-302.png'
+    };
+  }
+};
+
+/***/ }),
+/* 3 */
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _vm._m(0)
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
-    staticStyle: {
-      justifyContent: "center"
+    staticClass: ["wrapper"]
+  }, [_c('image', {
+    staticClass: ["logo"],
+    attrs: {
+      "src": _vm.logo
     }
-  }, [_c('text', {
-    staticClass: ["freestyle"]
-  }, [_vm._v("Fuck Weex")])])
-}]}
+  }), _c('text', {
+    staticClass: ["greeting"]
+  }, [_vm._v("The environment is ready!")]), _c('text', {
+    staticClass: ["message"]
+  }, [_vm._v("Now, let's use Vue.js to build your Weex app.")])])
+},staticRenderFns: []}
 module.exports.render._withStripped = true
 
 /***/ })
