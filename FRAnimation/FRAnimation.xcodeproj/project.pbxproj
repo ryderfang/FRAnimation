@@ -13,12 +13,6 @@
 		2337DA681FB1D847008D480F /* bell.json in Resources */ = {isa = PBXBuildFile; fileRef = 2337DA661FB1D690008D480F /* bell.json */; };
 		2337DA691FB1D847008D480F /* birth.json in Resources */ = {isa = PBXBuildFile; fileRef = 2337DA671FB1D6A3008D480F /* birth.json */; };
 		2337DA6B1FB1E781008D480F /* bell2.json in Resources */ = {isa = PBXBuildFile; fileRef = 2337DA6A1FB1E780008D480F /* bell2.json */; };
-		234C77AF1FFF779200E585AF /* DCFrameView.m in Sources */ = {isa = PBXBuildFile; fileRef = 234C77A21FFF779100E585AF /* DCFrameView.m */; };
-		234C77B01FFF779200E585AF /* DCStatusBarOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 234C77A31FFF779100E585AF /* DCStatusBarOverlay.m */; };
-		234C77B11FFF779200E585AF /* DCCrossHairView.m in Sources */ = {isa = PBXBuildFile; fileRef = 234C77A41FFF779100E585AF /* DCCrossHairView.m */; };
-		234C77B21FFF779200E585AF /* DCIntrospect.m in Sources */ = {isa = PBXBuildFile; fileRef = 234C77A61FFF779100E585AF /* DCIntrospect.m */; };
-		234C77B31FFF779200E585AF /* DCTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 234C77AA1FFF779200E585AF /* DCTextView.m */; };
-		234C77B41FFF779200E585AF /* UIView+DCAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 234C77AC1FFF779200E585AF /* UIView+DCAdditions.m */; };
 		236496C620AC298C00502F74 /* AMOrderContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 236496C520AC298C00502F74 /* AMOrderContainerView.m */; };
 		236496C920AC29A400502F74 /* AMOrderItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 236496C820AC29A400502F74 /* AMOrderItemView.m */; };
 		2371A44E20E08E4900624979 /* microphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 2371A44D20E08E4900624979 /* microphone.png */; };
@@ -27,85 +21,17 @@
 		2371A45620E0D6A000624979 /* voice.json in Resources */ = {isa = PBXBuildFile; fileRef = 2371A45320E0D6A000624979 /* voice.json */; };
 		237552E420DDFB430032607E /* SpeechViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 237552E320DDFB430032607E /* SpeechViewController.m */; };
 		237552E620DDFBF10032607E /* Speech.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 237552E520DDFBF10032607E /* Speech.framework */; };
-		237D0FD7211C1F8E006911BA /* MyWeexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 237D0FD6211C1F8E006911BA /* MyWeexViewController.m */; };
-		23D38DA6211C5F570032CA98 /* WXIndexedDBTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D38D0A211C5F570032CA98 /* WXIndexedDBTypes.m */; };
-		23D38DA7211C5F570032CA98 /* WXApplicationCacheTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D38D0C211C5F570032CA98 /* WXApplicationCacheTypes.m */; };
-		23D38DA8211C5F570032CA98 /* WXDebugDomain.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D38D0E211C5F570032CA98 /* WXDebugDomain.m */; };
-		23D38DA9211C5F570032CA98 /* WXWebGLDomain.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D38D12211C5F570032CA98 /* WXWebGLDomain.m */; };
-		23D38DAA211C5F570032CA98 /* WXNetworkTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D38D14211C5F570032CA98 /* WXNetworkTypes.m */; };
-		23D38DAB211C5F570032CA98 /* WXIndexedDBDomain.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D38D16211C5F570032CA98 /* WXIndexedDBDomain.m */; };
-		23D38DAC211C5F570032CA98 /* WXTimelineTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D38D19211C5F570032CA98 /* WXTimelineTypes.m */; };
-		23D38DAD211C5F570032CA98 /* WXNetworkDomain.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D38D1B211C5F570032CA98 /* WXNetworkDomain.m */; };
-		23D38DAE211C5F570032CA98 /* WXConsoleTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D38D1E211C5F570032CA98 /* WXConsoleTypes.m */; };
-		23D38DAF211C5F570032CA98 /* WXDOMDebuggerDomain.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D38D20211C5F570032CA98 /* WXDOMDebuggerDomain.m */; };
-		23D38DB0211C5F570032CA98 /* WXDatabaseDomain.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D38D22211C5F570032CA98 /* WXDatabaseDomain.m */; };
-		23D38DB1211C5F570032CA98 /* WXProfilerTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D38D23211C5F570032CA98 /* WXProfilerTypes.m */; };
-		23D38DB2211C5F570032CA98 /* WXTimelineDomain.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D38D24211C5F570032CA98 /* WXTimelineDomain.m */; };
-		23D38DB3211C5F570032CA98 /* WXDOMStorageTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D38D25211C5F570032CA98 /* WXDOMStorageTypes.m */; };
-		23D38DB4211C5F570032CA98 /* WXProfilerDomain.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D38D27211C5F570032CA98 /* WXProfilerDomain.m */; };
-		23D38DB5211C5F570032CA98 /* WXDebuggerTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D38D29211C5F570032CA98 /* WXDebuggerTypes.m */; };
-		23D38DB6211C5F570032CA98 /* WXConsoleDomain.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D38D2A211C5F570032CA98 /* WXConsoleDomain.m */; };
-		23D38DB7211C5F570032CA98 /* WXDOMStorageDomain.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D38D2B211C5F570032CA98 /* WXDOMStorageDomain.m */; };
-		23D38DB8211C5F570032CA98 /* WXCSSDomain.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D38D2C211C5F570032CA98 /* WXCSSDomain.m */; };
-		23D38DB9211C5F570032CA98 /* WXProfilerDomainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D38D2D211C5F570032CA98 /* WXProfilerDomainController.m */; };
-		23D38DBA211C5F570032CA98 /* WXFileSystemTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D38D2E211C5F570032CA98 /* WXFileSystemTypes.m */; };
-		23D38DBB211C5F570032CA98 /* WXInspectorDomain.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D38D30211C5F570032CA98 /* WXInspectorDomain.m */; };
-		23D38DBC211C5F570032CA98 /* WXFileSystemDomain.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D38D33211C5F570032CA98 /* WXFileSystemDomain.m */; };
-		23D38DBD211C5F570032CA98 /* WXCSSTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D38D34211C5F570032CA98 /* WXCSSTypes.m */; };
-		23D38DBE211C5F570032CA98 /* WXTimelineDomainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D38D35211C5F570032CA98 /* WXTimelineDomainController.m */; };
-		23D38DBF211C5F570032CA98 /* WXPageDomain.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D38D38211C5F570032CA98 /* WXPageDomain.m */; };
-		23D38DC0211C5F570032CA98 /* WXApplicationCacheDomain.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D38D39211C5F570032CA98 /* WXApplicationCacheDomain.m */; };
-		23D38DC1211C5F570032CA98 /* WXMemoryDomain.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D38D3B211C5F570032CA98 /* WXMemoryDomain.m */; };
-		23D38DC2211C5F570032CA98 /* WXDatabaseTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D38D3C211C5F570032CA98 /* WXDatabaseTypes.m */; };
-		23D38DC3211C5F570032CA98 /* WXDOMTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D38D3D211C5F570032CA98 /* WXDOMTypes.m */; };
-		23D38DC4211C5F570032CA98 /* WXWebGLTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D38D41211C5F570032CA98 /* WXWebGLTypes.m */; };
-		23D38DC5211C5F570032CA98 /* WXDebuggerDomain.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D38D43211C5F570032CA98 /* WXDebuggerDomain.m */; };
-		23D38DC6211C5F570032CA98 /* WXPageTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D38D45211C5F570032CA98 /* WXPageTypes.m */; };
-		23D38DC7211C5F570032CA98 /* WXWorkerDomain.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D38D46211C5F570032CA98 /* WXWorkerDomain.m */; };
-		23D38DC8211C5F570032CA98 /* WXRuntimeDomain.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D38D48211C5F570032CA98 /* WXRuntimeDomain.m */; };
-		23D38DC9211C5F570032CA98 /* WXMemoryTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D38D4A211C5F570032CA98 /* WXMemoryTypes.m */; };
-		23D38DCA211C5F570032CA98 /* WXDOMDomain.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D38D4B211C5F570032CA98 /* WXDOMDomain.m */; };
-		23D38DCB211C5F570032CA98 /* WXRuntimeTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D38D53211C5F570032CA98 /* WXRuntimeTypes.m */; };
-		23D38DCC211C5F570032CA98 /* WXPageDomainUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D38D54211C5F570032CA98 /* WXPageDomainUtility.m */; };
-		23D38DCD211C5F570032CA98 /* WXDevTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D38D5A211C5F570032CA98 /* WXDevTool.m */; };
-		23D38DCE211C5F570032CA98 /* WXSourceDebuggerDomainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D38D5E211C5F570032CA98 /* WXSourceDebuggerDomainController.m */; };
-		23D38DCF211C5F570032CA98 /* NSArray+WXRuntimePropertyDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D38D62211C5F570032CA98 /* NSArray+WXRuntimePropertyDescriptor.m */; };
-		23D38DD0211C5F570032CA98 /* NSData+WXDebugger.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D38D63211C5F570032CA98 /* NSData+WXDebugger.m */; };
-		23D38DD1211C5F570032CA98 /* NSDictionary+WXRuntimePropertyDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D38D67211C5F570032CA98 /* NSDictionary+WXRuntimePropertyDescriptor.m */; };
-		23D38DD2211C5F570032CA98 /* WXObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D38D6D211C5F570032CA98 /* WXObject.m */; };
-		23D38DD3211C5F570032CA98 /* NSManagedObject+WXRuntimePropertyDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D38D71211C5F570032CA98 /* NSManagedObject+WXRuntimePropertyDescriptor.m */; };
-		23D38DD4211C5F570032CA98 /* WXContainerIndex.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D38D72211C5F570032CA98 /* WXContainerIndex.m */; };
-		23D38DD5211C5F570032CA98 /* WXRuntimeDomainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D38D76211C5F570032CA98 /* WXRuntimeDomainController.m */; };
-		23D38DD6211C5F570032CA98 /* WXDebuggerUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D38D77211C5F570032CA98 /* WXDebuggerUtility.m */; };
-		23D38DD7211C5F570032CA98 /* NSObject+WXRuntimePropertyDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D38D79211C5F570032CA98 /* NSObject+WXRuntimePropertyDescriptor.m */; };
-		23D38DD8211C5F570032CA98 /* NSArray+WX_JSONObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D38D7A211C5F570032CA98 /* NSArray+WX_JSONObject.m */; };
-		23D38DD9211C5F570032CA98 /* WXPageDomainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D38D7B211C5F570032CA98 /* WXPageDomainController.m */; };
-		23D38DDA211C5F570032CA98 /* WXDynamicDebuggerDomain.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D38D7C211C5F570032CA98 /* WXDynamicDebuggerDomain.m */; };
-		23D38DDB211C5F570032CA98 /* NSSet+WXRuntimePropertyDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D38D7F211C5F570032CA98 /* NSSet+WXRuntimePropertyDescriptor.m */; };
-		23D38DDC211C5F570032CA98 /* WXDOMDomainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D38D80211C5F570032CA98 /* WXDOMDomainController.m */; };
-		23D38DDD211C5F570032CA98 /* WXIndexedDBDomainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D38D81211C5F570032CA98 /* WXIndexedDBDomainController.m */; };
-		23D38DDE211C5F570032CA98 /* WXConsoleDomainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D38D82211C5F570032CA98 /* WXConsoleDomainController.m */; };
-		23D38DDF211C5F570032CA98 /* WXPrettyStringPrinter.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D38D84211C5F570032CA98 /* WXPrettyStringPrinter.m */; };
-		23D38DE0211C5F570032CA98 /* WXNetworkDomainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D38D85211C5F570032CA98 /* WXNetworkDomainController.m */; };
-		23D38DE1211C5F570032CA98 /* WXDomainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D38D87211C5F570032CA98 /* WXDomainController.m */; };
-		23D38DE2211C5F570032CA98 /* WXDebugger.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D38D88211C5F570032CA98 /* WXDebugger.m */; };
-		23D38DE3211C5F570032CA98 /* WXDebugDomainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D38D89211C5F570032CA98 /* WXDebugDomainController.m */; };
-		23D38DE4211C5F570032CA98 /* WXDeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D38D8A211C5F570032CA98 /* WXDeviceInfo.m */; };
-		23D38DE5211C5F570032CA98 /* NSError+WX_JSONObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D38D8C211C5F570032CA98 /* NSError+WX_JSONObject.m */; };
-		23D38DE6211C5F570032CA98 /* NSDate+WX_JSONObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D38D8D211C5F570032CA98 /* NSDate+WX_JSONObject.m */; };
-		23D38DE7211C5F570032CA98 /* WXDevToolType.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D38D8E211C5F570032CA98 /* WXDevToolType.m */; };
-		23D38DE8211C5F570032CA98 /* NSOrderedSet+WXRuntimePropertyDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D38D8F211C5F570032CA98 /* NSOrderedSet+WXRuntimePropertyDescriptor.m */; };
-		23D38DE9211C5F570032CA98 /* WXInspectorDomainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D38D90211C5F570032CA98 /* WXInspectorDomainController.m */; };
-		23D38DEA211C5F570032CA98 /* NSDate+WXDebugger.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D38D94211C5F570032CA98 /* NSDate+WXDebugger.m */; };
-		23D38DEB211C5F570032CA98 /* WXCSSDomainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D38D95211C5F570032CA98 /* WXCSSDomainController.m */; };
-		23D38DEC211C5F570032CA98 /* WXDefinitions.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D38D99211C5F570032CA98 /* WXDefinitions.m */; };
-		23D38DED211C5F570032CA98 /* WXNetworkTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D38D9E211C5F570032CA98 /* WXNetworkTransaction.m */; };
-		23D38DEE211C5F570032CA98 /* WXNetworkRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D38DA0211C5F570032CA98 /* WXNetworkRecorder.m */; };
-		23D38DEF211C5F570032CA98 /* WXTracingUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D38DA1211C5F570032CA98 /* WXTracingUtility.m */; };
-		23D38DF0211C5F570032CA98 /* WXResources.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D38DA5211C5F570032CA98 /* WXResources.m */; };
-		23D38DF7211D7AEF0032CA98 /* fuck_weex.js in Resources */ = {isa = PBXBuildFile; fileRef = 23D38DF6211D7AEF0032CA98 /* fuck_weex.js */; };
+		239D85BF2154E69700BEA2F2 /* DragView.m in Sources */ = {isa = PBXBuildFile; fileRef = 239D85BE2154E69700BEA2F2 /* DragView.m */; };
 		23DDDE032108581F00CA9B92 /* UIImage+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = 23DDDE022108581F00CA9B92 /* UIImage+Color.m */; };
 		23DDDE062108584700CA9B92 /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 23DDDE052108584700CA9B92 /* NSString+Extension.m */; };
+		23F44CF222E05FA900CEE70C /* fuck_weex.js in Resources */ = {isa = PBXBuildFile; fileRef = 23F44CF122E05FA800CEE70C /* fuck_weex.js */; };
+		23F44D0222E1A13500CEE70C /* DCFrameView.m in Sources */ = {isa = PBXBuildFile; fileRef = 23F44CF622E1A13500CEE70C /* DCFrameView.m */; };
+		23F44D0322E1A13500CEE70C /* DCTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 23F44CF722E1A13500CEE70C /* DCTextView.m */; };
+		23F44D0422E1A13500CEE70C /* DCIntrospect.m in Sources */ = {isa = PBXBuildFile; fileRef = 23F44CF822E1A13500CEE70C /* DCIntrospect.m */; };
+		23F44D0522E1A13500CEE70C /* DCStatusBarOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 23F44CFC22E1A13500CEE70C /* DCStatusBarOverlay.m */; };
+		23F44D0622E1A13500CEE70C /* UIView+DCAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 23F44CFD22E1A13500CEE70C /* UIView+DCAdditions.m */; };
+		23F44D0722E1A13500CEE70C /* DCCrossHairView.m in Sources */ = {isa = PBXBuildFile; fileRef = 23F44D0122E1A13500CEE70C /* DCCrossHairView.m */; };
+		23F7E4552154D8AE00E19CB1 /* DragableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23F7E4542154D8AE00E19CB1 /* DragableViewController.m */; };
 		7138754C1EF2673D0093BE11 /* fontello.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7138754B1EF2673D0093BE11 /* fontello.ttf */; };
 		713875511EF2758F0093BE11 /* BiliIconFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 713875501EF2758F0093BE11 /* BiliIconFont.m */; };
 		713875551EF27F110093BE11 /* UILabel+BiliIconFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 713875541EF27F110093BE11 /* UILabel+BiliIconFont.m */; };
@@ -174,19 +100,6 @@
 		2337DA671FB1D6A3008D480F /* birth.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = birth.json; sourceTree = "<group>"; };
 		2337DA6A1FB1E780008D480F /* bell2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = bell2.json; sourceTree = "<group>"; };
 		234B705C465687C689077428 /* Pods-AnimationDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimationDemo.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-AnimationDemo/Pods-AnimationDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		234C77A21FFF779100E585AF /* DCFrameView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCFrameView.m; sourceTree = "<group>"; };
-		234C77A31FFF779100E585AF /* DCStatusBarOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCStatusBarOverlay.m; sourceTree = "<group>"; };
-		234C77A41FFF779100E585AF /* DCCrossHairView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCCrossHairView.m; sourceTree = "<group>"; };
-		234C77A51FFF779100E585AF /* DCFrameView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCFrameView.h; sourceTree = "<group>"; };
-		234C77A61FFF779100E585AF /* DCIntrospect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCIntrospect.m; sourceTree = "<group>"; };
-		234C77A71FFF779200E585AF /* DCIntrospectSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCIntrospectSettings.h; sourceTree = "<group>"; };
-		234C77A81FFF779200E585AF /* UIView+DCAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+DCAdditions.h"; sourceTree = "<group>"; };
-		234C77A91FFF779200E585AF /* DCTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCTextView.h; sourceTree = "<group>"; };
-		234C77AA1FFF779200E585AF /* DCTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCTextView.m; sourceTree = "<group>"; };
-		234C77AB1FFF779200E585AF /* DCIntrospect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCIntrospect.h; sourceTree = "<group>"; };
-		234C77AC1FFF779200E585AF /* UIView+DCAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+DCAdditions.m"; sourceTree = "<group>"; };
-		234C77AD1FFF779200E585AF /* DCStatusBarOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCStatusBarOverlay.h; sourceTree = "<group>"; };
-		234C77AE1FFF779200E585AF /* DCCrossHairView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCCrossHairView.h; sourceTree = "<group>"; };
 		236496C420AC298C00502F74 /* AMOrderContainerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMOrderContainerView.h; sourceTree = "<group>"; };
 		236496C520AC298C00502F74 /* AMOrderContainerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMOrderContainerView.m; sourceTree = "<group>"; };
 		236496C720AC29A400502F74 /* AMOrderItemView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMOrderItemView.h; sourceTree = "<group>"; };
@@ -198,166 +111,29 @@
 		237552E220DDFB430032607E /* SpeechViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SpeechViewController.h; path = Controllers/SpeechViewController.h; sourceTree = "<group>"; };
 		237552E320DDFB430032607E /* SpeechViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SpeechViewController.m; path = Controllers/SpeechViewController.m; sourceTree = "<group>"; };
 		237552E520DDFBF10032607E /* Speech.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Speech.framework; path = System/Library/Frameworks/Speech.framework; sourceTree = SDKROOT; };
-		237D0FD5211C1F8E006911BA /* MyWeexViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MyWeexViewController.h; path = Controllers/MyWeexViewController.h; sourceTree = "<group>"; };
-		237D0FD6211C1F8E006911BA /* MyWeexViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MyWeexViewController.m; path = Controllers/MyWeexViewController.m; sourceTree = "<group>"; };
+		239D85BD2154E69700BEA2F2 /* DragView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DragView.h; sourceTree = "<group>"; };
+		239D85BE2154E69700BEA2F2 /* DragView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DragView.m; sourceTree = "<group>"; };
 		23D38D06211C254B0032CA98 /* ViewControllers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewControllers.h; path = Headers/ViewControllers.h; sourceTree = "<group>"; };
-		23D38D09211C5F570032CA98 /* WXCSSTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXCSSTypes.h; sourceTree = "<group>"; };
-		23D38D0A211C5F570032CA98 /* WXIndexedDBTypes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXIndexedDBTypes.m; sourceTree = "<group>"; };
-		23D38D0B211C5F570032CA98 /* WXFileSystemDomain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXFileSystemDomain.h; sourceTree = "<group>"; };
-		23D38D0C211C5F570032CA98 /* WXApplicationCacheTypes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXApplicationCacheTypes.m; sourceTree = "<group>"; };
-		23D38D0D211C5F570032CA98 /* WXInspectorDomain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXInspectorDomain.h; sourceTree = "<group>"; };
-		23D38D0E211C5F570032CA98 /* WXDebugDomain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXDebugDomain.m; sourceTree = "<group>"; };
-		23D38D0F211C5F570032CA98 /* WXDOMTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXDOMTypes.h; sourceTree = "<group>"; };
-		23D38D10211C5F570032CA98 /* WXDatabaseTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXDatabaseTypes.h; sourceTree = "<group>"; };
-		23D38D11211C5F570032CA98 /* WXMemoryDomain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXMemoryDomain.h; sourceTree = "<group>"; };
-		23D38D12211C5F570032CA98 /* WXWebGLDomain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXWebGLDomain.m; sourceTree = "<group>"; };
-		23D38D13211C5F570032CA98 /* WXApplicationCacheDomain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApplicationCacheDomain.h; sourceTree = "<group>"; };
-		23D38D14211C5F570032CA98 /* WXNetworkTypes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXNetworkTypes.m; sourceTree = "<group>"; };
-		23D38D15211C5F570032CA98 /* WXPageDomain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXPageDomain.h; sourceTree = "<group>"; };
-		23D38D16211C5F570032CA98 /* WXIndexedDBDomain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXIndexedDBDomain.m; sourceTree = "<group>"; };
-		23D38D17211C5F570032CA98 /* WXTimelineDomainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXTimelineDomainController.h; sourceTree = "<group>"; };
-		23D38D18211C5F570032CA98 /* WXMemoryTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXMemoryTypes.h; sourceTree = "<group>"; };
-		23D38D19211C5F570032CA98 /* WXTimelineTypes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXTimelineTypes.m; sourceTree = "<group>"; };
-		23D38D1A211C5F570032CA98 /* WXRuntimeDomain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXRuntimeDomain.h; sourceTree = "<group>"; };
-		23D38D1B211C5F570032CA98 /* WXNetworkDomain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXNetworkDomain.m; sourceTree = "<group>"; };
-		23D38D1C211C5F570032CA98 /* WXWorkerDomain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXWorkerDomain.h; sourceTree = "<group>"; };
-		23D38D1D211C5F570032CA98 /* WXPageTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXPageTypes.h; sourceTree = "<group>"; };
-		23D38D1E211C5F570032CA98 /* WXConsoleTypes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXConsoleTypes.m; sourceTree = "<group>"; };
-		23D38D1F211C5F570032CA98 /* WXDebuggerDomain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXDebuggerDomain.h; sourceTree = "<group>"; };
-		23D38D20211C5F570032CA98 /* WXDOMDebuggerDomain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXDOMDebuggerDomain.m; sourceTree = "<group>"; };
-		23D38D21211C5F570032CA98 /* WXWebGLTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXWebGLTypes.h; sourceTree = "<group>"; };
-		23D38D22211C5F570032CA98 /* WXDatabaseDomain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXDatabaseDomain.m; sourceTree = "<group>"; };
-		23D38D23211C5F570032CA98 /* WXProfilerTypes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXProfilerTypes.m; sourceTree = "<group>"; };
-		23D38D24211C5F570032CA98 /* WXTimelineDomain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXTimelineDomain.m; sourceTree = "<group>"; };
-		23D38D25211C5F570032CA98 /* WXDOMStorageTypes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXDOMStorageTypes.m; sourceTree = "<group>"; };
-		23D38D26211C5F570032CA98 /* WXPageDomainUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXPageDomainUtility.h; sourceTree = "<group>"; };
-		23D38D27211C5F570032CA98 /* WXProfilerDomain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXProfilerDomain.m; sourceTree = "<group>"; };
-		23D38D28211C5F570032CA98 /* WXRuntimeTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXRuntimeTypes.h; sourceTree = "<group>"; };
-		23D38D29211C5F570032CA98 /* WXDebuggerTypes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXDebuggerTypes.m; sourceTree = "<group>"; };
-		23D38D2A211C5F570032CA98 /* WXConsoleDomain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXConsoleDomain.m; sourceTree = "<group>"; };
-		23D38D2B211C5F570032CA98 /* WXDOMStorageDomain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXDOMStorageDomain.m; sourceTree = "<group>"; };
-		23D38D2C211C5F570032CA98 /* WXCSSDomain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXCSSDomain.m; sourceTree = "<group>"; };
-		23D38D2D211C5F570032CA98 /* WXProfilerDomainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXProfilerDomainController.m; sourceTree = "<group>"; };
-		23D38D2E211C5F570032CA98 /* WXFileSystemTypes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXFileSystemTypes.m; sourceTree = "<group>"; };
-		23D38D2F211C5F570032CA98 /* WXDOMDomain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXDOMDomain.h; sourceTree = "<group>"; };
-		23D38D30211C5F570032CA98 /* WXInspectorDomain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXInspectorDomain.m; sourceTree = "<group>"; };
-		23D38D31211C5F570032CA98 /* WXApplicationCacheTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApplicationCacheTypes.h; sourceTree = "<group>"; };
-		23D38D32211C5F570032CA98 /* WXIndexedDBTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXIndexedDBTypes.h; sourceTree = "<group>"; };
-		23D38D33211C5F570032CA98 /* WXFileSystemDomain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXFileSystemDomain.m; sourceTree = "<group>"; };
-		23D38D34211C5F570032CA98 /* WXCSSTypes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXCSSTypes.m; sourceTree = "<group>"; };
-		23D38D35211C5F570032CA98 /* WXTimelineDomainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXTimelineDomainController.m; sourceTree = "<group>"; };
-		23D38D36211C5F570032CA98 /* WXIndexedDBDomain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXIndexedDBDomain.h; sourceTree = "<group>"; };
-		23D38D37211C5F570032CA98 /* WXNetworkTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXNetworkTypes.h; sourceTree = "<group>"; };
-		23D38D38211C5F570032CA98 /* WXPageDomain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXPageDomain.m; sourceTree = "<group>"; };
-		23D38D39211C5F570032CA98 /* WXApplicationCacheDomain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXApplicationCacheDomain.m; sourceTree = "<group>"; };
-		23D38D3A211C5F570032CA98 /* WXWebGLDomain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXWebGLDomain.h; sourceTree = "<group>"; };
-		23D38D3B211C5F570032CA98 /* WXMemoryDomain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXMemoryDomain.m; sourceTree = "<group>"; };
-		23D38D3C211C5F570032CA98 /* WXDatabaseTypes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXDatabaseTypes.m; sourceTree = "<group>"; };
-		23D38D3D211C5F570032CA98 /* WXDOMTypes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXDOMTypes.m; sourceTree = "<group>"; };
-		23D38D3E211C5F570032CA98 /* WXDebugDomain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXDebugDomain.h; sourceTree = "<group>"; };
-		23D38D3F211C5F570032CA98 /* WXDatabaseDomain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXDatabaseDomain.h; sourceTree = "<group>"; };
-		23D38D40211C5F570032CA98 /* WXProfilerTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXProfilerTypes.h; sourceTree = "<group>"; };
-		23D38D41211C5F570032CA98 /* WXWebGLTypes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXWebGLTypes.m; sourceTree = "<group>"; };
-		23D38D42211C5F570032CA98 /* WXDOMDebuggerDomain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXDOMDebuggerDomain.h; sourceTree = "<group>"; };
-		23D38D43211C5F570032CA98 /* WXDebuggerDomain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXDebuggerDomain.m; sourceTree = "<group>"; };
-		23D38D44211C5F570032CA98 /* WXConsoleTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXConsoleTypes.h; sourceTree = "<group>"; };
-		23D38D45211C5F570032CA98 /* WXPageTypes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXPageTypes.m; sourceTree = "<group>"; };
-		23D38D46211C5F570032CA98 /* WXWorkerDomain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXWorkerDomain.m; sourceTree = "<group>"; };
-		23D38D47211C5F570032CA98 /* WXNetworkDomain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXNetworkDomain.h; sourceTree = "<group>"; };
-		23D38D48211C5F570032CA98 /* WXRuntimeDomain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXRuntimeDomain.m; sourceTree = "<group>"; };
-		23D38D49211C5F570032CA98 /* WXTimelineTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXTimelineTypes.h; sourceTree = "<group>"; };
-		23D38D4A211C5F570032CA98 /* WXMemoryTypes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXMemoryTypes.m; sourceTree = "<group>"; };
-		23D38D4B211C5F570032CA98 /* WXDOMDomain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXDOMDomain.m; sourceTree = "<group>"; };
-		23D38D4C211C5F570032CA98 /* WXProfilerDomainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXProfilerDomainController.h; sourceTree = "<group>"; };
-		23D38D4D211C5F570032CA98 /* WXFileSystemTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXFileSystemTypes.h; sourceTree = "<group>"; };
-		23D38D4E211C5F570032CA98 /* WXCSSDomain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXCSSDomain.h; sourceTree = "<group>"; };
-		23D38D4F211C5F570032CA98 /* WXConsoleDomain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXConsoleDomain.h; sourceTree = "<group>"; };
-		23D38D50211C5F570032CA98 /* WXDOMStorageDomain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXDOMStorageDomain.h; sourceTree = "<group>"; };
-		23D38D51211C5F570032CA98 /* WXDebuggerTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXDebuggerTypes.h; sourceTree = "<group>"; };
-		23D38D52211C5F570032CA98 /* WXProfilerDomain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXProfilerDomain.h; sourceTree = "<group>"; };
-		23D38D53211C5F570032CA98 /* WXRuntimeTypes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXRuntimeTypes.m; sourceTree = "<group>"; };
-		23D38D54211C5F570032CA98 /* WXPageDomainUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXPageDomainUtility.m; sourceTree = "<group>"; };
-		23D38D55211C5F570032CA98 /* WXDOMStorageTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXDOMStorageTypes.h; sourceTree = "<group>"; };
-		23D38D56211C5F570032CA98 /* WXTimelineDomain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXTimelineDomain.h; sourceTree = "<group>"; };
-		23D38D58211C5F570032CA98 /* TBWXDevTool.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBWXDevTool.pch; sourceTree = "<group>"; };
-		23D38D5A211C5F570032CA98 /* WXDevTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXDevTool.m; sourceTree = "<group>"; };
-		23D38D5B211C5F570032CA98 /* WXDevTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXDevTool.h; sourceTree = "<group>"; };
-		23D38D5D211C5F570032CA98 /* WXConsoleDomainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXConsoleDomainController.h; sourceTree = "<group>"; };
-		23D38D5E211C5F570032CA98 /* WXSourceDebuggerDomainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXSourceDebuggerDomainController.m; sourceTree = "<group>"; };
-		23D38D5F211C5F570032CA98 /* WXIndexedDBDomainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXIndexedDBDomainController.h; sourceTree = "<group>"; };
-		23D38D60211C5F570032CA98 /* WXDOMDomainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXDOMDomainController.h; sourceTree = "<group>"; };
-		23D38D61211C5F570032CA98 /* NSSet+WXRuntimePropertyDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSSet+WXRuntimePropertyDescriptor.h"; sourceTree = "<group>"; };
-		23D38D62211C5F570032CA98 /* NSArray+WXRuntimePropertyDescriptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+WXRuntimePropertyDescriptor.m"; sourceTree = "<group>"; };
-		23D38D63211C5F570032CA98 /* NSData+WXDebugger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+WXDebugger.m"; sourceTree = "<group>"; };
-		23D38D64211C5F570032CA98 /* WXDynamicDebuggerDomain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXDynamicDebuggerDomain.h; sourceTree = "<group>"; };
-		23D38D65211C5F570032CA98 /* NSDate+WX_JSONObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+WX_JSONObject.h"; sourceTree = "<group>"; };
-		23D38D66211C5F570032CA98 /* NSError+WX_JSONObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+WX_JSONObject.h"; sourceTree = "<group>"; };
-		23D38D67211C5F570032CA98 /* NSDictionary+WXRuntimePropertyDescriptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+WXRuntimePropertyDescriptor.m"; sourceTree = "<group>"; };
-		23D38D68211C5F570032CA98 /* WXDeviceInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXDeviceInfo.h; sourceTree = "<group>"; };
-		23D38D69211C5F570032CA98 /* WXDebugDomainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXDebugDomainController.h; sourceTree = "<group>"; };
-		23D38D6A211C5F570032CA98 /* WXDebugger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXDebugger.h; sourceTree = "<group>"; };
-		23D38D6B211C5F570032CA98 /* WXDomainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXDomainController.h; sourceTree = "<group>"; };
-		23D38D6C211C5F570032CA98 /* WXNetworkDomainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXNetworkDomainController.h; sourceTree = "<group>"; };
-		23D38D6D211C5F570032CA98 /* WXObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXObject.m; sourceTree = "<group>"; };
-		23D38D6E211C5F570032CA98 /* WXPrettyStringPrinter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXPrettyStringPrinter.h; sourceTree = "<group>"; };
-		23D38D6F211C5F570032CA98 /* WXCSSDomainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXCSSDomainController.h; sourceTree = "<group>"; };
-		23D38D70211C5F570032CA98 /* NSDate+WXDebugger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+WXDebugger.h"; sourceTree = "<group>"; };
-		23D38D71211C5F570032CA98 /* NSManagedObject+WXRuntimePropertyDescriptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObject+WXRuntimePropertyDescriptor.m"; sourceTree = "<group>"; };
-		23D38D72211C5F570032CA98 /* WXContainerIndex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXContainerIndex.m; sourceTree = "<group>"; };
-		23D38D73211C5F570032CA98 /* WXInspectorDomainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXInspectorDomainController.h; sourceTree = "<group>"; };
-		23D38D74211C5F570032CA98 /* NSOrderedSet+WXRuntimePropertyDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSOrderedSet+WXRuntimePropertyDescriptor.h"; sourceTree = "<group>"; };
-		23D38D75211C5F570032CA98 /* WXDevToolType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXDevToolType.h; sourceTree = "<group>"; };
-		23D38D76211C5F570032CA98 /* WXRuntimeDomainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXRuntimeDomainController.m; sourceTree = "<group>"; };
-		23D38D77211C5F570032CA98 /* WXDebuggerUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXDebuggerUtility.m; sourceTree = "<group>"; };
-		23D38D78211C5F570032CA98 /* WXDefinitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXDefinitions.h; sourceTree = "<group>"; };
-		23D38D79211C5F570032CA98 /* NSObject+WXRuntimePropertyDescriptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+WXRuntimePropertyDescriptor.m"; sourceTree = "<group>"; };
-		23D38D7A211C5F570032CA98 /* NSArray+WX_JSONObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+WX_JSONObject.m"; sourceTree = "<group>"; };
-		23D38D7B211C5F570032CA98 /* WXPageDomainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXPageDomainController.m; sourceTree = "<group>"; };
-		23D38D7C211C5F570032CA98 /* WXDynamicDebuggerDomain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXDynamicDebuggerDomain.m; sourceTree = "<group>"; };
-		23D38D7D211C5F570032CA98 /* NSData+WXDebugger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+WXDebugger.h"; sourceTree = "<group>"; };
-		23D38D7E211C5F570032CA98 /* NSArray+WXRuntimePropertyDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+WXRuntimePropertyDescriptor.h"; sourceTree = "<group>"; };
-		23D38D7F211C5F570032CA98 /* NSSet+WXRuntimePropertyDescriptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSSet+WXRuntimePropertyDescriptor.m"; sourceTree = "<group>"; };
-		23D38D80211C5F570032CA98 /* WXDOMDomainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXDOMDomainController.m; sourceTree = "<group>"; };
-		23D38D81211C5F570032CA98 /* WXIndexedDBDomainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXIndexedDBDomainController.m; sourceTree = "<group>"; };
-		23D38D82211C5F570032CA98 /* WXConsoleDomainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXConsoleDomainController.m; sourceTree = "<group>"; };
-		23D38D83211C5F570032CA98 /* WXSourceDebuggerDomainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXSourceDebuggerDomainController.h; sourceTree = "<group>"; };
-		23D38D84211C5F570032CA98 /* WXPrettyStringPrinter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXPrettyStringPrinter.m; sourceTree = "<group>"; };
-		23D38D85211C5F570032CA98 /* WXNetworkDomainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXNetworkDomainController.m; sourceTree = "<group>"; };
-		23D38D86211C5F570032CA98 /* WXObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXObject.h; sourceTree = "<group>"; };
-		23D38D87211C5F570032CA98 /* WXDomainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXDomainController.m; sourceTree = "<group>"; };
-		23D38D88211C5F570032CA98 /* WXDebugger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXDebugger.m; sourceTree = "<group>"; };
-		23D38D89211C5F570032CA98 /* WXDebugDomainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXDebugDomainController.m; sourceTree = "<group>"; };
-		23D38D8A211C5F570032CA98 /* WXDeviceInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXDeviceInfo.m; sourceTree = "<group>"; };
-		23D38D8B211C5F570032CA98 /* NSDictionary+WXRuntimePropertyDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+WXRuntimePropertyDescriptor.h"; sourceTree = "<group>"; };
-		23D38D8C211C5F570032CA98 /* NSError+WX_JSONObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+WX_JSONObject.m"; sourceTree = "<group>"; };
-		23D38D8D211C5F570032CA98 /* NSDate+WX_JSONObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+WX_JSONObject.m"; sourceTree = "<group>"; };
-		23D38D8E211C5F570032CA98 /* WXDevToolType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXDevToolType.m; sourceTree = "<group>"; };
-		23D38D8F211C5F570032CA98 /* NSOrderedSet+WXRuntimePropertyDescriptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSOrderedSet+WXRuntimePropertyDescriptor.m"; sourceTree = "<group>"; };
-		23D38D90211C5F570032CA98 /* WXInspectorDomainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXInspectorDomainController.m; sourceTree = "<group>"; };
-		23D38D91211C5F570032CA98 /* WXContainerIndex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXContainerIndex.h; sourceTree = "<group>"; };
-		23D38D92211C5F570032CA98 /* WXPonyDebugger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXPonyDebugger.h; sourceTree = "<group>"; };
-		23D38D93211C5F570032CA98 /* NSManagedObject+WXRuntimePropertyDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObject+WXRuntimePropertyDescriptor.h"; sourceTree = "<group>"; };
-		23D38D94211C5F570032CA98 /* NSDate+WXDebugger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+WXDebugger.m"; sourceTree = "<group>"; };
-		23D38D95211C5F570032CA98 /* WXCSSDomainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXCSSDomainController.m; sourceTree = "<group>"; };
-		23D38D96211C5F570032CA98 /* WXPageDomainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXPageDomainController.h; sourceTree = "<group>"; };
-		23D38D97211C5F570032CA98 /* NSArray+WX_JSONObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+WX_JSONObject.h"; sourceTree = "<group>"; };
-		23D38D98211C5F570032CA98 /* NSObject+WXRuntimePropertyDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+WXRuntimePropertyDescriptor.h"; sourceTree = "<group>"; };
-		23D38D99211C5F570032CA98 /* WXDefinitions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXDefinitions.m; sourceTree = "<group>"; };
-		23D38D9A211C5F570032CA98 /* WXDebuggerUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXDebuggerUtility.h; sourceTree = "<group>"; };
-		23D38D9B211C5F570032CA98 /* WXRuntimeDomainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXRuntimeDomainController.h; sourceTree = "<group>"; };
-		23D38D9E211C5F570032CA98 /* WXNetworkTransaction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXNetworkTransaction.m; sourceTree = "<group>"; };
-		23D38D9F211C5F570032CA98 /* WXResources.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXResources.h; sourceTree = "<group>"; };
-		23D38DA0211C5F570032CA98 /* WXNetworkRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXNetworkRecorder.m; sourceTree = "<group>"; };
-		23D38DA1211C5F570032CA98 /* WXTracingUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXTracingUtility.m; sourceTree = "<group>"; };
-		23D38DA2211C5F570032CA98 /* WXNetworkTransaction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXNetworkTransaction.h; sourceTree = "<group>"; };
-		23D38DA3211C5F570032CA98 /* WXTracingUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXTracingUtility.h; sourceTree = "<group>"; };
-		23D38DA4211C5F570032CA98 /* WXNetworkRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXNetworkRecorder.h; sourceTree = "<group>"; };
-		23D38DA5211C5F570032CA98 /* WXResources.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXResources.m; sourceTree = "<group>"; };
-		23D38DF6211D7AEF0032CA98 /* fuck_weex.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = fuck_weex.js; sourceTree = "<group>"; };
 		23DDDE012108581F00CA9B92 /* UIImage+Color.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "UIImage+Color.h"; path = "Catagories/UIImage+Color.h"; sourceTree = "<group>"; };
 		23DDDE022108581F00CA9B92 /* UIImage+Color.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Color.m"; path = "Catagories/UIImage+Color.m"; sourceTree = "<group>"; };
 		23DDDE042108584700CA9B92 /* NSString+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+Extension.h"; path = "Catagories/NSString+Extension.h"; sourceTree = "<group>"; };
 		23DDDE052108584700CA9B92 /* NSString+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+Extension.m"; path = "Catagories/NSString+Extension.m"; sourceTree = "<group>"; };
+		23F44CF122E05FA800CEE70C /* fuck_weex.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = fuck_weex.js; path = FRAnimation/Resources/fuck_weex.js; sourceTree = SOURCE_ROOT; };
+		23F44CF522E1A13500CEE70C /* DCStatusBarOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCStatusBarOverlay.h; sourceTree = "<group>"; };
+		23F44CF622E1A13500CEE70C /* DCFrameView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCFrameView.m; sourceTree = "<group>"; };
+		23F44CF722E1A13500CEE70C /* DCTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCTextView.m; sourceTree = "<group>"; };
+		23F44CF822E1A13500CEE70C /* DCIntrospect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCIntrospect.m; sourceTree = "<group>"; };
+		23F44CF922E1A13500CEE70C /* DCIntrospectSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCIntrospectSettings.h; sourceTree = "<group>"; };
+		23F44CFA22E1A13500CEE70C /* UIView+DCAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+DCAdditions.h"; sourceTree = "<group>"; };
+		23F44CFB22E1A13500CEE70C /* DCCrossHairView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCCrossHairView.h; sourceTree = "<group>"; };
+		23F44CFC22E1A13500CEE70C /* DCStatusBarOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCStatusBarOverlay.m; sourceTree = "<group>"; };
+		23F44CFD22E1A13500CEE70C /* UIView+DCAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+DCAdditions.m"; sourceTree = "<group>"; };
+		23F44CFE22E1A13500CEE70C /* DCIntrospect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCIntrospect.h; sourceTree = "<group>"; };
+		23F44CFF22E1A13500CEE70C /* DCTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCTextView.h; sourceTree = "<group>"; };
+		23F44D0022E1A13500CEE70C /* DCFrameView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCFrameView.h; sourceTree = "<group>"; };
+		23F44D0122E1A13500CEE70C /* DCCrossHairView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCCrossHairView.m; sourceTree = "<group>"; };
+		23F7E4532154D8AE00E19CB1 /* DragableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DragableViewController.h; path = Controllers/DragableViewController.h; sourceTree = "<group>"; };
+		23F7E4542154D8AE00E19CB1 /* DragableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = DragableViewController.m; path = Controllers/DragableViewController.m; sourceTree = "<group>"; };
 		713875491EF2601E0093BE11 /* Demo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Demo-Prefix.pch"; sourceTree = "<group>"; };
 		7138754B1EF2673D0093BE11 /* fontello.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = fontello.ttf; sourceTree = "<group>"; };
 		7138754F1EF2758F0093BE11 /* BiliIconFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BiliIconFont.h; path = IconFont/BiliIconFont.h; sourceTree = "<group>"; };
@@ -439,35 +215,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		234C779B1FFF745500E585AF /* Vendor */ = {
-			isa = PBXGroup;
-			children = (
-				23D38D07211C5F570032CA98 /* WXDevTool */,
-				234C77A11FFF774C00E585AF /* DCIntrospect */,
-			);
-			path = Vendor;
-			sourceTree = "<group>";
-		};
-		234C77A11FFF774C00E585AF /* DCIntrospect */ = {
-			isa = PBXGroup;
-			children = (
-				234C77AE1FFF779200E585AF /* DCCrossHairView.h */,
-				234C77A41FFF779100E585AF /* DCCrossHairView.m */,
-				234C77A51FFF779100E585AF /* DCFrameView.h */,
-				234C77A21FFF779100E585AF /* DCFrameView.m */,
-				234C77AB1FFF779200E585AF /* DCIntrospect.h */,
-				234C77A61FFF779100E585AF /* DCIntrospect.m */,
-				234C77A71FFF779200E585AF /* DCIntrospectSettings.h */,
-				234C77AD1FFF779200E585AF /* DCStatusBarOverlay.h */,
-				234C77A31FFF779100E585AF /* DCStatusBarOverlay.m */,
-				234C77A91FFF779200E585AF /* DCTextView.h */,
-				234C77AA1FFF779200E585AF /* DCTextView.m */,
-				234C77A81FFF779200E585AF /* UIView+DCAdditions.h */,
-				234C77AC1FFF779200E585AF /* UIView+DCAdditions.m */,
-			);
-			path = DCIntrospect;
-			sourceTree = "<group>";
-		};
 		236496C320AC28BC00502F74 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -475,223 +222,47 @@
 				236496C520AC298C00502F74 /* AMOrderContainerView.m */,
 				236496C720AC29A400502F74 /* AMOrderItemView.h */,
 				236496C820AC29A400502F74 /* AMOrderItemView.m */,
+				239D85BD2154E69700BEA2F2 /* DragView.h */,
+				239D85BE2154E69700BEA2F2 /* DragView.m */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		23D38D07211C5F570032CA98 /* WXDevTool */ = {
-			isa = PBXGroup;
-			children = (
-				23D38D08211C5F570032CA98 /* DerivedSources */,
-				23D38D57211C5F570032CA98 /* Supporting Files */,
-				23D38D59211C5F570032CA98 /* WXHeader */,
-				23D38D5C211C5F570032CA98 /* PonyDebugger */,
-				23D38D9C211C5F570032CA98 /* WXTracing */,
-			);
-			path = WXDevTool;
-			sourceTree = "<group>";
-		};
-		23D38D08211C5F570032CA98 /* DerivedSources */ = {
-			isa = PBXGroup;
-			children = (
-				23D38D09211C5F570032CA98 /* WXCSSTypes.h */,
-				23D38D0A211C5F570032CA98 /* WXIndexedDBTypes.m */,
-				23D38D0B211C5F570032CA98 /* WXFileSystemDomain.h */,
-				23D38D0C211C5F570032CA98 /* WXApplicationCacheTypes.m */,
-				23D38D0D211C5F570032CA98 /* WXInspectorDomain.h */,
-				23D38D0E211C5F570032CA98 /* WXDebugDomain.m */,
-				23D38D0F211C5F570032CA98 /* WXDOMTypes.h */,
-				23D38D10211C5F570032CA98 /* WXDatabaseTypes.h */,
-				23D38D11211C5F570032CA98 /* WXMemoryDomain.h */,
-				23D38D12211C5F570032CA98 /* WXWebGLDomain.m */,
-				23D38D13211C5F570032CA98 /* WXApplicationCacheDomain.h */,
-				23D38D14211C5F570032CA98 /* WXNetworkTypes.m */,
-				23D38D15211C5F570032CA98 /* WXPageDomain.h */,
-				23D38D16211C5F570032CA98 /* WXIndexedDBDomain.m */,
-				23D38D17211C5F570032CA98 /* WXTimelineDomainController.h */,
-				23D38D18211C5F570032CA98 /* WXMemoryTypes.h */,
-				23D38D19211C5F570032CA98 /* WXTimelineTypes.m */,
-				23D38D1A211C5F570032CA98 /* WXRuntimeDomain.h */,
-				23D38D1B211C5F570032CA98 /* WXNetworkDomain.m */,
-				23D38D1C211C5F570032CA98 /* WXWorkerDomain.h */,
-				23D38D1D211C5F570032CA98 /* WXPageTypes.h */,
-				23D38D1E211C5F570032CA98 /* WXConsoleTypes.m */,
-				23D38D1F211C5F570032CA98 /* WXDebuggerDomain.h */,
-				23D38D20211C5F570032CA98 /* WXDOMDebuggerDomain.m */,
-				23D38D21211C5F570032CA98 /* WXWebGLTypes.h */,
-				23D38D22211C5F570032CA98 /* WXDatabaseDomain.m */,
-				23D38D23211C5F570032CA98 /* WXProfilerTypes.m */,
-				23D38D24211C5F570032CA98 /* WXTimelineDomain.m */,
-				23D38D25211C5F570032CA98 /* WXDOMStorageTypes.m */,
-				23D38D26211C5F570032CA98 /* WXPageDomainUtility.h */,
-				23D38D27211C5F570032CA98 /* WXProfilerDomain.m */,
-				23D38D28211C5F570032CA98 /* WXRuntimeTypes.h */,
-				23D38D29211C5F570032CA98 /* WXDebuggerTypes.m */,
-				23D38D2A211C5F570032CA98 /* WXConsoleDomain.m */,
-				23D38D2B211C5F570032CA98 /* WXDOMStorageDomain.m */,
-				23D38D2C211C5F570032CA98 /* WXCSSDomain.m */,
-				23D38D2D211C5F570032CA98 /* WXProfilerDomainController.m */,
-				23D38D2E211C5F570032CA98 /* WXFileSystemTypes.m */,
-				23D38D2F211C5F570032CA98 /* WXDOMDomain.h */,
-				23D38D30211C5F570032CA98 /* WXInspectorDomain.m */,
-				23D38D31211C5F570032CA98 /* WXApplicationCacheTypes.h */,
-				23D38D32211C5F570032CA98 /* WXIndexedDBTypes.h */,
-				23D38D33211C5F570032CA98 /* WXFileSystemDomain.m */,
-				23D38D34211C5F570032CA98 /* WXCSSTypes.m */,
-				23D38D35211C5F570032CA98 /* WXTimelineDomainController.m */,
-				23D38D36211C5F570032CA98 /* WXIndexedDBDomain.h */,
-				23D38D37211C5F570032CA98 /* WXNetworkTypes.h */,
-				23D38D38211C5F570032CA98 /* WXPageDomain.m */,
-				23D38D39211C5F570032CA98 /* WXApplicationCacheDomain.m */,
-				23D38D3A211C5F570032CA98 /* WXWebGLDomain.h */,
-				23D38D3B211C5F570032CA98 /* WXMemoryDomain.m */,
-				23D38D3C211C5F570032CA98 /* WXDatabaseTypes.m */,
-				23D38D3D211C5F570032CA98 /* WXDOMTypes.m */,
-				23D38D3E211C5F570032CA98 /* WXDebugDomain.h */,
-				23D38D3F211C5F570032CA98 /* WXDatabaseDomain.h */,
-				23D38D40211C5F570032CA98 /* WXProfilerTypes.h */,
-				23D38D41211C5F570032CA98 /* WXWebGLTypes.m */,
-				23D38D42211C5F570032CA98 /* WXDOMDebuggerDomain.h */,
-				23D38D43211C5F570032CA98 /* WXDebuggerDomain.m */,
-				23D38D44211C5F570032CA98 /* WXConsoleTypes.h */,
-				23D38D45211C5F570032CA98 /* WXPageTypes.m */,
-				23D38D46211C5F570032CA98 /* WXWorkerDomain.m */,
-				23D38D47211C5F570032CA98 /* WXNetworkDomain.h */,
-				23D38D48211C5F570032CA98 /* WXRuntimeDomain.m */,
-				23D38D49211C5F570032CA98 /* WXTimelineTypes.h */,
-				23D38D4A211C5F570032CA98 /* WXMemoryTypes.m */,
-				23D38D4B211C5F570032CA98 /* WXDOMDomain.m */,
-				23D38D4C211C5F570032CA98 /* WXProfilerDomainController.h */,
-				23D38D4D211C5F570032CA98 /* WXFileSystemTypes.h */,
-				23D38D4E211C5F570032CA98 /* WXCSSDomain.h */,
-				23D38D4F211C5F570032CA98 /* WXConsoleDomain.h */,
-				23D38D50211C5F570032CA98 /* WXDOMStorageDomain.h */,
-				23D38D51211C5F570032CA98 /* WXDebuggerTypes.h */,
-				23D38D52211C5F570032CA98 /* WXProfilerDomain.h */,
-				23D38D53211C5F570032CA98 /* WXRuntimeTypes.m */,
-				23D38D54211C5F570032CA98 /* WXPageDomainUtility.m */,
-				23D38D55211C5F570032CA98 /* WXDOMStorageTypes.h */,
-				23D38D56211C5F570032CA98 /* WXTimelineDomain.h */,
-			);
-			path = DerivedSources;
-			sourceTree = "<group>";
-		};
-		23D38D57211C5F570032CA98 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				23D38D58211C5F570032CA98 /* TBWXDevTool.pch */,
-			);
-			path = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		23D38D59211C5F570032CA98 /* WXHeader */ = {
-			isa = PBXGroup;
-			children = (
-				23D38D5A211C5F570032CA98 /* WXDevTool.m */,
-				23D38D5B211C5F570032CA98 /* WXDevTool.h */,
-			);
-			path = WXHeader;
-			sourceTree = "<group>";
-		};
-		23D38D5C211C5F570032CA98 /* PonyDebugger */ = {
-			isa = PBXGroup;
-			children = (
-				23D38D5D211C5F570032CA98 /* WXConsoleDomainController.h */,
-				23D38D5E211C5F570032CA98 /* WXSourceDebuggerDomainController.m */,
-				23D38D5F211C5F570032CA98 /* WXIndexedDBDomainController.h */,
-				23D38D60211C5F570032CA98 /* WXDOMDomainController.h */,
-				23D38D61211C5F570032CA98 /* NSSet+WXRuntimePropertyDescriptor.h */,
-				23D38D62211C5F570032CA98 /* NSArray+WXRuntimePropertyDescriptor.m */,
-				23D38D63211C5F570032CA98 /* NSData+WXDebugger.m */,
-				23D38D64211C5F570032CA98 /* WXDynamicDebuggerDomain.h */,
-				23D38D65211C5F570032CA98 /* NSDate+WX_JSONObject.h */,
-				23D38D66211C5F570032CA98 /* NSError+WX_JSONObject.h */,
-				23D38D67211C5F570032CA98 /* NSDictionary+WXRuntimePropertyDescriptor.m */,
-				23D38D68211C5F570032CA98 /* WXDeviceInfo.h */,
-				23D38D69211C5F570032CA98 /* WXDebugDomainController.h */,
-				23D38D6A211C5F570032CA98 /* WXDebugger.h */,
-				23D38D6B211C5F570032CA98 /* WXDomainController.h */,
-				23D38D6C211C5F570032CA98 /* WXNetworkDomainController.h */,
-				23D38D6D211C5F570032CA98 /* WXObject.m */,
-				23D38D6E211C5F570032CA98 /* WXPrettyStringPrinter.h */,
-				23D38D6F211C5F570032CA98 /* WXCSSDomainController.h */,
-				23D38D70211C5F570032CA98 /* NSDate+WXDebugger.h */,
-				23D38D71211C5F570032CA98 /* NSManagedObject+WXRuntimePropertyDescriptor.m */,
-				23D38D72211C5F570032CA98 /* WXContainerIndex.m */,
-				23D38D73211C5F570032CA98 /* WXInspectorDomainController.h */,
-				23D38D74211C5F570032CA98 /* NSOrderedSet+WXRuntimePropertyDescriptor.h */,
-				23D38D75211C5F570032CA98 /* WXDevToolType.h */,
-				23D38D76211C5F570032CA98 /* WXRuntimeDomainController.m */,
-				23D38D77211C5F570032CA98 /* WXDebuggerUtility.m */,
-				23D38D78211C5F570032CA98 /* WXDefinitions.h */,
-				23D38D79211C5F570032CA98 /* NSObject+WXRuntimePropertyDescriptor.m */,
-				23D38D7A211C5F570032CA98 /* NSArray+WX_JSONObject.m */,
-				23D38D7B211C5F570032CA98 /* WXPageDomainController.m */,
-				23D38D7C211C5F570032CA98 /* WXDynamicDebuggerDomain.m */,
-				23D38D7D211C5F570032CA98 /* NSData+WXDebugger.h */,
-				23D38D7E211C5F570032CA98 /* NSArray+WXRuntimePropertyDescriptor.h */,
-				23D38D7F211C5F570032CA98 /* NSSet+WXRuntimePropertyDescriptor.m */,
-				23D38D80211C5F570032CA98 /* WXDOMDomainController.m */,
-				23D38D81211C5F570032CA98 /* WXIndexedDBDomainController.m */,
-				23D38D82211C5F570032CA98 /* WXConsoleDomainController.m */,
-				23D38D83211C5F570032CA98 /* WXSourceDebuggerDomainController.h */,
-				23D38D84211C5F570032CA98 /* WXPrettyStringPrinter.m */,
-				23D38D85211C5F570032CA98 /* WXNetworkDomainController.m */,
-				23D38D86211C5F570032CA98 /* WXObject.h */,
-				23D38D87211C5F570032CA98 /* WXDomainController.m */,
-				23D38D88211C5F570032CA98 /* WXDebugger.m */,
-				23D38D89211C5F570032CA98 /* WXDebugDomainController.m */,
-				23D38D8A211C5F570032CA98 /* WXDeviceInfo.m */,
-				23D38D8B211C5F570032CA98 /* NSDictionary+WXRuntimePropertyDescriptor.h */,
-				23D38D8C211C5F570032CA98 /* NSError+WX_JSONObject.m */,
-				23D38D8D211C5F570032CA98 /* NSDate+WX_JSONObject.m */,
-				23D38D8E211C5F570032CA98 /* WXDevToolType.m */,
-				23D38D8F211C5F570032CA98 /* NSOrderedSet+WXRuntimePropertyDescriptor.m */,
-				23D38D90211C5F570032CA98 /* WXInspectorDomainController.m */,
-				23D38D91211C5F570032CA98 /* WXContainerIndex.h */,
-				23D38D92211C5F570032CA98 /* WXPonyDebugger.h */,
-				23D38D93211C5F570032CA98 /* NSManagedObject+WXRuntimePropertyDescriptor.h */,
-				23D38D94211C5F570032CA98 /* NSDate+WXDebugger.m */,
-				23D38D95211C5F570032CA98 /* WXCSSDomainController.m */,
-				23D38D96211C5F570032CA98 /* WXPageDomainController.h */,
-				23D38D97211C5F570032CA98 /* NSArray+WX_JSONObject.h */,
-				23D38D98211C5F570032CA98 /* NSObject+WXRuntimePropertyDescriptor.h */,
-				23D38D99211C5F570032CA98 /* WXDefinitions.m */,
-				23D38D9A211C5F570032CA98 /* WXDebuggerUtility.h */,
-				23D38D9B211C5F570032CA98 /* WXRuntimeDomainController.h */,
-			);
-			path = PonyDebugger;
-			sourceTree = "<group>";
-		};
-		23D38D9C211C5F570032CA98 /* WXTracing */ = {
-			isa = PBXGroup;
-			children = (
-				23D38D9D211C5F570032CA98 /* WXNetwork */,
-			);
-			path = WXTracing;
-			sourceTree = "<group>";
-		};
-		23D38D9D211C5F570032CA98 /* WXNetwork */ = {
-			isa = PBXGroup;
-			children = (
-				23D38D9E211C5F570032CA98 /* WXNetworkTransaction.m */,
-				23D38D9F211C5F570032CA98 /* WXResources.h */,
-				23D38DA0211C5F570032CA98 /* WXNetworkRecorder.m */,
-				23D38DA1211C5F570032CA98 /* WXTracingUtility.m */,
-				23D38DA2211C5F570032CA98 /* WXNetworkTransaction.h */,
-				23D38DA3211C5F570032CA98 /* WXTracingUtility.h */,
-				23D38DA4211C5F570032CA98 /* WXNetworkRecorder.h */,
-				23D38DA5211C5F570032CA98 /* WXResources.m */,
-			);
-			path = WXNetwork;
 			sourceTree = "<group>";
 		};
 		23D38DF1211D76770032CA98 /* Weex */ = {
 			isa = PBXGroup;
 			children = (
-				23D38DF6211D7AEF0032CA98 /* fuck_weex.js */,
+				23F44CF122E05FA800CEE70C /* fuck_weex.js */,
 			);
-			path = Weex;
+			name = Weex;
+			sourceTree = "<group>";
+		};
+		23F44CF322E1A12000CEE70C /* Vender */ = {
+			isa = PBXGroup;
+			children = (
+				23F44CF422E1A13500CEE70C /* DCIntrospect */,
+			);
+			name = Vender;
+			sourceTree = "<group>";
+		};
+		23F44CF422E1A13500CEE70C /* DCIntrospect */ = {
+			isa = PBXGroup;
+			children = (
+				23F44CF522E1A13500CEE70C /* DCStatusBarOverlay.h */,
+				23F44CF622E1A13500CEE70C /* DCFrameView.m */,
+				23F44CF722E1A13500CEE70C /* DCTextView.m */,
+				23F44CF822E1A13500CEE70C /* DCIntrospect.m */,
+				23F44CF922E1A13500CEE70C /* DCIntrospectSettings.h */,
+				23F44CFA22E1A13500CEE70C /* UIView+DCAdditions.h */,
+				23F44CFB22E1A13500CEE70C /* DCCrossHairView.h */,
+				23F44CFC22E1A13500CEE70C /* DCStatusBarOverlay.m */,
+				23F44CFD22E1A13500CEE70C /* UIView+DCAdditions.m */,
+				23F44CFE22E1A13500CEE70C /* DCIntrospect.h */,
+				23F44CFF22E1A13500CEE70C /* DCTextView.h */,
+				23F44D0022E1A13500CEE70C /* DCFrameView.h */,
+				23F44D0122E1A13500CEE70C /* DCCrossHairView.m */,
+			);
+			name = DCIntrospect;
+			path = Vendor/DCIntrospect;
 			sourceTree = "<group>";
 		};
 		2516032FBC4F492D5252FD16 /* Pods */ = {
@@ -772,19 +343,19 @@
 			children = (
 				71630ED71DF56585002F4D0A /* AppDelegate.h */,
 				71630ED81DF56585002F4D0A /* AppDelegate.m */,
-				71DFB8A91E0D2DDB00DFAE63 /* MainViewController.h */,
-				71DFB8AA1E0D2DDB00DFAE63 /* MainViewController.m */,
 				71516C941E1630A2003DC670 /* Catagories */,
 				71DFB8CA1E10C8E800DFAE63 /* Controllers */,
-				236496C320AC28BC00502F74 /* Views */,
 				71DFB8EA1E14BC8E00DFAE63 /* Delegates */,
 				713BAF551ED2E5D3008789C7 /* Headers */,
 				7138754E1EF275310093BE11 /* IconFont */,
 				71630EE51DF56586002F4D0A /* Info.plist */,
+				71DFB8A91E0D2DDB00DFAE63 /* MainViewController.h */,
+				71DFB8AA1E0D2DDB00DFAE63 /* MainViewController.m */,
 				7174C86B1E0A795E008D5887 /* Resources */,
 				71630ED41DF56585002F4D0A /* Supporting Files */,
 				71DFB8D21E10F33500DFAE63 /* UIComponents */,
-				234C779B1FFF745500E585AF /* Vendor */,
+				23F44CF322E1A12000CEE70C /* Vender */,
+				236496C320AC28BC00502F74 /* Views */,
 			);
 			path = FRAnimation;
 			sourceTree = "<group>";
@@ -856,8 +427,8 @@
 				232D8BDE20AC135500516A4D /* ScrollViewController.m */,
 				237552E220DDFB430032607E /* SpeechViewController.h */,
 				237552E320DDFB430032607E /* SpeechViewController.m */,
-				237D0FD5211C1F8E006911BA /* MyWeexViewController.h */,
-				237D0FD6211C1F8E006911BA /* MyWeexViewController.m */,
+				23F7E4532154D8AE00E19CB1 /* DragableViewController.h */,
+				23F7E4542154D8AE00E19CB1 /* DragableViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -902,7 +473,6 @@
 				71630ECD1DF56585002F4D0A /* Sources */,
 				71630ECE1DF56585002F4D0A /* Frameworks */,
 				71630ECF1DF56585002F4D0A /* Resources */,
-				714C34CCAA07BAC15F982EB5 /* [CP] Copy Pods Resources */,
 				2337DA611FB1D381008D480F /* Embed Frameworks */,
 			);
 			buildRules = (
@@ -984,6 +554,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -1012,11 +583,11 @@
 				2337DA651FB1D5BE008D480F /* gears.json in Resources */,
 				7138755B1EF28B990093BE11 /* iconfont.ttf in Resources */,
 				71630EE11DF56586002F4D0A /* Assets.xcassets in Resources */,
+				23F44CF222E05FA900CEE70C /* fuck_weex.js in Resources */,
 				2337DA6B1FB1E781008D480F /* bell2.json in Resources */,
 				71DFB8E91E14B9E800DFAE63 /* next_bg.jpg in Resources */,
 				2371A45420E0D6A000624979 /* voice_indicator.json in Resources */,
 				71DFB8AE1E0FB46700DFAE63 /* icon_balloon.png in Resources */,
-				23D38DF7211D7AEF0032CA98 /* fuck_weex.js in Resources */,
 				7138754C1EF2673D0093BE11 /* fontello.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1038,26 +609,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		714C34CCAA07BAC15F982EB5 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/../Pods/Target Support Files/Pods-FRAnimation/Pods-FRAnimation-resources.sh",
-				"${PODS_ROOT}/WeexSDK/pre-build/native-bundle-main.js",
-				"${PODS_ROOT}/WeexSDK/ios/sdk/WeexSDK/Resources/wx_load_error@3x.png",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/native-bundle-main.js",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/wx_load_error@3x.png",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-FRAnimation/Pods-FRAnimation-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		A51F389AF8145DC06D107F04 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1084,110 +635,36 @@
 			buildActionMask = 2147483647;
 			files = (
 				236496C920AC29A400502F74 /* AMOrderItemView.m in Sources */,
-				23D38DB0211C5F570032CA98 /* WXDatabaseDomain.m in Sources */,
-				23D38DC4211C5F570032CA98 /* WXWebGLTypes.m in Sources */,
-				23D38DD9211C5F570032CA98 /* WXPageDomainController.m in Sources */,
-				23D38DE7211C5F570032CA98 /* WXDevToolType.m in Sources */,
-				234C77B31FFF779200E585AF /* DCTextView.m in Sources */,
-				23D38DEB211C5F570032CA98 /* WXCSSDomainController.m in Sources */,
-				23D38DBB211C5F570032CA98 /* WXInspectorDomain.m in Sources */,
-				23D38DBA211C5F570032CA98 /* WXFileSystemTypes.m in Sources */,
-				23D38DE0211C5F570032CA98 /* WXNetworkDomainController.m in Sources */,
-				23D38DE4211C5F570032CA98 /* WXDeviceInfo.m in Sources */,
-				23D38DB5211C5F570032CA98 /* WXDebuggerTypes.m in Sources */,
-				23D38DAD211C5F570032CA98 /* WXNetworkDomain.m in Sources */,
-				23D38DEE211C5F570032CA98 /* WXNetworkRecorder.m in Sources */,
-				23D38DCD211C5F570032CA98 /* WXDevTool.m in Sources */,
-				23D38DE2211C5F570032CA98 /* WXDebugger.m in Sources */,
 				232D8BDF20AC135500516A4D /* ScrollViewController.m in Sources */,
-				23D38DB6211C5F570032CA98 /* WXConsoleDomain.m in Sources */,
-				234C77B41FFF779200E585AF /* UIView+DCAdditions.m in Sources */,
-				23D38DD0211C5F570032CA98 /* NSData+WXDebugger.m in Sources */,
-				23D38DED211C5F570032CA98 /* WXNetworkTransaction.m in Sources */,
-				23D38DC7211C5F570032CA98 /* WXWorkerDomain.m in Sources */,
-				23D38DB9211C5F570032CA98 /* WXProfilerDomainController.m in Sources */,
-				23D38DCE211C5F570032CA98 /* WXSourceDebuggerDomainController.m in Sources */,
 				713875581EF281710093BE11 /* UIImage+BiliIconFont.m in Sources */,
-				23D38DEC211C5F570032CA98 /* WXDefinitions.m in Sources */,
-				23D38DD3211C5F570032CA98 /* NSManagedObject+WXRuntimePropertyDescriptor.m in Sources */,
-				23D38DAC211C5F570032CA98 /* WXTimelineTypes.m in Sources */,
-				23D38DC5211C5F570032CA98 /* WXDebuggerDomain.m in Sources */,
-				23D38DA7211C5F570032CA98 /* WXApplicationCacheTypes.m in Sources */,
 				713875511EF2758F0093BE11 /* BiliIconFont.m in Sources */,
-				23D38DE6211C5F570032CA98 /* NSDate+WX_JSONObject.m in Sources */,
-				23D38DD6211C5F570032CA98 /* WXDebuggerUtility.m in Sources */,
+				23F44D0522E1A13500CEE70C /* DCStatusBarOverlay.m in Sources */,
 				71630ED91DF56585002F4D0A /* AppDelegate.m in Sources */,
-				23D38DE3211C5F570032CA98 /* WXDebugDomainController.m in Sources */,
+				23F44D0422E1A13500CEE70C /* DCIntrospect.m in Sources */,
 				713875611EF29B650093BE11 /* UIButton+BiliIconFont.m in Sources */,
-				23D38DBE211C5F570032CA98 /* WXTimelineDomainController.m in Sources */,
-				23D38DB8211C5F570032CA98 /* WXCSSDomain.m in Sources */,
-				23D38DCF211C5F570032CA98 /* NSArray+WXRuntimePropertyDescriptor.m in Sources */,
 				71630ED61DF56585002F4D0A /* main.m in Sources */,
-				23D38DC9211C5F570032CA98 /* WXMemoryTypes.m in Sources */,
 				71DFB8AB1E0D2DDB00DFAE63 /* MainViewController.m in Sources */,
-				23D38DB1211C5F570032CA98 /* WXProfilerTypes.m in Sources */,
 				71DFB8E71E14B20200DFAE63 /* LoggedInViewController.m in Sources */,
-				23D38DF0211C5F570032CA98 /* WXResources.m in Sources */,
 				71DFB8D51E10F42400DFAE63 /* FRTextField.m in Sources */,
-				23D38DCB211C5F570032CA98 /* WXRuntimeTypes.m in Sources */,
 				71516C971E1630F5003DC670 /* UIColor+Hex.m in Sources */,
-				23D38DDC211C5F570032CA98 /* WXDOMDomainController.m in Sources */,
 				236496C620AC298C00502F74 /* AMOrderContainerView.m in Sources */,
-				23D38DAF211C5F570032CA98 /* WXDOMDebuggerDomain.m in Sources */,
-				234C77B01FFF779200E585AF /* DCStatusBarOverlay.m in Sources */,
-				23D38DB4211C5F570032CA98 /* WXProfilerDomain.m in Sources */,
-				23D38DB7211C5F570032CA98 /* WXDOMStorageDomain.m in Sources */,
-				23D38DD1211C5F570032CA98 /* NSDictionary+WXRuntimePropertyDescriptor.m in Sources */,
-				23D38DA9211C5F570032CA98 /* WXWebGLDomain.m in Sources */,
-				23D38DEF211C5F570032CA98 /* WXTracingUtility.m in Sources */,
 				71D1D1651EF25E4000BF6CB1 /* IconFontViewController.m in Sources */,
 				71DFB8ED1E14C0C900DFAE63 /* LoginCustomTransition.m in Sources */,
-				23D38DB3211C5F570032CA98 /* WXDOMStorageTypes.m in Sources */,
-				23D38DE1211C5F570032CA98 /* WXDomainController.m in Sources */,
+				23F7E4552154D8AE00E19CB1 /* DragableViewController.m in Sources */,
+				239D85BF2154E69700BEA2F2 /* DragView.m in Sources */,
 				2337DA641FB1D419008D480F /* LottieViewController.m in Sources */,
-				23D38DAB211C5F570032CA98 /* WXIndexedDBDomain.m in Sources */,
-				23D38DDF211C5F570032CA98 /* WXPrettyStringPrinter.m in Sources */,
-				23D38DE9211C5F570032CA98 /* WXInspectorDomainController.m in Sources */,
-				23D38DC1211C5F570032CA98 /* WXMemoryDomain.m in Sources */,
-				23D38DBD211C5F570032CA98 /* WXCSSTypes.m in Sources */,
-				23D38DDD211C5F570032CA98 /* WXIndexedDBDomainController.m in Sources */,
 				71DFB8E21E112B3500DFAE63 /* FRLoginButton.m in Sources */,
-				23D38DCA211C5F570032CA98 /* WXDOMDomain.m in Sources */,
-				23D38DC6211C5F570032CA98 /* WXPageTypes.m in Sources */,
-				234C77B11FFF779200E585AF /* DCCrossHairView.m in Sources */,
-				23D38DC3211C5F570032CA98 /* WXDOMTypes.m in Sources */,
 				713875551EF27F110093BE11 /* UILabel+BiliIconFont.m in Sources */,
-				23D38DE5211C5F570032CA98 /* NSError+WX_JSONObject.m in Sources */,
-				23D38DD4211C5F570032CA98 /* WXContainerIndex.m in Sources */,
-				23D38DC2211C5F570032CA98 /* WXDatabaseTypes.m in Sources */,
-				234C77AF1FFF779200E585AF /* DCFrameView.m in Sources */,
-				23D38DE8211C5F570032CA98 /* NSOrderedSet+WXRuntimePropertyDescriptor.m in Sources */,
-				237D0FD7211C1F8E006911BA /* MyWeexViewController.m in Sources */,
-				234C77B21FFF779200E585AF /* DCIntrospect.m in Sources */,
-				23D38DA6211C5F570032CA98 /* WXIndexedDBTypes.m in Sources */,
-				23D38DD2211C5F570032CA98 /* WXObject.m in Sources */,
-				23D38DCC211C5F570032CA98 /* WXPageDomainUtility.m in Sources */,
 				7138755E1EF29B470093BE11 /* UIImageView+BiliIconFont.m in Sources */,
+				23F44D0222E1A13500CEE70C /* DCFrameView.m in Sources */,
 				71DFB8CF1E10C92200DFAE63 /* ClockViewController.m in Sources */,
-				23D38DEA211C5F570032CA98 /* NSDate+WXDebugger.m in Sources */,
-				23D38DBF211C5F570032CA98 /* WXPageDomain.m in Sources */,
-				23D38DD5211C5F570032CA98 /* WXRuntimeDomainController.m in Sources */,
-				23D38DB2211C5F570032CA98 /* WXTimelineDomain.m in Sources */,
-				23D38DAA211C5F570032CA98 /* WXNetworkTypes.m in Sources */,
+				23F44D0622E1A13500CEE70C /* UIView+DCAdditions.m in Sources */,
+				23F44D0722E1A13500CEE70C /* DCCrossHairView.m in Sources */,
 				23DDDE062108584700CA9B92 /* NSString+Extension.m in Sources */,
-				23D38DAE211C5F570032CA98 /* WXConsoleTypes.m in Sources */,
 				71DFB8D01E10C92200DFAE63 /* LoginViewController.m in Sources */,
-				23D38DDE211C5F570032CA98 /* WXConsoleDomainController.m in Sources */,
-				23D38DC0211C5F570032CA98 /* WXApplicationCacheDomain.m in Sources */,
-				23D38DD7211C5F570032CA98 /* NSObject+WXRuntimePropertyDescriptor.m in Sources */,
-				23D38DBC211C5F570032CA98 /* WXFileSystemDomain.m in Sources */,
-				23D38DD8211C5F570032CA98 /* NSArray+WX_JSONObject.m in Sources */,
-				23D38DC8211C5F570032CA98 /* WXRuntimeDomain.m in Sources */,
 				23DDDE032108581F00CA9B92 /* UIImage+Color.m in Sources */,
+				23F44D0322E1A13500CEE70C /* DCTextView.m in Sources */,
 				71973B6A1E458FD400C9D07A /* EmitterSnowController.swift in Sources */,
-				23D38DDA211C5F570032CA98 /* WXDynamicDebuggerDomain.m in Sources */,
-				23D38DA8211C5F570032CA98 /* WXDebugDomain.m in Sources */,
-				23D38DDB211C5F570032CA98 /* NSSet+WXRuntimePropertyDescriptor.m in Sources */,
 				237552E420DDFB430032607E /* SpeechViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

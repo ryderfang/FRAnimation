@@ -1,46 +1,61 @@
 PODS:
-  - AFNetworking (3.1.0):
-    - AFNetworking/NSURLSession (= 3.1.0)
-    - AFNetworking/Reachability (= 3.1.0)
-    - AFNetworking/Security (= 3.1.0)
-    - AFNetworking/Serialization (= 3.1.0)
-    - AFNetworking/UIKit (= 3.1.0)
-  - AFNetworking/NSURLSession (3.1.0):
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
     - AFNetworking/Reachability
     - AFNetworking/Security
     - AFNetworking/Serialization
-  - AFNetworking/Reachability (3.1.0)
-  - AFNetworking/Security (3.1.0)
-  - AFNetworking/Serialization (3.1.0)
-  - AFNetworking/UIKit (3.1.0):
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
-  - lottie-ios (2.1.5)
-  - Masonry (1.0.2)
+  - lottie-ios (2.5.3)
+  - Masonry (1.1.0)
   - SocketRocket (0.5.1)
-  - WeexSDK (0.17.0)
 
 DEPENDENCIES:
-  - AFNetworking
-  - lottie-ios
-  - Masonry
-  - SocketRocket
-  - WeexSDK (~> 0.17.0)
+  - AFNetworking (from `https://github.com/AFNetworking/AFNetworking.git`)
+  - lottie-ios (from `https://github.com/airbnb/lottie-ios.git`, branch `objectiveC`)
+  - Masonry (from `https://github.com/SnapKit/Masonry.git`, branch `master`)
+  - SocketRocket (from `https://github.com/facebook/SocketRocket.git`)
 
-SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
-    - AFNetworking
-    - lottie-ios
-    - Masonry
-    - SocketRocket
-    - WeexSDK
+EXTERNAL SOURCES:
+  AFNetworking:
+    :git: https://github.com/AFNetworking/AFNetworking.git
+  lottie-ios:
+    :branch: objectiveC
+    :git: https://github.com/airbnb/lottie-ios.git
+  Masonry:
+    :branch: master
+    :git: https://github.com/SnapKit/Masonry.git
+  SocketRocket:
+    :git: https://github.com/facebook/SocketRocket.git
+
+CHECKOUT OPTIONS:
+  AFNetworking:
+    :commit: 685e31a31bb1ebce3fdb5a752e392dfd8263e169
+    :git: https://github.com/AFNetworking/AFNetworking.git
+  lottie-ios:
+    :commit: a7de66519254e02baf395fbe90d1d811ee6e0409
+    :git: https://github.com/airbnb/lottie-ios.git
+  Masonry:
+    :commit: 8bd77ea92bbe995e14c454f821200b222e5a8804
+    :git: https://github.com/SnapKit/Masonry.git
+  SocketRocket:
+    :commit: 0a023409b138039d1ab5ac5431fe61c5f334e86b
+    :git: https://github.com/facebook/SocketRocket.git
 
 SPEC CHECKSUMS:
-  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
-  lottie-ios: 836cdbba92f62f3c6a00e37a4ce485321fe317cf
-  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
-  SocketRocket: d57c7159b83c3c6655745cd15302aa24b6bae531
-  WeexSDK: ad8443f4290ef7cb241bbd4c03b02d9dfc9fdca2
+  AFNetworking: ef6403a1383e5a6fa4ca961d7d524b1898ce0a84
+  lottie-ios: a50d5c0160425cd4b01b852bb9578963e6d92d31
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  SocketRocket: dbb1554b8fc288ef8ef370d6285aeca7361be31e
 
-PODFILE CHECKSUM: 95c7f0046f5ec4b10d51d707d6ce39ddfc2d7df9
+PODFILE CHECKSUM: a6c13f6f179eb8dc24b6b51bc21ff59d023f24a7
 
 COCOAPODS: 1.5.3

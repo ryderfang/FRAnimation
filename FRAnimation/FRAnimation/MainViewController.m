@@ -125,7 +125,7 @@
     
     
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        NSIndexPath *indexPath = [NSIndexPath indexPathForRow:7 inSection:0];
+        NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
         [self.mainTable selectRowAtIndexPath:indexPath animated:YES scrollPosition:UITableViewScrollPositionBottom];
         if ([self.mainTable.delegate respondsToSelector:@selector(tableView:didSelectRowAtIndexPath:)]) {
             [self.mainTable.delegate tableView:self.mainTable didSelectRowAtIndexPath:indexPath];
@@ -133,15 +133,25 @@
     });
 }
 
+#pragma mark - Crash Warning: insert emoji cause crash with vim plugin
 - (void)initDataSource {
-    self.itemList = @[[MyListItem initWithName:@"🕘一个时针" withClass:[ClockViewController class]],
+    self.itemList = @[
+                      // 0
+                      [MyListItem initWithName:@"🕘一个时针" withClass:[ClockViewController class]],
+                      // 1
                       [MyListItem initWithName:@"➡️一个登录界面" withClass:[LoginViewController class]],
+                      // 2
                       [MyListItem initWithName:@"❄️雪花粒子动画" withClass:[EmitterSnowController class]],
+                      // 3
                       [MyListItem initWithName:@"🌀IconFont测试" withClass:[IconFontViewController class]],
+                      // 4
                       [MyListItem initWithName:@"〽️Lottie动画测试" withClass:[LottieViewController class]],
+                      // 5
                       [MyListItem initWithName:@"🖖水平滚动账单" withClass:[ScrollViewController class]],
+                      // 6
                       [MyListItem initWithName:@"🗣语音识别" withClass:[SpeechViewController class]],
-                      [MyListItem initWithName:@"🦅Weex & Vue.js" withClass:[MyWeexViewController class]],
+                      // 7
+                      [MyListItem initWithName:@"👿拖拽操作" withClass:[DragableViewController class]],
                       
                       // Last one is reserved.
                       [MyListItem initWithName:@"🤔 App内打开AppStore" withClass:[UIViewController class]]

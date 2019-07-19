@@ -12,4 +12,4 @@
 #import "LottieViewController.h"
 #import "ScrollViewController.h"
 #import "SpeechViewController.h"
-#import "MyWeexViewController.h"
+#import "DragableViewController.h"

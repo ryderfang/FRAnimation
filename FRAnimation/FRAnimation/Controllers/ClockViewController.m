@@ -26,6 +26,19 @@
 
 @implementation ClockViewController
 
+- (NSInteger)testTryCatch {
+    @try {
+        NSString *str = @"abc";
+        [str substringFromIndex:99];
+        NSLog(@"try.");
+    } @catch (NSException *exception) {
+        NSLog(@"exception catched.");
+    } @finally {
+        NSLog(@"finally.");
+    }
+    return 3;
+}
+
 - (void)viewDidLoad {
     self.view.backgroundColor = [UIColor blackColor];
 
@@ -79,25 +92,61 @@
         }
     });
     
+    NSInteger temp = [self testTryCatch];
+
     
     ////
     
     [self.shadowView addSubview:self.bgView];
     [self.view addSubview:self.shadowView];
     [self.view.layer addSublayer:self.circleLayer];
-    [self performSelector:@selector(startAnimation) withObject:self afterDelay:0.5];
+    //[self performSelector:@selector(startAnimation) withObject:self afterDelay:0.5];
+    
+    CAShapeLayer *rectLayer = [CAShapeLayer layer];
+    rectLayer.strokeColor = [UIColor yellowColor].CGColor;
+    rectLayer.lineWidth = 5;
+    rectLayer.fillColor = [UIColor clearColor].CGColor;
+    UIBezierPath *bezierPath = [UIBezierPath bezierPath];
+    [bezierPath moveToPoint:CGPointMake(self.view.center.x + 150, self.view.center.y - 150)];
+    [bezierPath addLineToPoint:CGPointMake(self.view.center.x + 150, self.view.center.y + 150)];
+    [bezierPath addLineToPoint:CGPointMake(self.view.center.x - 150, self.view.center.y + 150)];
+    [bezierPath addLineToPoint:CGPointMake(self.view.center.x - 150, self.view.center.y - 150)];
+    [bezierPath addLineToPoint:CGPointMake(self.view.center.x + 150 + 2.5, self.view.center.y - 150)];
+    rectLayer.path = bezierPath.CGPath;
+    rectLayer.strokeEnd = 0;
+    [self.view.layer addSublayer:rectLayer];
+    
+    {
+        CABasicAnimation *basicAnimation = [CABasicAnimation animationWithKeyPath:@"strokeEnd"];
+        basicAnimation.toValue = @(0.25);
+        basicAnimation.duration = 2;
+        basicAnimation.removedOnCompletion = NO;
+        basicAnimation.fillMode = kCAFillModeForwards;
+        basicAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+        [rectLayer addAnimation:basicAnimation forKey:nil];
+    }
+    
+    
+    CABasicAnimation *basicAnimation = [CABasicAnimation animationWithKeyPath:@"strokeEnd"];
+    basicAnimation.toValue = @(0.75);
+    basicAnimation.duration = 5;
+    basicAnimation.removedOnCompletion = NO;
+    basicAnimation.fillMode = kCAFillModeForwards;
+    basicAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+    [rectLayer addAnimation:basicAnimation forKey:nil];
+    
     
     //// <!---  镂空图层
-    UIBezierPath *path = [UIBezierPath bezierPathWithArcCenter:CGPointMake(self.view.center.x, self.view.center.y) radius:30 startAngle:-M_PI / 2  endAngle:M_PI * 3 / 2 clockwise:YES];
-    CAShapeLayer *shapeLayer = [CAShapeLayer layer];
-    shapeLayer.fillColor = [UIColor blackColor].CGColor;
-    shapeLayer.opacity = 0.4;
-    [self.bgView.layer addSublayer:shapeLayer];
-    
-    UIBezierPath *circlePath = [UIBezierPath bezierPathWithCGPath:self.circleLayer.path];
-    [circlePath appendPath:path];
-    shapeLayer.path = circlePath.CGPath;
-    shapeLayer.fillRule = kCAFillRuleEvenOdd;
+//    UIBezierPath *path = [UIBezierPath bezierPathWithArcCenter:CGPointMake(self.view.center.x, self.view.center.y) radius:30 startAngle:-M_PI / 2  endAngle:M_PI * 3 / 2 clockwise:YES];
+//    CAShapeLayer *shapeLayer = [CAShapeLayer layer];
+//    shapeLayer.fillColor = [UIColor blackColor].CGColor;
+//    shapeLayer.opacity = 0.4;
+//    [self.bgView.layer addSublayer:shapeLayer];
+//
+//    UIBezierPath *circlePath = [UIBezierPath bezierPathWithCGPath:self.circleLayer.path];
+//    [circlePath appendPath:path];
+//    shapeLayer.path = circlePath.CGPath;
+//    shapeLayer.fillRule = kCAFillRuleEvenOdd;
     ////// ---- !>
     
     [self.view addSubview:self.hourImage];
