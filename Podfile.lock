@@ -19,36 +19,20 @@ PODS:
   - SocketRocket (0.5.1)
 
 DEPENDENCIES:
-  - AFNetworking (from `https://github.com/AFNetworking/AFNetworking.git`)
-  - lottie-ios (from `https://github.com/airbnb/lottie-ios.git`, branch `objectiveC`)
-  - Masonry (from `https://github.com/SnapKit/Masonry.git`, branch `master`)
-  - SocketRocket (from `https://github.com/facebook/SocketRocket.git`)
+  - AFNetworking (from `./DevelopDeps/AFNetworking`)
+  - lottie-ios (from `./DevelopDeps/lottie-ios`)
+  - Masonry (from `./DevelopDeps/Masonry`)
+  - SocketRocket (from `./DevelopDeps/SocketRocket`)
 
 EXTERNAL SOURCES:
   AFNetworking:
-    :git: https://github.com/AFNetworking/AFNetworking.git
+    :path: "./DevelopDeps/AFNetworking"
   lottie-ios:
-    :branch: objectiveC
-    :git: https://github.com/airbnb/lottie-ios.git
+    :path: "./DevelopDeps/lottie-ios"
   Masonry:
-    :branch: master
-    :git: https://github.com/SnapKit/Masonry.git
+    :path: "./DevelopDeps/Masonry"
   SocketRocket:
-    :git: https://github.com/facebook/SocketRocket.git
-
-CHECKOUT OPTIONS:
-  AFNetworking:
-    :commit: 685e31a31bb1ebce3fdb5a752e392dfd8263e169
-    :git: https://github.com/AFNetworking/AFNetworking.git
-  lottie-ios:
-    :commit: a7de66519254e02baf395fbe90d1d811ee6e0409
-    :git: https://github.com/airbnb/lottie-ios.git
-  Masonry:
-    :commit: 8bd77ea92bbe995e14c454f821200b222e5a8804
-    :git: https://github.com/SnapKit/Masonry.git
-  SocketRocket:
-    :commit: 0a023409b138039d1ab5ac5431fe61c5f334e86b
-    :git: https://github.com/facebook/SocketRocket.git
+    :path: "./DevelopDeps/SocketRocket"
 
 SPEC CHECKSUMS:
   AFNetworking: ef6403a1383e5a6fa4ca961d7d524b1898ce0a84
@@ -56,6 +40,6 @@ SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   SocketRocket: dbb1554b8fc288ef8ef370d6285aeca7361be31e
 
-PODFILE CHECKSUM: a6c13f6f179eb8dc24b6b51bc21ff59d023f24a7
+PODFILE CHECKSUM: a64637aca5ac33e6a7019adc14892828490d1d05
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.8.4

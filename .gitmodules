@@ -1,0 +1,13 @@
+[submodule "DevelopDeps/AFNetworking"]
+	path = DevelopDeps/AFNetworking
+	url = https://github.com/AFNetworking/AFNetworking.git
+[submodule "DevelopDeps/Masonry"]
+	path = DevelopDeps/Masonry
+	url = https://github.com/SnapKit/Masonry.git
+[submodule "DevelopDeps/lottie-ios"]
+	path = DevelopDeps/lottie-ios
+	url = https://github.com/airbnb/lottie-ios.git
+    branch = lottie/objectiveC
+[submodule "DevelopDeps/SocketRocket"]
+	path = DevelopDeps/SocketRocket
+	url = https://github.com/facebook/SocketRocket.git
