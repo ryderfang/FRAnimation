@@ -1,3 +1,4 @@
+source 'https://github.com/CocoaPods/Specs.git'
 workspace 'FRAnimation'
 platform :ios, '8.0'
 target 'FRAnimation' do
