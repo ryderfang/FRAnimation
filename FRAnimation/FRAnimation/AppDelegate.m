@@ -11,6 +11,7 @@
 #import "DCIntrospect.h"
 #import "NSString+Extension.h"
 #import "UIImage+BiliIconFont.h"
+#import "UITabBarController+Rotate.h"
 
 @interface AppDelegate ()
 

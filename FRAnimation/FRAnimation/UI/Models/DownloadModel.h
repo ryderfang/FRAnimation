@@ -3,7 +3,7 @@
 //  FRAnimation
 //
 //  Created by ryderfang on 2020/3/17.
-//  Copyright © 2020 tencent. All rights reserved.
+//  Copyright © 2020 Ray Fong. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -12,6 +12,7 @@
 
 @property (nonatomic, copy) NSString *itemId;
 @property (nonatomic, copy) NSString *url;
+@property (nonatomic, strong, readonly) NSString *testReadonly;
 
 - (BOOL)isFileExist;
 

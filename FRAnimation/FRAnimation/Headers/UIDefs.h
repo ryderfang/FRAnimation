@@ -32,4 +32,6 @@
 
 #define kGlobalNotification @"kGlobalNotification"
 
+#import "UIViewAdditions.h"
+
 #endif /* UIDefs_h */

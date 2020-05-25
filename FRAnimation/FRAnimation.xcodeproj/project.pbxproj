@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D07F107247BEC0500CE577A /* OCTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D07F106247BEC0500CE577A /* OCTestViewController.m */; };
+		0D4ACE3D243F0B720048418E /* ExpressionCropViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D4ACE3C243F0B720048418E /* ExpressionCropViewController.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		0D4ACE65243F12FE0048418E /* UIViewAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D4ACE63243F12FE0048418E /* UIViewAdditions.m */; };
+		0D51DD482444775700FE7BED /* UITabBarController+Rotate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D51DD472444775700FE7BED /* UITabBarController+Rotate.m */; };
+		0D51DD4C24447B0B00FE7BED /* FRImageHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D51DD4B24447B0B00FE7BED /* FRImageHelper.m */; };
 		0D6B1AE02420C15A0096FB1E /* ClockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D6B1AD02420C15A0096FB1E /* ClockViewController.m */; };
 		0D6B1AE12420C15A0096FB1E /* IconFontViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D6B1AD12420C15A0096FB1E /* IconFontViewController.m */; };
 		0D6B1AE22420C15A0096FB1E /* DragableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D6B1AD42420C15A0096FB1E /* DragableViewController.m */; };
@@ -29,6 +34,9 @@
 		0D6B1B0F2420C33F0096FB1E /* EmitterSnowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6B1B0E2420C33F0096FB1E /* EmitterSnowController.swift */; };
 		0D6B1B122420C3AF0096FB1E /* DownloadModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D6B1B112420C3AF0096FB1E /* DownloadModel.m */; };
 		0D6B1B172420C3ED0096FB1E /* DownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D6B1B162420C3ED0096FB1E /* DownloadManager.m */; };
+		0DB167F0244D617000E1B3AF /* UIImage+FixOrientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DB167EE244D617000E1B3AF /* UIImage+FixOrientation.m */; };
+		0DD6B848243F1FDA00BA92EF /* AECropView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DD6B847243F1FDA00BA92EF /* AECropView.m */; };
+		0DDFC43C2445A6C000D57263 /* ResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DDFC43B2445A6C000D57263 /* ResultViewController.m */; };
 		2337DA651FB1D5BE008D480F /* gears.json in Resources */ = {isa = PBXBuildFile; fileRef = 2337DA5C1FB1CBF1008D480F /* gears.json */; };
 		2337DA681FB1D847008D480F /* bell.json in Resources */ = {isa = PBXBuildFile; fileRef = 2337DA661FB1D690008D480F /* bell.json */; };
 		2337DA691FB1D847008D480F /* birth.json in Resources */ = {isa = PBXBuildFile; fileRef = 2337DA671FB1D6A3008D480F /* birth.json */; };
@@ -92,6 +100,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0D07F105247BEC0500CE577A /* OCTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCTestViewController.h; sourceTree = "<group>"; };
+		0D07F106247BEC0500CE577A /* OCTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCTestViewController.m; sourceTree = "<group>"; };
+		0D4ACE3B243F0B720048418E /* ExpressionCropViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExpressionCropViewController.h; sourceTree = "<group>"; };
+		0D4ACE3C243F0B720048418E /* ExpressionCropViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExpressionCropViewController.m; sourceTree = "<group>"; };
+		0D4ACE63243F12FE0048418E /* UIViewAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewAdditions.m; sourceTree = "<group>"; };
+		0D4ACE64243F12FE0048418E /* UIViewAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewAdditions.h; sourceTree = "<group>"; };
+		0D51DD462444775700FE7BED /* UITabBarController+Rotate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITabBarController+Rotate.h"; sourceTree = "<group>"; };
+		0D51DD472444775700FE7BED /* UITabBarController+Rotate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITabBarController+Rotate.m"; sourceTree = "<group>"; };
+		0D51DD4A24447B0B00FE7BED /* FRImageHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FRImageHelper.h; sourceTree = "<group>"; };
+		0D51DD4B24447B0B00FE7BED /* FRImageHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FRImageHelper.m; sourceTree = "<group>"; };
 		0D6B1AD02420C15A0096FB1E /* ClockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClockViewController.m; sourceTree = "<group>"; };
 		0D6B1AD12420C15A0096FB1E /* IconFontViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IconFontViewController.m; sourceTree = "<group>"; };
 		0D6B1AD22420C15A0096FB1E /* LoggedInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoggedInViewController.h; sourceTree = "<group>"; };
@@ -138,6 +156,12 @@
 		0D6B1B112420C3AF0096FB1E /* DownloadModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DownloadModel.m; sourceTree = "<group>"; };
 		0D6B1B152420C3ED0096FB1E /* DownloadManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DownloadManager.h; sourceTree = "<group>"; };
 		0D6B1B162420C3ED0096FB1E /* DownloadManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DownloadManager.m; sourceTree = "<group>"; };
+		0DB167EE244D617000E1B3AF /* UIImage+FixOrientation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FixOrientation.m"; sourceTree = "<group>"; };
+		0DB167EF244D617000E1B3AF /* UIImage+FixOrientation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+FixOrientation.h"; sourceTree = "<group>"; };
+		0DD6B846243F1FDA00BA92EF /* AECropView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AECropView.h; sourceTree = "<group>"; };
+		0DD6B847243F1FDA00BA92EF /* AECropView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AECropView.m; sourceTree = "<group>"; };
+		0DDFC43A2445A6C000D57263 /* ResultViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ResultViewController.h; sourceTree = "<group>"; };
+		0DDFC43B2445A6C000D57263 /* ResultViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ResultViewController.m; sourceTree = "<group>"; };
 		1C88B88261FDCAA920D39E62 /* Pods-FRAnimation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FRAnimation.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-FRAnimation/Pods-FRAnimation.debug.xcconfig"; sourceTree = "<group>"; };
 		2337DA5C1FB1CBF1008D480F /* gears.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = gears.json; sourceTree = "<group>"; };
 		2337DA661FB1D690008D480F /* bell.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = bell.json; sourceTree = "<group>"; };
@@ -221,6 +245,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D51DD4224446C1F00FE7BED /* Crop */ = {
+			isa = PBXGroup;
+			children = (
+				0DD6B846243F1FDA00BA92EF /* AECropView.h */,
+				0DD6B847243F1FDA00BA92EF /* AECropView.m */,
+			);
+			path = Crop;
+			sourceTree = "<group>";
+		};
+		0D51DD4924447AE900FE7BED /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				0DB167EF244D617000E1B3AF /* UIImage+FixOrientation.h */,
+				0DB167EE244D617000E1B3AF /* UIImage+FixOrientation.m */,
+				0D51DD4A24447B0B00FE7BED /* FRImageHelper.h */,
+				0D51DD4B24447B0B00FE7BED /* FRImageHelper.m */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 		0D6B1AEE2420C19F0096FB1E /* UI */ = {
 			isa = PBXGroup;
 			children = (
@@ -253,6 +297,7 @@
 		236496C320AC28BC00502F74 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				0D51DD4224446C1F00FE7BED /* Crop */,
 				236496C420AC298C00502F74 /* AMOrderContainerView.h */,
 				236496C520AC298C00502F74 /* AMOrderContainerView.m */,
 				236496C720AC29A400502F74 /* AMOrderItemView.h */,
@@ -346,12 +391,16 @@
 		71516C941E1630A2003DC670 /* Catagories */ = {
 			isa = PBXGroup;
 			children = (
+				0D4ACE64243F12FE0048418E /* UIViewAdditions.h */,
+				0D4ACE63243F12FE0048418E /* UIViewAdditions.m */,
 				0D6B1AF52420C1E90096FB1E /* NSString+Extension.h */,
 				0D6B1AF32420C1E90096FB1E /* NSString+Extension.m */,
 				0D6B1AF02420C1E90096FB1E /* UIColor+Hex.h */,
 				0D6B1AF12420C1E90096FB1E /* UIColor+Hex.m */,
 				0D6B1AF22420C1E90096FB1E /* UIImage+Color.h */,
 				0D6B1AF42420C1E90096FB1E /* UIImage+Color.m */,
+				0D51DD462444775700FE7BED /* UITabBarController+Rotate.h */,
+				0D51DD472444775700FE7BED /* UITabBarController+Rotate.m */,
 			);
 			path = Catagories;
 			sourceTree = "<group>";
@@ -386,6 +435,7 @@
 				71516C941E1630A2003DC670 /* Catagories */,
 				71DFB8EA1E14BC8E00DFAE63 /* Delegates */,
 				713BAF551ED2E5D3008789C7 /* Headers */,
+				0D51DD4924447AE900FE7BED /* Helper */,
 				71630EE51DF56586002F4D0A /* Info.plist */,
 				71DFB8A91E0D2DDB00DFAE63 /* MainViewController.h */,
 				71DFB8AA1E0D2DDB00DFAE63 /* MainViewController.m */,
@@ -466,6 +516,12 @@
 				0D6B1ADF2420C15A0096FB1E /* ScrollViewController.m */,
 				0D6B1ADB2420C15A0096FB1E /* SpeechViewController.h */,
 				0D6B1AD62420C15A0096FB1E /* SpeechViewController.m */,
+				0D4ACE3B243F0B720048418E /* ExpressionCropViewController.h */,
+				0D4ACE3C243F0B720048418E /* ExpressionCropViewController.m */,
+				0DDFC43A2445A6C000D57263 /* ResultViewController.h */,
+				0DDFC43B2445A6C000D57263 /* ResultViewController.m */,
+				0D07F105247BEC0500CE577A /* OCTestViewController.h */,
+				0D07F106247BEC0500CE577A /* OCTestViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -661,6 +717,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D6B1AE52420C15A0096FB1E /* LoginViewController.m in Sources */,
+				0DDFC43C2445A6C000D57263 /* ResultViewController.m in Sources */,
 				236496C920AC29A400502F74 /* AMOrderItemView.m in Sources */,
 				0D6B1AE32420C15A0096FB1E /* LoggedInViewController.m in Sources */,
 				0D6B1AE62420C15A0096FB1E /* LottieViewController.m in Sources */,
@@ -679,20 +736,27 @@
 				71630ED61DF56585002F4D0A /* main.m in Sources */,
 				71DFB8AB1E0D2DDB00DFAE63 /* MainViewController.m in Sources */,
 				0D6B1AEC2420C1890096FB1E /* FRTextField.m in Sources */,
+				0DB167F0244D617000E1B3AF /* UIImage+FixOrientation.m in Sources */,
 				236496C620AC298C00502F74 /* AMOrderContainerView.m in Sources */,
+				0D4ACE65243F12FE0048418E /* UIViewAdditions.m in Sources */,
 				0D6B1AE42420C15A0096FB1E /* SpeechViewController.m in Sources */,
 				239D85BF2154E69700BEA2F2 /* DragView.m in Sources */,
+				0D51DD4C24447B0B00FE7BED /* FRImageHelper.m in Sources */,
 				23F44D0222E1A13500CEE70C /* DCFrameView.m in Sources */,
 				23F44D0622E1A13500CEE70C /* UIView+DCAdditions.m in Sources */,
 				0D6B1AF72420C1E90096FB1E /* NSString+Extension.m in Sources */,
 				23F44D0722E1A13500CEE70C /* DCCrossHairView.m in Sources */,
 				0D6B1B092420C2050096FB1E /* UIImageView+BiliIconFont.m in Sources */,
+				0D51DD482444775700FE7BED /* UITabBarController+Rotate.m in Sources */,
+				0DD6B848243F1FDA00BA92EF /* AECropView.m in Sources */,
 				0D6B1AE22420C15A0096FB1E /* DragableViewController.m in Sources */,
 				0D6B1B0F2420C33F0096FB1E /* EmitterSnowController.swift in Sources */,
 				0D6B1B0B2420C2050096FB1E /* UIButton+BiliIconFont.m in Sources */,
 				0D6B1AED2420C1890096FB1E /* FRLoginButton.m in Sources */,
+				0D4ACE3D243F0B720048418E /* ExpressionCropViewController.m in Sources */,
 				0D6B1AFB2420C1F20096FB1E /* LoginCustomTransition.m in Sources */,
 				23F44D0322E1A13500CEE70C /* DCTextView.m in Sources */,
+				0D07F107247BEC0500CE577A /* OCTestViewController.m in Sources */,
 				0D6B1B172420C3ED0096FB1E /* DownloadManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -849,7 +913,7 @@
 				INFOPLIST_FILE = FRAnimation/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = cc.fangr.FRAnimation.0317;
+				PRODUCT_BUNDLE_IDENTIFIER = cc.fangr.FRAnimation.xyz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/FRAnimation-Bridging-Header.h";

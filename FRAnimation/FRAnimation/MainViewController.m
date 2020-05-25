@@ -125,12 +125,20 @@
     
     
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
+        NSIndexPath *indexPath = [NSIndexPath indexPathForRow:9 inSection:0];
         [self.mainTable selectRowAtIndexPath:indexPath animated:YES scrollPosition:UITableViewScrollPositionBottom];
         if ([self.mainTable.delegate respondsToSelector:@selector(tableView:didSelectRowAtIndexPath:)]) {
             [self.mainTable.delegate tableView:self.mainTable didSelectRowAtIndexPath:indexPath];
         }
     });
+}
+
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations {
+    return UIInterfaceOrientationMaskPortrait;
+}
+
+- (BOOL)shouldAutorotate {
+    return NO;
 }
 
 #pragma mark - Crash Warning: insert emoji cause crash with vim plugin
@@ -152,6 +160,11 @@
                       [MyListItem initWithName:@"🗣语音识别" withClass:[SpeechViewController class]],
                       // 7
                       [MyListItem initWithName:@"👿拖拽操作" withClass:[DragableViewController class]],
+                      // 8
+                      [MyListItem initWithName:@"🏀画面裁剪" withClass:[ExpressionCropViewController class]],
+                      
+                      // 9
+                      [MyListItem initWithName:@"🛠ObjC测试" withClass:[OCTestViewController class]],
                       
                       // Last one is reserved.
                       [MyListItem initWithName:@"🤔 App内打开AppStore" withClass:[UIViewController class]]
@@ -225,6 +238,7 @@
         [self.navigationController presentViewController:storeVC animated:YES completion:nil];
     } else {
         UIViewController *viewController = [[((MyListItem *)self.itemList[indexPath.row]).object alloc] init];
+        viewController.hidesBottomBarWhenPushed = YES;
         [self.navigationController pushViewController:viewController animated:YES];
     }
 }

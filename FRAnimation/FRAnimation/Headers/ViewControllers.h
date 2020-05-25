@@ -13,3 +13,5 @@
 #import "ScrollViewController.h"
 #import "SpeechViewController.h"
 #import "DragableViewController.h"
+#import "ExpressionCropViewController.h"
+#import "OCTestViewController.h"

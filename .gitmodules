@@ -11,3 +11,6 @@
 [submodule "DevelopDeps/SocketRocket"]
 	path = DevelopDeps/SocketRocket
 	url = https://github.com/facebook/SocketRocket.git
+[submodule "DevelopDeps/YYModel"]
+    path = DevelopDeps/YYModel
+    url = https://github.com/ibireme/YYModel.git

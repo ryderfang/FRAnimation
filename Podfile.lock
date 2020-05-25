@@ -17,12 +17,14 @@ PODS:
   - lottie-ios (2.5.3)
   - Masonry (1.1.0)
   - SocketRocket (0.5.1)
+  - YYModel (1.0.4)
 
 DEPENDENCIES:
   - AFNetworking (from `./DevelopDeps/AFNetworking`)
   - lottie-ios (from `./DevelopDeps/lottie-ios`)
   - Masonry (from `./DevelopDeps/Masonry`)
   - SocketRocket (from `./DevelopDeps/SocketRocket`)
+  - YYModel (from `./DevelopDeps/YYModel`)
 
 EXTERNAL SOURCES:
   AFNetworking:
@@ -33,13 +35,16 @@ EXTERNAL SOURCES:
     :path: "./DevelopDeps/Masonry"
   SocketRocket:
     :path: "./DevelopDeps/SocketRocket"
+  YYModel:
+    :path: "./DevelopDeps/YYModel"
 
 SPEC CHECKSUMS:
   AFNetworking: ef6403a1383e5a6fa4ca961d7d524b1898ce0a84
   lottie-ios: a50d5c0160425cd4b01b852bb9578963e6d92d31
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   SocketRocket: dbb1554b8fc288ef8ef370d6285aeca7361be31e
+  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: 81068607cb7bf1d57082816a9be5b719bae8cead
+PODFILE CHECKSUM: 688b17761da2e757f95f572c099c84e55017391f
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.9.1

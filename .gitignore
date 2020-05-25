@@ -41,3 +41,5 @@ FauxPasConfig
 .clang-format
 
 ~*
+xcshareddata/
+QQCropEdit/

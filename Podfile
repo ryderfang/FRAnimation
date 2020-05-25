@@ -6,6 +6,7 @@ target 'FRAnimation' do
     pod 'AFNetworking', :path => './DevelopDeps/AFNetworking'
     pod 'lottie-ios', :path => './DevelopDeps/lottie-ios'
     pod 'SocketRocket', :path => './DevelopDeps/SocketRocket'
+    pod 'YYModel', :path => './DevelopDeps/YYModel'
     project './FRAnimation/FRAnimation.xcodeproj'
 end
 
