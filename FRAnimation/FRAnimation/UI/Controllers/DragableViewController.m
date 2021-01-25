@@ -8,6 +8,7 @@
 
 #import "DragableViewController.h"
 #import "DragView.h"
+#import "QQHotPicSwitchBar.h"
 
 #define color1 HEXCOLOR(0xEFF9FF)
 #define color2 HEXCOLOR(0xF6FCF2)
@@ -17,6 +18,7 @@
 
 @property (nonatomic, strong) DragView *firstLine;
 @property (nonatomic, strong) CALayer *afterLayer;
+@property (nonatomic, strong) QQHotPicSwitchBar *switchBar;
 
 @end
 
@@ -42,10 +44,20 @@
     [self.view addSubview:self.firstLine];
     
     [self.firstLine addObserver:self forKeyPath:@"center" options:(NSKeyValueObservingOptionNew |NSKeyValueObservingOptionOld) context:nil];
+
+    [self.view addSubview:self.switchBar];
 }
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context {
     NSLog(@"%@", change);
 }
 
+- (QQHotPicSwitchBar *)switchBar {
+    if (!_switchBar) {
+        _switchBar = [[QQHotPicSwitchBar alloc] initWithFrame:CGRectMake(0, 100, CGRectGetWidth(self.view.frame), 37)];
+    }
+    return _switchBar;
+}
+
 @end
+

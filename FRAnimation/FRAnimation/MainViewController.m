@@ -123,9 +123,9 @@
 
     [self initDataSource];
     
-    
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        NSIndexPath *indexPath = [NSIndexPath indexPathForRow:1 inSection:0];
+    NSInteger initIndex = 8;
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        NSIndexPath *indexPath = [NSIndexPath indexPathForRow:initIndex inSection:0];
         [self.mainTable selectRowAtIndexPath:indexPath animated:YES scrollPosition:UITableViewScrollPositionBottom];
         if ([self.mainTable.delegate respondsToSelector:@selector(tableView:didSelectRowAtIndexPath:)]) {
             [self.mainTable.delegate tableView:self.mainTable didSelectRowAtIndexPath:indexPath];
@@ -165,7 +165,8 @@
                       
                       // 9
                       [MyListItem initWithName:@"🛠ObjC测试" withClass:[OCTestViewController class]],
-                      
+                      // 10
+                      [MyListItem initWithName:@"蛋疼需求" withClass:[DTViewController class]],
                       // Last one is reserved.
                       [MyListItem initWithName:@"🤔 App内打开AppStore" withClass:[UIViewController class]]
                      ];
@@ -235,7 +236,7 @@
                                    // nothing
                                }
         }];
-        [self.navigationController presentViewController:storeVC animated:YES completion:nil];
+        [self.navigationController presentViewController:storeVC animated:NO completion:nil];
     } else {
         UIViewController *viewController = [[((MyListItem *)self.itemList[indexPath.row]).object alloc] init];
         viewController.hidesBottomBarWhenPushed = YES;

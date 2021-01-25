@@ -26,6 +26,10 @@ static const CGFloat kCropViewTopMargin = 170.f;
 @property (nonatomic, strong) UIScrollView *scrollView;
 @property (nonatomic, strong) UIView *zoomingView;
 @property (nonatomic, strong) UIImageView *imageView;
+// test
+@property (nonatomic, strong) UILabel *testLabel;
+@property (nonatomic, strong) UIImageView *testImageView;
+
 @property (nonatomic, strong) UIView *singleCropView;
 @property (nonatomic, strong) CAShapeLayer *singleCropMask;
 @property (nonatomic, strong) CAShapeLayer *multiCropMask;
@@ -49,6 +53,8 @@ static const CGFloat kCropViewTopMargin = 170.f;
     [self addSubview:self.scrollView];
     [self.scrollView addSubview:self.zoomingView];
     [self.zoomingView addSubview:self.imageView];
+    [self.zoomingView addSubview:self.testLabel];
+    [self.imageView addSubview:self.testImageView];
     [self addSubview:self.singleCropView];
     [self addSubview:self.smartBtn];
     [self addSubview:self.freeBtn];
@@ -325,6 +331,24 @@ static const CGFloat kCropViewTopMargin = 170.f;
         _imageView.backgroundColor = [UIColor clearColor];
     }
     return _imageView;
+}
+
+- (UILabel *)testLabel {
+    if (!_testLabel) {
+        _testLabel = [[UILabel alloc] initWithFrame:CGRectMake(30, 30, 200, 40)];
+        _testLabel.text = @"测试文字贴纸....";
+        _testLabel.font = [UIFont systemFontOfSize:14];
+        _testLabel.textColor = [UIColor redColor];
+    }
+    return _testLabel;
+}
+
+- (UIImageView *)testImageView {
+    if (!_testImageView) {
+        _testImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"common_checkbox_yes_44px@2x.png"]];
+        _testImageView.contentMode = UIViewContentModeScaleAspectFit;
+    }
+    return _testImageView;
 }
 
 - (UIView *)singleCropView {

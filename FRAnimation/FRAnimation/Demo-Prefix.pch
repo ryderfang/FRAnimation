@@ -17,6 +17,7 @@
     #import "UIDefs.h"
     #import "BiliIconFont.h"
     #import "BiliIconConfig.h"
+    #import "UIViewAdditions.h"
 #endif
 
 #endif /* Demo_Prefix_pch */
