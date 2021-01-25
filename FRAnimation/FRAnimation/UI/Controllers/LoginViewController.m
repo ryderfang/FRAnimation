@@ -11,10 +11,12 @@
 #import "FRTextField.h"
 #import "FRLoginButton.h"
 #import "UIColor+Hex.h"
+#import "FRBubbleView.h"
 
 @interface LoginViewController ()
 
 @property (nonatomic, strong) FRLoginButton *loginButton;
+@property (nonatomic, strong) FRBubbleView *bubbleView;
 
 @end
 
@@ -69,6 +71,10 @@
         [strongSelf presentViewController:nextVC animated:YES completion:nil];
     };
     [self.view addSubview:_loginButton];
+    
+    self.bubbleView.left = self.loginButton.left + (self.loginButton.width - self.bubbleView.width) / 2;
+    self.bubbleView.bottom = self.loginButton.top;
+    [FRBubbleView showBubble:self.bubbleView inView:self.view fullScreenMask:YES];
 }
 
 - (CAGradientLayer *)backgroundLayer {
@@ -81,6 +87,26 @@
     layer.endPoint = CGPointMake(0.5, 1);
     layer.locations = @[@0.25, @0.75];
     return layer;
+}
+
+- (FRBubbleView *)bubbleView {
+    if (!_bubbleView) {
+        _bubbleView = [[FRBubbleView alloc] initWithFrame:CGRectMake(0, 0, 152, 76)];
+        _bubbleView.imageView.image = [UIImage imageNamed:@"qipao1.png"];
+        _bubbleView.labelInset = UIEdgeInsetsMake(0, 16, 0, 16);
+        // Label
+        NSString *labelString = @"这是一个气泡\n点了也没有反应";
+        NSMutableAttributedString *attrStr = [[NSMutableAttributedString alloc] initWithString:labelString];
+        NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
+        paragraphStyle.lineSpacing = 8;
+        [attrStr addAttributes:@{ NSParagraphStyleAttributeName : paragraphStyle } range:NSMakeRange(0, labelString.length)];
+        _bubbleView.labelTip.attributedText = attrStr;
+        _bubbleView.labelTip.font = [UIFont systemFontOfSize:14];
+        _bubbleView.labelTip.textColor = [UIColor blackColor];
+        _bubbleView.labelTip.numberOfLines = 2;
+        _bubbleView.labelTip.textAlignment = NSTextAlignmentLeft;
+    }
+    return _bubbleView;
 }
 
 @end

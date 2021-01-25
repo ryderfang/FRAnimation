@@ -28,7 +28,7 @@
 }
 
 - (void)presentAnimation:(id<UIViewControllerContextTransitioning>)transitionContext {
-    UINavigationController *fromNavVC = (UINavigationController *)[transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey];
+    UINavigationController *fromNavVC = ((UITabBarController *)[transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey]).viewControllers[0];
     UINavigationController *toNavVC = (UINavigationController *)[transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
     
     UIViewController *fromVC = fromNavVC.viewControllers.lastObject;
@@ -65,10 +65,10 @@
 
 - (void)dismissAnimation:(id<UIViewControllerContextTransitioning>)transitionContext {
     UIViewController *fromNavVC = (UIViewController *)[transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey];
-    UINavigationController *toNavVC = (UINavigationController *)[transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
+    UINavigationController *toNavVC = (UIViewController *)[transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
     UIViewController *toVC = toNavVC.viewControllers.lastObject;
     UIView *containerView = [transitionContext containerView];
-    [containerView insertSubview:toNavVC.view atIndex:0];
+    [containerView insertSubview:toVC.view atIndex:0];
     
     CGFloat radius = sqrtf(pow(containerView.frame.size.height, 2) + pow(containerView.frame.size.height, 2)) / 2;
     

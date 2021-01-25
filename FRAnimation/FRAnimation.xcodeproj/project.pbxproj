@@ -34,6 +34,9 @@
 		0D6B1B0F2420C33F0096FB1E /* EmitterSnowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6B1B0E2420C33F0096FB1E /* EmitterSnowController.swift */; };
 		0D6B1B122420C3AF0096FB1E /* DownloadModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D6B1B112420C3AF0096FB1E /* DownloadModel.m */; };
 		0D6B1B172420C3ED0096FB1E /* DownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D6B1B162420C3ED0096FB1E /* DownloadManager.m */; };
+		0D811FA924C834EE00B47F5E /* FRBubbleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D811FA824C834EE00B47F5E /* FRBubbleView.m */; };
+		0D811FD024C8368D00B47F5E /* qipao2.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D811FCE24C8368D00B47F5E /* qipao2.png */; };
+		0D811FD124C8368D00B47F5E /* qipao1.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D811FCF24C8368D00B47F5E /* qipao1.png */; };
 		0DB167F0244D617000E1B3AF /* UIImage+FixOrientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DB167EE244D617000E1B3AF /* UIImage+FixOrientation.m */; };
 		0DD6B848243F1FDA00BA92EF /* AECropView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DD6B847243F1FDA00BA92EF /* AECropView.m */; };
 		0DDFC43C2445A6C000D57263 /* ResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DDFC43B2445A6C000D57263 /* ResultViewController.m */; };
@@ -156,6 +159,10 @@
 		0D6B1B112420C3AF0096FB1E /* DownloadModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DownloadModel.m; sourceTree = "<group>"; };
 		0D6B1B152420C3ED0096FB1E /* DownloadManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DownloadManager.h; sourceTree = "<group>"; };
 		0D6B1B162420C3ED0096FB1E /* DownloadManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DownloadManager.m; sourceTree = "<group>"; };
+		0D811FA724C834EE00B47F5E /* FRBubbleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FRBubbleView.h; sourceTree = "<group>"; };
+		0D811FA824C834EE00B47F5E /* FRBubbleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FRBubbleView.m; sourceTree = "<group>"; };
+		0D811FCE24C8368D00B47F5E /* qipao2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = qipao2.png; sourceTree = "<group>"; };
+		0D811FCF24C8368D00B47F5E /* qipao1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = qipao1.png; sourceTree = "<group>"; };
 		0DB167EE244D617000E1B3AF /* UIImage+FixOrientation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FixOrientation.m"; sourceTree = "<group>"; };
 		0DB167EF244D617000E1B3AF /* UIImage+FixOrientation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+FixOrientation.h"; sourceTree = "<group>"; };
 		0DD6B846243F1FDA00BA92EF /* AECropView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AECropView.h; sourceTree = "<group>"; };
@@ -308,6 +315,8 @@
 				0D6B1AEB2420C1890096FB1E /* FRLoginButton.m */,
 				0D6B1AE92420C1890096FB1E /* FRTextField.h */,
 				0D6B1AEA2420C1890096FB1E /* FRTextField.m */,
+				0D811FA724C834EE00B47F5E /* FRBubbleView.h */,
+				0D811FA824C834EE00B47F5E /* FRBubbleView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -478,20 +487,22 @@
 		7174C86B1E0A795E008D5887 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				23D38DF1211D76770032CA98 /* Weex */,
+				71630EE01DF56586002F4D0A /* Assets.xcassets */,
+				2337DA661FB1D690008D480F /* bell.json */,
+				2337DA6A1FB1E780008D480F /* bell2.json */,
+				2337DA671FB1D6A3008D480F /* birth.json */,
+				7138754B1EF2673D0093BE11 /* fontello.ttf */,
+				2337DA5C1FB1CBF1008D480F /* gears.json */,
+				71DFB8AC1E0FB46700DFAE63 /* icon_balloon.png */,
+				7138755A1EF28B880093BE11 /* iconfont.ttf */,
+				2371A44D20E08E4900624979 /* microphone.png */,
+				71DFB8E81E14B9E700DFAE63 /* next_bg.jpg */,
+				0D811FCF24C8368D00B47F5E /* qipao1.png */,
+				0D811FCE24C8368D00B47F5E /* qipao2.png */,
 				2371A45220E0D6A000624979 /* table_bg.png */,
 				2371A45120E0D6A000624979 /* voice_indicator.json */,
 				2371A45320E0D6A000624979 /* voice.json */,
-				2371A44D20E08E4900624979 /* microphone.png */,
-				2337DA6A1FB1E780008D480F /* bell2.json */,
-				2337DA661FB1D690008D480F /* bell.json */,
-				2337DA5C1FB1CBF1008D480F /* gears.json */,
-				2337DA671FB1D6A3008D480F /* birth.json */,
-				7138755A1EF28B880093BE11 /* iconfont.ttf */,
-				7138754B1EF2673D0093BE11 /* fontello.ttf */,
-				71630EE01DF56586002F4D0A /* Assets.xcassets */,
-				71DFB8AC1E0FB46700DFAE63 /* icon_balloon.png */,
-				71DFB8E81E14B9E700DFAE63 /* next_bg.jpg */,
+				23D38DF1211D76770032CA98 /* Weex */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -613,7 +624,6 @@
 				TargetAttributes = {
 					71630ED01DF56585002F4D0A = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = AV8J5QKX6U;
 						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
@@ -665,12 +675,14 @@
 				2337DA651FB1D5BE008D480F /* gears.json in Resources */,
 				7138755B1EF28B990093BE11 /* iconfont.ttf in Resources */,
 				71630EE11DF56586002F4D0A /* Assets.xcassets in Resources */,
+				0D811FD124C8368D00B47F5E /* qipao1.png in Resources */,
 				23F44CF222E05FA900CEE70C /* fuck_weex.js in Resources */,
 				2337DA6B1FB1E781008D480F /* bell2.json in Resources */,
 				71DFB8E91E14B9E800DFAE63 /* next_bg.jpg in Resources */,
 				2371A45420E0D6A000624979 /* voice_indicator.json in Resources */,
 				71DFB8AE1E0FB46700DFAE63 /* icon_balloon.png in Resources */,
 				7138754C1EF2673D0093BE11 /* fontello.ttf in Resources */,
+				0D811FD024C8368D00B47F5E /* qipao2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -752,6 +764,7 @@
 				0D6B1AE22420C15A0096FB1E /* DragableViewController.m in Sources */,
 				0D6B1B0F2420C33F0096FB1E /* EmitterSnowController.swift in Sources */,
 				0D6B1B0B2420C2050096FB1E /* UIButton+BiliIconFont.m in Sources */,
+				0D811FA924C834EE00B47F5E /* FRBubbleView.m in Sources */,
 				0D6B1AED2420C1890096FB1E /* FRLoginButton.m in Sources */,
 				0D4ACE3D243F0B720048418E /* ExpressionCropViewController.m in Sources */,
 				0D6B1AFB2420C1F20096FB1E /* LoginCustomTransition.m in Sources */,
@@ -908,7 +921,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = AV8J5QKX6U;
+				DEVELOPMENT_TEAM = "";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/Demo-Prefix.pch";
 				INFOPLIST_FILE = FRAnimation/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
