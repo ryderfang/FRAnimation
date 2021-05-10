@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0D07F107247BEC0500CE577A /* OCTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D07F106247BEC0500CE577A /* OCTestViewController.m */; };
+		0D14DC5626494BC1003857FC /* WeakWatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D14DC5526494BC1003857FC /* WeakWatcher.m */; };
 		0D4ACE3D243F0B720048418E /* ExpressionCropViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D4ACE3C243F0B720048418E /* ExpressionCropViewController.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		0D4ACE65243F12FE0048418E /* UIViewAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D4ACE63243F12FE0048418E /* UIViewAdditions.m */; };
 		0D51DD482444775700FE7BED /* UITabBarController+Rotate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D51DD472444775700FE7BED /* UITabBarController+Rotate.m */; };
@@ -118,6 +119,8 @@
 /* Begin PBXFileReference section */
 		0D07F105247BEC0500CE577A /* OCTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCTestViewController.h; sourceTree = "<group>"; };
 		0D07F106247BEC0500CE577A /* OCTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCTestViewController.m; sourceTree = "<group>"; };
+		0D14DC5426494BC1003857FC /* WeakWatcher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeakWatcher.h; sourceTree = "<group>"; };
+		0D14DC5526494BC1003857FC /* WeakWatcher.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeakWatcher.m; sourceTree = "<group>"; };
 		0D4ACE3B243F0B720048418E /* ExpressionCropViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExpressionCropViewController.h; sourceTree = "<group>"; };
 		0D4ACE3C243F0B720048418E /* ExpressionCropViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExpressionCropViewController.m; sourceTree = "<group>"; };
 		0D4ACE63243F12FE0048418E /* UIViewAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewAdditions.m; sourceTree = "<group>"; };
@@ -300,6 +303,8 @@
 				0DB167EE244D617000E1B3AF /* UIImage+FixOrientation.m */,
 				0D51DD4A24447B0B00FE7BED /* FRImageHelper.h */,
 				0D51DD4B24447B0B00FE7BED /* FRImageHelper.m */,
+				0D14DC5426494BC1003857FC /* WeakWatcher.h */,
+				0D14DC5526494BC1003857FC /* WeakWatcher.m */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -839,6 +844,7 @@
 				0D6B1AF72420C1E90096FB1E /* NSString+Extension.m in Sources */,
 				71FFB44025BEF63A0069659F /* QQDouTuModel.m in Sources */,
 				23F44D0722E1A13500CEE70C /* DCCrossHairView.m in Sources */,
+				0D14DC5626494BC1003857FC /* WeakWatcher.m in Sources */,
 				0D6B1B092420C2050096FB1E /* UIImageView+BiliIconFont.m in Sources */,
 				0D51DD482444775700FE7BED /* UITabBarController+Rotate.m in Sources */,
 				0DD6B848243F1FDA00BA92EF /* AECropView.m in Sources */,
