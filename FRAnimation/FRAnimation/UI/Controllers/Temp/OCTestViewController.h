@@ -2,8 +2,8 @@
 //  OCTestViewController.h
 //  FRAnimation
 //
-//  Created by ryderfang on 2020/5/25.
-//  Copyright © 2020 Ray Fong. All rights reserved.
+//  Created by Rui on 2020/5/25.
+//  Copyright © 2020 ryderfang. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

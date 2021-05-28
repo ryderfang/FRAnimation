@@ -2,8 +2,8 @@
 //  UITabBarController+Rotate.m
 //  FRAnimation
 //
-//  Created by ryderfang on 2020/4/13.
-//  Copyright © 2020 Ray Fong. All rights reserved.
+//  Created by Rui on 2020/4/13.
+//  Copyright © 2020 ryderfang. All rights reserved.
 //
 
 #import "UITabBarController+Rotate.h"

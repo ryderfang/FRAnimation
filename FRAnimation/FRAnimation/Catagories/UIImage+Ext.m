@@ -1,14 +1,14 @@
 //
-//  UIImage+Color.m
+//  UIImage+Ext.m
 //  FRAnimation
 //
-//  Created by YiMu on 2018/7/25.
-//  Copyright © 2018年 Ray Fong. All rights reserved.
+//  Created by Rui on 2018/7/25.
+//  Copyright © 2018年 ryderfang. All rights reserved.
 //
 
-#import "UIImage+Color.h"
+#import "UIImage+Ext.h"
 
-@implementation UIImage (Color)
+@implementation UIImage (Ext)
 
 + (UIImage *)imageWithColor1x1:(UIColor *)color {
     return [UIImage imageWithColor:color size:CGSizeMake(1, 1)];
@@ -39,5 +39,14 @@
     return newImage;
 }
 
+- (UIImage *)roundedCornerImageWithRadius:(CGFloat)radius {
+    UIGraphicsBeginImageContextWithOptions(self.size, NO, [UIScreen mainScreen].scale);
+    [[UIBezierPath bezierPathWithRoundedRect:CGRectMake(0, 0, self.size.width, self.size.height)
+                                cornerRadius:radius] addClip];
+    [self drawInRect:CGRectMake(0, 0, self.size.width, self.size.height)];
+    UIImage * image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return image;
+}
 
 @end

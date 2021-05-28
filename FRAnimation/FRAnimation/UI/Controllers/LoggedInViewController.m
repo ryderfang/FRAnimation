@@ -2,8 +2,8 @@
 //  LoggedInViewController.m
 //  FRAnimation
 //
-//  Created by Ray Fong on 2016/12/29.
-//  Copyright © 2016年 Ray Fong. All rights reserved.
+//  Created by Rui on 2016/12/29.
+//  Copyright © 2016年 ryderfang. All rights reserved.
 //
 
 #import "LoggedInViewController.h"

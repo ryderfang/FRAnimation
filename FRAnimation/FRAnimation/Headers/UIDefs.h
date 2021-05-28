@@ -2,8 +2,8 @@
 //  UIDefs.h
 //  FRAnimation
 //
-//  Created by Ray Fong on 2017/5/22.
-//  Copyright © 2017年 Ray Fong. All rights reserved.
+//  Created by Rui on 2017/5/22.
+//  Copyright © 2017年 ryderfang. All rights reserved.
 //
 
 #ifndef UIDefs_h

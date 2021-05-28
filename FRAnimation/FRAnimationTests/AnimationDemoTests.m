@@ -2,8 +2,8 @@
 //  FRAnimationTests.m
 //  FRAnimationTests
 //
-//  Created by Ray Fong on 16/12/5.
-//  Copyright © 2016年 Ray Fong. All rights reserved.
+//  Created by Rui on 16/12/5.
+//  Copyright © 2016年 ryderfang. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>

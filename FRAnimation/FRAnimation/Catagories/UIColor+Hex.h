@@ -2,8 +2,8 @@
 //  UIColor+UIColor_Hex.h
 //  FRAnimation
 //
-//  Created by Ray Fong on 2016/12/30.
-//  Copyright © 2016年 Ray Fong. All rights reserved.
+//  Created by Rui on 2016/12/30.
+//  Copyright © 2016年 ryderfang. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

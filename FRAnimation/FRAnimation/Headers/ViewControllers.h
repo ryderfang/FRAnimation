@@ -2,8 +2,8 @@
 //  Header.h
 //  FRAnimation
 //
-//  Created by YiMu on 2018/8/9.
-//  Copyright © 2018年 Ray Fong. All rights reserved.
+//  Created by Rui on 2018/8/9.
+//  Copyright © 2018年 ryderfang. All rights reserved.
 //
 
 #import "ClockViewController.h"
@@ -15,4 +15,4 @@
 #import "DragableViewController.h"
 #import "ExpressionCropViewController.h"
 #import "OCTestViewController.h"
-#import "DTViewController.h"
+#import "UITestViewController.h"

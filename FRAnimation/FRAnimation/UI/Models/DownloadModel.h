@@ -2,8 +2,8 @@
 //  DownloadModel.h
 //  FRAnimation
 //
-//  Created by ryderfang on 2020/3/17.
-//  Copyright © 2020 Ray Fong. All rights reserved.
+//  Created by Rui on 2020/3/17.
+//  Copyright © 2020 ryderfang. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

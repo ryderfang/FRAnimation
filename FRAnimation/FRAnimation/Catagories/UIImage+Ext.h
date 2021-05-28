@@ -1,14 +1,14 @@
 //
-//  UIImage+Color.h
+//  UIImage+Ext.h
 //  FRAnimation
 //
-//  Created by YiMu on 2018/7/25.
-//  Copyright © 2018年 Ray Fong. All rights reserved.
+//  Created by Rui on 2018/7/25.
+//  Copyright © 2018年 ryderfang. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface UIImage (Color)
+@interface UIImage (Ext)
 
 /**
  *  生成1*1像素的纯色图片
@@ -24,5 +24,10 @@
  *  设置图片透明度
  */
 + (UIImage *)imageByApplyingAlpha:(CGFloat)alpha image:(UIImage*)image;
+
+/*
+ * 圆角图片
+ */
+- (UIImage *)roundedCornerImageWithRadius:(CGFloat)radius;
 
 @end

@@ -2,8 +2,8 @@
 //  WeakWatcher.m
 //  FRAnimation
 //
-//  Created by ryderfang on 2021/5/10.
-//  Copyright © 2021 Ray Fong. All rights reserved.
+//  Created by Rui on 2021/5/10.
+//  Copyright © 2021 ryderfang. All rights reserved.
 //
 
 #import "WeakWatcher.h"

@@ -2,7 +2,7 @@
 //  NSString+Extension.h
 //  Pin
 //
-//  Created by cyan on 15/9/12.
+//  Created by Rui on 15/9/12.
 //  Copyright © 2015年 cyan. All rights reserved.
 //
 

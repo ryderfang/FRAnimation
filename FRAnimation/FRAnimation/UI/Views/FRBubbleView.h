@@ -2,8 +2,8 @@
 //  FRBubbleView.h
 //  FRAnimation
 //
-//  Created by Ryder Fang on 2020/7/22.
-//  Copyright © 2020 Ray Fong. All rights reserved.
+//  Created by Rui on 2020/7/22.
+//  Copyright © 2020 ryderfang. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

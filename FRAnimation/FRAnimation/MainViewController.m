@@ -2,8 +2,8 @@
 //  MainViewController.m
 //  FRAnimation
 //
-//  Created by Ray Fong on 2016/12/23.
-//  Copyright © 2016年 Ray Fong. All rights reserved.
+//  Created by Rui on 2016/12/23.
+//  Copyright © 2016年 ryderfang. All rights reserved.
 //
 
 #import "MainViewController.h"
@@ -123,7 +123,7 @@
 
     [self initDataSource];
     
-    NSInteger initIndex = 8;
+    NSInteger initIndex = 10;
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         NSIndexPath *indexPath = [NSIndexPath indexPathForRow:initIndex inSection:0];
         [self.mainTable selectRowAtIndexPath:indexPath animated:YES scrollPosition:UITableViewScrollPositionBottom];
@@ -166,7 +166,7 @@
                       // 9
                       [MyListItem initWithName:@"🛠ObjC测试" withClass:[OCTestViewController class]],
                       // 10
-                      [MyListItem initWithName:@"蛋疼需求" withClass:[DTViewController class]],
+                      [MyListItem initWithName:@"🪒UI测试" withClass:[UITestViewController class]],
                       // Last one is reserved.
                       [MyListItem initWithName:@"🤔 App内打开AppStore" withClass:[UIViewController class]]
                      ];

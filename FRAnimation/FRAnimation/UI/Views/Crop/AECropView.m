@@ -2,8 +2,8 @@
 //  AECropView.m
 //  FRAnimation
 //
-//  Created by ryderfang on 2020/4/9.
-//  Copyright © 2020 Ray Fong. All rights reserved.
+//  Created by Rui on 2020/4/9.
+//  Copyright © 2020 ryderfang. All rights reserved.
 //
 
 #if ! __has_feature(objc_arc)
@@ -345,7 +345,7 @@ static const CGFloat kCropViewTopMargin = 170.f;
 
 - (UIImageView *)testImageView {
     if (!_testImageView) {
-        _testImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"common_checkbox_yes_44px@2x.png"]];
+        _testImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"checkbox_yes_44px@2x.png"]];
         _testImageView.contentMode = UIViewContentModeScaleAspectFit;
     }
     return _testImageView;

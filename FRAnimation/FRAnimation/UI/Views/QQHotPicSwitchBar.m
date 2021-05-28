@@ -2,8 +2,8 @@
 //  QQHotPicSwitchBar.m
 //  ryderfang
 //
-//  Created by ryderfang on 2020/2/24.
-//  Copyright © 2018年 Ray Fong. All rights reserved.
+//  Created by Rui on 2020/2/24.
+//  Copyright © 2018年 ryderfang. All rights reserved.
 //
 
 #if ! __has_feature(objc_arc)

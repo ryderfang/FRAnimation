@@ -2,13 +2,13 @@
 //  LottieViewController.m
 //  FRAnimation
 //
-//  Created by YiMu on 2017/11/7.
-//  Copyright © 2017年 Ray Fong. All rights reserved.
+//  Created by Rui on 2017/11/7.
+//  Copyright © 2017年 ryderfang. All rights reserved.
 //
 
 #import "LottieViewController.h"
 #import <Lottie/Lottie.h>
-#import "UIImage+Color.h"
+#import "UIImage+Ext.h"
 
 @interface MyButton : UIButton
 
