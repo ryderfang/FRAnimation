@@ -27,10 +27,11 @@
 }
 
 - (void)buildUI {
-    self.slider = [[RRSlider alloc] initWithFrame:CGRectMake(40, 200, self.view.width - 40 * 2, 20)];
-    self.slider.minimumValue = 0.0;
+    self.slider = [[RRSlider alloc] initWithFrame:CGRectMake(40, 200, self.view.width - 40 * 2, 28)];
+    self.slider.minimumValue = -1.0;
     self.slider.maximumValue = 1.0;
-    self.slider.defaultValue = 0.3;
+    self.slider.enableBiDirection = YES;
+    self.slider.defaultValue = 0;
     [self.view addSubview:self.slider];
 }
 

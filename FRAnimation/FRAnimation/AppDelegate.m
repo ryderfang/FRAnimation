@@ -55,7 +55,7 @@
     [self.window makeKeyAndVisible];
 
 #if TARGET_IPHONE_SIMULATOR
-    [[DCIntrospect sharedIntrospector] start];
+//    [[DCIntrospect sharedIntrospector] start];
 #endif
 
 //    NSArray<NSString *> *texts = [@"这是 Pin 里面使用的文本分词功能的代码，哦对了，完全是本地的，准确率有限" segment:PINSegmentationOptionsNone];

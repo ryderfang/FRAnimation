@@ -39,6 +39,14 @@
     return newImage;
 }
 
++ (UIImage *)resizeImage:(UIImage *)image withNewSize:(CGSize)newSize scale:(CGFloat)scale {
+    UIGraphicsBeginImageContextWithOptions(newSize, NO, scale);
+    [image drawInRect:CGRectMake(0, 0, newSize.width, newSize.height)];
+    UIImage *result = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return result;
+}
+
 - (UIImage *)roundedCornerImageWithRadius:(CGFloat)radius {
     UIGraphicsBeginImageContextWithOptions(self.size, NO, [UIScreen mainScreen].scale);
     [[UIBezierPath bezierPathWithRoundedRect:CGRectMake(0, 0, self.size.width, self.size.height)

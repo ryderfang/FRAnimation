@@ -12,6 +12,8 @@
 
 // default is 0.5
 @property (nonatomic, assign) float defaultValue;
+// default is NO
+@property (nonatomic, assign) BOOL enableBiDirection;
 
 - (void)setDefaultValueHidden:(BOOL)isHidden;
 
