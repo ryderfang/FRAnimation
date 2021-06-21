@@ -19,12 +19,19 @@
 @implementation RRHitOutsideView
 
 - (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event {
-    for (UIView *subview in self.subviews) {
-        if (CGRectContainsPoint(subview.frame, point)) {
-            return subview;
+    if (self.clipsToBounds || self.hidden || self.alpha <= 0) {
+        return nil;
+    }
+    
+    for (UIView *subview in self.subviews.reverseObjectEnumerator) {
+        CGPoint subPoint = [subview convertPoint:point fromView:self];
+        UIView *result = [subview hitTest:subPoint withEvent:event];
+        if (result != nil) {
+            return result;
         }
     }
-    return [super hitTest:point withEvent:event];
+
+    return nil;
 }
 
 @end
