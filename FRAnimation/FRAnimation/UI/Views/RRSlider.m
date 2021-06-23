@@ -93,53 +93,85 @@ const CGFloat kRRSliderTrackHeight = 4.0f;
 
 - (void)layoutSubviews {
     [super layoutSubviews];
-    [self updateFrame];
+    [self layoutValueLabel];
+    [self layoutDefaultValueView];
+    [self layoutTrackViews];
 }
 
-- (void)updateFrame {
+- (void)layoutValueLabel {
     CGRect thumbRect = [self thumbRectForBounds:self.bounds trackRect:self.bounds value:self.value];
-    // layout valueLabel
-    self.valueLabel.center = CGPointMake(thumbRect.origin.x + thumbRect.size.width / 2, self.valueLabel.centerY);
-    self.valueLabel.text = [NSString stringWithFormat:@"%.1f", self.value];
-    
-    if (self.defaultValueView.hidden) {
-        return;
-    }
+    self.valueLabel.center = CGPointMake(thumbRect.origin.x + thumbRect.size.width * .5f, self.valueLabel.center.y);
+    self.valueLabel.text = [NSString stringWithFormat:@"%.0f", self.value];
+}
+
+- (void)layoutDefaultValueView {
+    BOOL hasVisualElement = (self.subviews.firstObject.subviews.count >= 3);
+    // iOS 13.5 之后，UISlider 的实现有变化，一级子 View 变成了 _UISlideriOSVisualElement
     if (!self.thumbImageView) {
-        for (UIView *v in self.subviews.firstObject.subviews) {
-            if ([v isKindOfClass:[UIImageView class]]) {
-                self.thumbImageView = (UIImageView *)v;
+        self.thumbImageView = hasVisualElement ? self.subviews.firstObject.subviews.lastObject : self.subviews.lastObject;
+    }
+
+    if (!self.maxTrackView || !self.minTrackView) {
+        if (hasVisualElement) {
+            self.maxTrackView = self.subviews.firstObject.subviews[0];
+            self.minTrackView = self.subviews.firstObject.subviews[1];
+        } else {
+            if (self.subviews.count > 2) {
+                // subviews[0] 是 valueLabel
+                self.maxTrackView = self.subviews[1];
+                self.minTrackView = self.subviews[2];
             }
         }
     }
-    
-    if (!self.maxTrackView) {
-        self.maxTrackView = self.subviews.firstObject.subviews[0];
-    }
-    if (!self.minTrackView) {
-        self.minTrackView = self.subviews.firstObject.subviews[1];
+
+    if (self.defaultValueView.hidden) {
+        return;
     }
 
     if (self.thumbImageView && !self.defaultValueView.superview) {
-        [self.subviews.firstObject insertSubview:self.defaultValueView belowSubview:self.thumbImageView];
-    }
-    
-    CGSize viewSize = self.defaultValueView.bounds.size;
-    CGFloat originX = self.trackRect.origin.x + (self.defaultValue - self.minimumValue) * self.trackRect.size.width / (self.maximumValue - self.minimumValue) - viewSize.width / 2;
-    CGRect defaultFrame = CGRectMake(originX, self.trackRect.origin.y + self.trackRect.size.height / 2 - viewSize.height / 2, viewSize.width, viewSize.height);
-    self.defaultValueView.frame = defaultFrame;
-    
-    if (self.enableBiDirection) {
-        self.maxTrackView.frame = self.trackRect;
-        self.maxTrackView.subviews[0].frame = self.maxTrackView.bounds;
-        CGRect minRect = CGRectZero;
-        if (self.value > self.defaultValue) {
-            minRect = CGRectMake(CGRectGetMidX(defaultFrame), self.trackRect.origin.y, (self.value - self.defaultValue) * CGRectGetWidth(self.bounds) / (self.maximumValue - self.minimumValue), CGRectGetHeight(self.trackRect));
+        if (hasVisualElement) {
+            [self.subviews.firstObject insertSubview:self.defaultValueView belowSubview:self.thumbImageView];
         } else {
-            minRect = CGRectMake(CGRectGetMidX(thumbRect), self.trackRect.origin.y, (self.defaultValue - self.value) * CGRectGetWidth(self.bounds) / (self.maximumValue - self.minimumValue), CGRectGetHeight(self.trackRect));
+            [self insertSubview:self.defaultValueView belowSubview:self.thumbImageView];
         }
-        self.minTrackView.frame = minRect;
-        self.minTrackView.subviews[0].frame = self.minTrackView.bounds;
+    }
+
+    CGSize defaultViewSize = self.defaultValueView.frame.size;
+    CGFloat originX = self.trackRect.origin.x
+                      + (self.defaultValue - self.minimumValue) * self.trackRect.size.width / (self.maximumValue - self.minimumValue)
+                      - defaultViewSize.width / 2;
+    self.defaultValueView.frame = CGRectMake(originX, self.trackRect.origin.y + self.trackRect.size.height * 0.5f - defaultViewSize.height * 0.5f,
+        defaultViewSize.width, defaultViewSize.height);
+}
+
+- (void)layoutTrackViews {
+    if (!_enableBiDirection) {
+        return;
+    }
+    CGRect defaultViewFrame = self.defaultValueView.frame;
+    CGRect thumbRect = [self thumbRectForBounds:self.bounds trackRect:self.bounds value:self.value];
+    // 双向滑杆，minRect 位于 [self.value, self.defaultValue] 之间
+    self.maxTrackView.frame = self.trackRect;
+    if (self.maxTrackView.subviews.count > 0) {
+        for (UIView *subView in self.maxTrackView.subviews) {
+            subView.frame = self.maxTrackView.bounds;
+        }
+    }
+    CGRect minRect = CGRectZero;
+    if (self.value > self.defaultValue) {
+        minRect = CGRectMake(CGRectGetMidX(defaultViewFrame), self.trackRect.origin.y,
+            (self.value - self.defaultValue) * CGRectGetWidth(self.bounds) / (self.maximumValue - self.minimumValue),
+            CGRectGetHeight(self.trackRect));
+    } else {
+        minRect = CGRectMake(CGRectGetMidX(thumbRect), self.trackRect.origin.y,
+            (self.defaultValue - self.value) * CGRectGetWidth(self.bounds) / (self.maximumValue - self.minimumValue),
+            CGRectGetHeight(self.trackRect));
+    }
+    self.minTrackView.frame = minRect;
+    if (self.minTrackView.subviews.count > 0) {
+        for (UIView *subView in self.minTrackView.subviews) {
+            subView.frame = self.minTrackView.bounds;
+        }
     }
 }
 

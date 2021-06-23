@@ -38,7 +38,7 @@
 
 @interface UITestViewController ()
 
-//@property (nonatomic, strong) RRSlider *slider;
+@property (nonatomic, strong) RRSlider *slider;
 @property (nonatomic, strong) UIButton *open;
 @property (nonatomic, strong) RRHitOutsideView *panel;
 @property (nonatomic, strong) UIButton *fav;
@@ -57,12 +57,14 @@
 }
 
 - (void)buildUI {
-//    self.slider = [[RRSlider alloc] initWithFrame:CGRectMake(40, 200, self.view.width - 40 * 2, 28)];
-//    self.slider.minimumValue = -1.0;
-//    self.slider.maximumValue = 1.0;
-//    self.slider.enableBiDirection = YES;
-//    self.slider.defaultValue = 0;
-//    [self.view addSubview:self.slider];
+    self.slider = [[RRSlider alloc] initWithFrame:CGRectMake(40, 200, self.view.width - 40 * 2, 28)];
+    self.slider.minimumValue = -1.0;
+    self.slider.maximumValue = 1.0;
+    self.slider.enableBiDirection = YES;
+    self.slider.defaultValue = 0;
+    [self.view addSubview:self.slider];
+    
+    return;
     UIImageView *bgView = [[UIImageView alloc] initWithFrame:self.view.bounds];
     bgView.image = [UIImage imageNamed:@"mikasa.png"];
     bgView.contentMode = UIViewContentModeScaleAspectFit;
