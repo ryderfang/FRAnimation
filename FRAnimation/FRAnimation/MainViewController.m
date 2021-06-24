@@ -111,7 +111,7 @@
     UIBarButtonItem *backItem = [[UIBarButtonItem alloc] init];
     backItem.title = @"返回";
     self.navigationItem.backBarButtonItem = backItem;
-    self.navigationItem.title = @"动画学习";
+    self.navigationItem.title = @"RRKit";
 
     // Check Fonts
 //    for (NSString* family in [UIFont familyNames]) {
@@ -166,7 +166,7 @@
                       // 9
                       [MyListItem initWithName:@"🛠ObjC测试" withClass:[OCTestViewController class]],
                       // 10
-                      [MyListItem initWithName:@"🪒UI测试" withClass:[UITestViewController class]],
+                      [MyListItem initWithName:@"🦋UI测试" withClass:[UITestViewController class]],
                       // Last one is reserved.
                       [MyListItem initWithName:@"🤔 App内打开AppStore" withClass:[UIViewController class]]
                      ];

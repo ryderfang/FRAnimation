@@ -55,6 +55,12 @@ const CGFloat kRRSliderTrackHeight = 4.0f;
     [self layoutIfNeeded];
 }
 
+- (void)setEnableBiDirection:(BOOL)enableBiDirection {
+    _enableBiDirection = enableBiDirection;
+    [self setNeedsLayout];
+    [self layoutIfNeeded];
+}
+
 - (UILabel *)valueLabel {
     if (!_valueLabel) {
         _valueLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, -30, 30, 20)];
@@ -102,25 +108,27 @@ const CGFloat kRRSliderTrackHeight = 4.0f;
     CGRect thumbRect = [self thumbRectForBounds:self.bounds trackRect:self.bounds value:self.value];
     self.valueLabel.center = CGPointMake(thumbRect.origin.x + thumbRect.size.width * .5f, self.valueLabel.center.y);
     self.valueLabel.text = [NSString stringWithFormat:@"%.0f", self.value];
+    [self bringSubviewToFront:self.valueLabel];
 }
 
 - (void)layoutDefaultValueView {
     BOOL hasVisualElement = (self.subviews.firstObject.subviews.count >= 3);
+    UIView *topView = hasVisualElement ? self.subviews.firstObject : self;
     // iOS 13.5 之后，UISlider 的实现有变化，一级子 View 变成了 _UISlideriOSVisualElement
     if (!self.thumbImageView) {
-        self.thumbImageView = hasVisualElement ? self.subviews.firstObject.subviews.lastObject : self.subviews.lastObject;
+        [topView.subviews enumerateObjectsWithOptions:NSEnumerationReverse
+                                           usingBlock:^(__kindof UIView *_Nonnull obj, NSUInteger idx, BOOL *_Nonnull stop) {
+                                               if ([obj isKindOfClass:[UIImageView class]]) {
+                                                   self.thumbImageView = (UIImageView *)obj;
+                                                   *stop = YES;
+                                               }
+                                           }];
     }
 
     if (!self.maxTrackView || !self.minTrackView) {
-        if (hasVisualElement) {
-            self.maxTrackView = self.subviews.firstObject.subviews[0];
-            self.minTrackView = self.subviews.firstObject.subviews[1];
-        } else {
-            if (self.subviews.count > 2) {
-                // subviews[0] 是 valueLabel
-                self.maxTrackView = self.subviews[1];
-                self.minTrackView = self.subviews[2];
-            }
+        if (topView.subviews.count > 2) {
+            self.maxTrackView = topView.subviews[0];
+            self.minTrackView = topView.subviews[1];
         }
     }
 
@@ -129,11 +137,7 @@ const CGFloat kRRSliderTrackHeight = 4.0f;
     }
 
     if (self.thumbImageView && !self.defaultValueView.superview) {
-        if (hasVisualElement) {
-            [self.subviews.firstObject insertSubview:self.defaultValueView belowSubview:self.thumbImageView];
-        } else {
-            [self insertSubview:self.defaultValueView belowSubview:self.thumbImageView];
-        }
+        [topView insertSubview:self.defaultValueView belowSubview:self.thumbImageView];
     }
 
     CGSize defaultViewSize = self.defaultValueView.frame.size;
